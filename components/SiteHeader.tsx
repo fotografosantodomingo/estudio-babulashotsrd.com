@@ -4,6 +4,7 @@ import { niche } from "@/lib/seo";
 
 const navItems: Array<{ label: string; href: string; external?: boolean }> = [
   { label: "Inicio", href: "/" },
+  { label: "Sesión de fotos", href: "/sesion-de-fotos/" },
   { label: "Servicios", href: "/servicios/" },
   { label: "Ubicaciones", href: "/ubicaciones/" },
   { label: "Precios", href: "/precios/" },

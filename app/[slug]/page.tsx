@@ -6,7 +6,13 @@ import { canonicalUrl } from "@/lib/seo";
 
 type PageProps = { params: Promise<{ slug: string }> };
 
-const RESERVED = new Set(["blog", "category", "tag", "en", "servicios", "ubicaciones", "precios", "faq"]);
+const RESERVED = new Set([
+  "blog", "category", "tag", "en", "servicios", "ubicaciones", "precios", "faq",
+  // Sesión de fotos topical authority cluster
+  "sesion-de-fotos", "sesion-de-fotos-pareja", "sesion-de-fotos-cumpleanos",
+  "sesion-de-fotos-corporativas", "headshots-profesionales-santo-domingo",
+  "sesion-de-fotos-embarazo", "sesion-de-fotos-quinceanera"
+]);
 
 export function generateStaticParams() {
   return [...pages, ...posts]

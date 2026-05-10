@@ -89,7 +89,7 @@ export function HomePage() {
             Reserva tu sesion en estudio profesional con iluminacion controlada.
           </p>
           <div className="hero-actions">
-            <a className="button button-light" href="#contacto">Reservar sesion</a>
+            <Link className="button button-light" href="/sesion-de-fotos/">Ver sesión de fotos</Link>
             <a
               className="button button-ghost"
               href={whatsappUrl(niche.whatsappContext)}
@@ -102,6 +102,18 @@ export function HomePage() {
       </section>
 
       <section className="section">
+        <div className="wrap">
+          <div className="section-heading">
+            <p className="section-tag">Catálogo completo</p>
+            <h2><Link href="/sesion-de-fotos/" className="inline-link">Sesión de fotos en Santo Domingo</Link></h2>
+            <p>
+              Hub principal del catálogo: tipos de sesión, precios, locaciones, qué ropa usar, FAQ. Página dedicada para cada tipo de sesión: <Link href="/sesion-de-fotos-pareja/" className="inline-link">pareja</Link>, <Link href="/sesion-de-fotos-cumpleanos/" className="inline-link">cumpleaños</Link>, <Link href="/sesion-de-fotos-corporativas/" className="inline-link">corporativas</Link>, <Link href="/headshots-profesionales-santo-domingo/" className="inline-link">headshots profesionales</Link>, <Link href="/sesion-de-fotos-embarazo/" className="inline-link">embarazo</Link>, <Link href="/sesion-de-fotos-quinceanera/" className="inline-link">quinceañera</Link>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-divider">
         <div className="wrap">
           <div className="section-heading">
             <p className="section-tag">Servicios</p>

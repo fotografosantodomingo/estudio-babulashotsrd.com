@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { categories, pages, posts, tags } from "@/lib/estudioContent";
 import { canonicalUrl } from "@/lib/seo";
+import { sesionPages } from "@/lib/sesionContent";
 
 export const dynamic = "force-static";
 
@@ -13,6 +14,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: canonicalUrl("/ubicaciones/"), lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: canonicalUrl("/precios/"), lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: canonicalUrl("/faq/"), lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    // Sesión de fotos topical authority cluster (P0 SEO)
+    ...Object.values(sesionPages).map((p) => ({
+      url: canonicalUrl(p.url),
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: p.isMaster ? 1.0 : 0.85
+    })),
     // English canonical pages
     { url: canonicalUrl("/en/"), lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: canonicalUrl("/en/services/"), lastModified: now, changeFrequency: "monthly", priority: 0.8 },
