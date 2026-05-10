@@ -11,7 +11,7 @@ import {
   plainTitle,
   posts
 } from "@/lib/estudioContent";
-import { canonicalUrl, niche, organizationSchema, phoneE164, siteUrl, whatsappUrl } from "@/lib/seo";
+import { canonicalUrl, niche, organizationSchema, phoneE164, siteUrl } from "@/lib/seo";
 
 const featuredServiceSlugs = [
   "retratos-profesionales-en-estudio-santo-domingo",
@@ -88,16 +88,6 @@ export function HomePage() {
             Retratos, sesiones de fotos en estudio, fotografia de comida y bebida, exteriores y campanas para empresas.
             Reserva tu sesion en estudio profesional con iluminacion controlada.
           </p>
-          <div className="hero-actions">
-            <Link className="button button-light" href="/sesion-de-fotos/">Ver sesión de fotos</Link>
-            <a
-              className="button button-ghost"
-              href={whatsappUrl(niche.whatsappContext)}
-              rel="noopener"
-            >
-              WhatsApp
-            </a>
-          </div>
         </div>
       </section>
 

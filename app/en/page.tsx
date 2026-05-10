@@ -76,14 +76,6 @@ export default function EnglishHome() {
           headshots, food and beverage, product, maternity, newborn and fashion editorial sessions.
           Bilingual team (ES/EN), 48-72 hour delivery and a private online gallery for every client.
         </p>
-        <div className="hero-actions">
-          <a className="button button-light" href={whatsappUrl("Hello, I'd like to check availability for a studio session.")} rel="noopener">
-            WhatsApp {phoneDisplay}
-          </a>
-          <Link className="button button-ghost" href="/en/prices/">
-            See prices
-          </Link>
-        </div>
       </section>
 
       <section className="section">
