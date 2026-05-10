@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "count": 17,
+    "description": "Estudio Santo Domingo es un espacio dinámico dedicado a la fotografía en el corazón de la ciudad. Fundado en 2024, es un punto de encuentro para fotógrafos emergentes y profesionales. Ofrece equipos de vanguardia y un ambiente creativo para sesiones fotográficas de todo tipo. Con una estética moderna y acogedora, el estudio promueve la colaboración y la experimentación. Además de ser un lugar para crear, organiza exposiciones y talleres para impulsar el arte fotográfico en la comunidad.",
+    "link": "https://estudio.babulashotsrd.com/category/estudio-santo-domingo/",
+    "name": "Estudio Santo Domingo",
+    "slug": "estudio-santo-domingo",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://estudio.babulashotsrd.com/wp-json/wp/v2/categories/1",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://estudio.babulashotsrd.com/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://estudio.babulashotsrd.com/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://estudio.babulashotsrd.com/wp-json/wp/v2/posts?categories=1"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 35,
+    "count": 2,
+    "description": "Sesion de fotos Retratos Estudio Blanco Y Negro",
+    "link": "https://estudio.babulashotsrd.com/category/retratos-estudio-blanco-y-negro/",
+    "name": "Retratos Estudio Blanco Y Negro",
+    "slug": "retratos-estudio-blanco-y-negro",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://estudio.babulashotsrd.com/wp-json/wp/v2/categories/35",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://estudio.babulashotsrd.com/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://estudio.babulashotsrd.com/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://estudio.babulashotsrd.com/wp-json/wp/v2/posts?categories=35"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]
