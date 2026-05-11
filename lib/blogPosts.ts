@@ -226,7 +226,166 @@ const POSTS: BlogPost[] = [
           "Tarifas publicadas para todos nuestros servicios de fotografía en estudio. Sin sorpresas."
       }
     ],
-    ogImageAlt: "Poses para fotos de quinceañera — Babula Shots Estudio Santo Domingo"
+    ogImageAlt: "Poses para fotos de quinceañera — Babula Shots Estudio Santo Domingo",
+    en: {
+      enSlug: "quinceanera-poses",
+      title:
+        "10 Best Quinceañera Photo Poses | 2026 Photographer's Guide — Babula Shots Studio",
+      metaDescription:
+        "The 10 essential poses for your quinceañera photo session: classic, modern editorial, and spontaneous moments. 2026 guide from a professional photographer in Santo Domingo, Dominican Republic.",
+      h1: "10 Best Quinceañera Photo Poses (2026 Guide)",
+      eyebrow: "Quinceañera · Pose Guide",
+      introParagraphs: [
+        "Quinceañera photos are one of the few visual records a woman keeps for 30, 40, 50 years. They're not Instagram throwaways — they're the definitive record of a milestone that happens once in a lifetime. Which is why the poses matter: good poses turn an ordinary session into an album that looks professional, intentional, and timeless.",
+        "This guide covers the 10 poses we use most successfully in our quinceañera sessions at Babula Shots Studio in Santo Domingo. The mix includes the classic look (formal dress, elegant portrait), the modern editorial style (magazine aesthetic, confident gaze), and the spontaneous moments that often turn out to be the family's favorite photos.",
+        "Before we begin: these poses work in studio or outdoors, in a simple session or a hybrid one. What matters is mentally rehearsing them before the session and communicating with your photographer. If you want to see how they translate to a real session, you can browse our [studio services](/en/services/) or message us on WhatsApp for references."
+      ],
+      sections: [
+        {
+          heading: "Before the session: how to prepare your quinceañera poses",
+          body: [
+            "**Research visual references** a week ahead. Pinterest and Instagram are your best resources — search terms like `quinceañera poses`, `quince picture poses`, `modern quinceañera photoshoot poses`. Save 8-12 images you like and share them with your photographer. This avoids arriving at the session without knowing what to ask for.",
+            "**Practice in front of a mirror.** Not to memorize (stiff poses show on camera) but to discover which angles work for you. Slight head tilt, relaxed shoulders, weight shifted onto one leg — small adjustments that transform a photo. Knowing how your face looks in different positions gives you confidence on the day.",
+            "**Talk to your photographer beforehand.** Share your references 2-3 days before the session. A good photographer will tell you which ones are realistic given the light and location, and which they'd need to adapt. This avoids disappointment if you expected something specific that can't be replicated.",
+            "**Trust the direction during the session.** Even if you've practiced, you'll receive instructions during the shoot — `tilt your head slightly`, `hand on hip`, `look toward the window`. Trust them. We're seeing the camera, you're not. Most of the best photos come when the quinceañera stops over-thinking and lets herself be directed."
+          ]
+        },
+        {
+          heading: "1. Seated portrait with extended skirt",
+          body: [
+            "The most classic pose for quinceañera photos with a formal dress. Done seated on a chair, bench, or step, with the skirt extended forward or sideways to show the volume of the design. The quinceañera looks at the camera with a serene expression (not a wide smile — more like a contained smile or elegant gaze).",
+            "**Why it works:** highlights the dress as the protagonist, conveys formality and tradition, is the pose that frames best for printing or gifting to relatives.",
+            "**Execution tip:** make sure the skirt sits symmetrically. Have your mom or the photographer adjust the folds before each frame. Shoulders slightly back, hands relaxed in your lap or on the chair."
+          ]
+        },
+        {
+          heading: "2. Walking toward the camera",
+          body: [
+            "Dynamic pose: the quinceañera walks toward the camera with a natural step, gaze forward, dress in motion. Multiple frames are taken while walking — some smiling, others with a confident expression.",
+            "**Why it works:** introduces movement (breaks the rigidity of static poses), shows the dress in action, and communicates confidence. It's one of the poses you see most in modern editorial sessions.",
+            "**Execution tip:** walk slowly, not as if heading somewhere. Look at a fixed point behind the photographer, not directly at the camera (unless the photographer asks). If wearing heels, practice walking in them before the session — discomfort shows in the photos."
+          ]
+        },
+        {
+          heading: "3. Spontaneous laugh with head slightly tilted",
+          body: [
+            "The opposite of the formal pose: a real, spontaneous laugh, generated by something funny (photographer's joke, memory, conversation). The head tilts slightly back or to one side, shoulders relax, eyes may close or half-close.",
+            "**Why it works:** these are always the family's favorite photos. They capture personality, not just appearance. They're the ones you hang on the wall, not the ones you put in the formal album.",
+            "**Execution tip:** it's not posed — it's provoked. A good photographer will talk with you during the session to generate real laughs. If they say `laugh`, it'll come out fake. Better: ask the photographer to make you laugh, or think of a funny memory seconds before the click."
+          ]
+        },
+        {
+          heading: "4. Side gaze with profile lit",
+          body: [
+            "Editorial pose: the quinceañera in profile (90 degrees to the camera), gaze toward the light direction, serene or slightly serious expression. Light falls from one side illuminating half the face and leaving the other half in soft shadow.",
+            "**Why it works:** it's the pose closest to a magazine cover. Works exceptionally well with elaborate hairstyles (side light reveals updo details) and earrings or crowns (the contrast highlights the accessory).",
+            "**Execution tip:** light has to come from one side, not from front or above. In studio, achieved with a single side flash. Outdoors, look for a large window or shoot at golden hour (5-6 PM in DR) when the sun's light is horizontal."
+          ]
+        },
+        {
+          heading: "5. Hands in hair or touching the crown",
+          body: [
+            "Detail pose: one or both hands rise toward the hair, crown, earrings, or face. Can be a subtle gesture (brushing hair) or more pronounced (adjusting the crown, touching the dress neckline).",
+            "**Why it works:** introduces hands into the composition (hands tell as much as the face), shows hairstyle and accessory details, conveys femininity and elegance. Excellent for vertical-format photos for invitations or social media.",
+            "**Execution tip:** hands should look relaxed, not rigid. Fingers slightly curved, wrist natural. If touching the crown, do it with fingertips, not the palm. If wearing a ring or bracelet, make sure the angle shows it."
+          ]
+        },
+        {
+          heading: "6. Seated on stairs with color composition",
+          body: [
+            "Pose with the location as protagonist: the quinceañera seated on stairs (interior or exterior), dress cascading down the steps. The composition uses the diagonal line of the staircase to guide the eye toward the quinceañera.",
+            "**Why it works:** stairs create instant composition (lines, layers, depth). Works exceptionally well at locations like the Colonial Zone, Plaza España, hotels with grand staircases, or even simple well-lit stairs. The dress spread across the steps is visually striking.",
+            "**Execution tip:** seated with back straight, one leg slightly crossed or one hand resting on the upper step. Gaze can be at the camera or downward (more editorial). Important: photographer positions themselves below the staircase and shoots upward to capture the full dress."
+          ]
+        },
+        {
+          heading: "7. Back view showing the dress",
+          body: [
+            "Pose that highlights the dress design: the quinceañera with her back to the camera, looking at a distant point (window, landscape, column). Shows the back neckline, corset details, ties, or embroidered details of the dress.",
+            "**Why it works:** often the most beautiful detail of a dress is on the back — formal corsets, ties, embroidery. This pose is the only one that shows them. It also conveys mystery and elegance.",
+            "**Execution tip:** head slightly turned toward one shoulder (3/4 profile) — shows part of the face. One hand can caress the neckline, the other can hold the skirt or stay relaxed. Key location: large window, garden with landscape behind, balcony with view."
+          ]
+        },
+        {
+          heading: "8. Pose with flowers or bouquet",
+          body: [
+            "The quinceañera holds a bouquet, a single flower, or approaches a large floral arrangement. Flowers can be part of the venue decoration, the church, or a prop brought specifically for the session (we recommend a white or pastel bouquet to not compete with the dress color).",
+            "**Why it works:** flowers are universal in quinceañera sessions — culturally associated with femininity, youth, celebration. They're also an excellent excuse to introduce color into a session where the dress and skin are the only chromatic elements. Excellent for square-format photos for Instagram.",
+            "**Execution tip:** hold the bouquet near the chest, not down low (flowers cover the dress). Look at the flowers, not the camera — this creates a contemplative feeling. If smelling a flower, do it with eyes closed — it always looks better than looking at the flower."
+          ]
+        },
+        {
+          heading: "9. Photo with family or court of honor",
+          body: [
+            "The quinceañera with parents, siblings, grandmother, or the court of honor / friends. Can be formal photos (everyone looking at camera, body weight distributed for group balance) or spontaneous (laughing, hugging, in conversation).",
+            "**Why it works:** these are the photos the family values most long-term — the quinceañera is the protagonist, but the family context gives emotional meaning. Often the most-framed or most-shared photos after the event.",
+            "**Execution tip:** for formal photos, align heads on a diagonal (not all at the same height). For photos with the court of honor, you can do a 'magazine cover' pose (all in line, gaze forward, hands on hips). Coordinate wardrobe — if the court members are all in the same color, the group looks cohesive and the quinceañera stands out."
+          ]
+        },
+        {
+          heading: "10. Modern editorial pose: forward gaze, backlight",
+          body: [
+            "The most modern and bold pose: the quinceañera standing, looking directly at the camera with a confident expression (not smiling — more intense or serene), lit in backlight (light comes from behind creating a halo around the silhouette).",
+            "**Why it works:** it's the pose most distinct from traditional photos. It's the pose seen in editorial fashion sessions. Works exceptionally well at golden hour outdoors (sunlight behind generates a natural halo) or in studio with backlight flash.",
+            "**Execution tip:** frontal position, body weight on one leg (the other slightly flexed for movement), one hand can be on the hip or holding the dress. Fixed gaze, no wide smile or stern face — more like serene intensity. The quinceañera has to feel this pose; if she doesn't feel confident, it won't work."
+          ]
+        },
+        {
+          heading: "Tips for a successful session with these poses",
+          body: [
+            "**Arrive 30 minutes before** start time. This gives margin to dress unhurried, hydrate, adjust hair, and start relaxed. A session that begins rushed shows in the first 50 frames.",
+            "**Light snack before leaving.** A 90-120 minute session in a structured formal dress is exhausting. Something simple — fruit, yogurt, a bar — keeps you energized. Avoid heavy meals or sugary drinks (they'll make you thirsty during the session).",
+            "**Don't drink too much water right before.** The session is long, and going to the bathroom in a voluminous dress with full makeup is complicated. Hydrate well the night before and that morning, and moderate liquids in the 2 hours before the session.",
+            "**Practice quick relaxation.** Between frames, drop your shoulders, release your jaw, breathe deeply. Tension shows in photos — especially in the neck, shoulders, and hands. If you feel tense, tell the photographer so they pause for a minute.",
+            "**Ask about the full gallery.** Some photographers deliver only the edited photos they select. Ask how many you'll receive, in what format (digital, print), if there are usage rights for social media, and if you can request specific edits (one in black and white, one cropped square for Instagram, etc.)."
+          ]
+        }
+      ],
+      faq: [
+        {
+          q: "How many poses are done in a quinceañera session?",
+          a: "Between 15 and 30 distinct poses in a 90-120 minute session, depending on the package. Each pose is photographed 5-10 times with small adjustments (gaze change, hand placement, micro angle changes). The photographer selects the best 30-60 for final editing. If you want a specific pose, communicate it at the start to reserve time."
+        },
+        {
+          q: "Do I need to practice the poses beforehand?",
+          a: "Not required, but very helpful. Practicing in front of a mirror gives you confidence, helps you discover which angles flatter you, and reduces stiffness in the first frames. Don't memorize the poses (that shows), but get familiar with them. Pinterest and Instagram are the best references: save 10-15 images you like and share them with your photographer before the session."
+        },
+        {
+          q: "What if I don't feel comfortable with a pose?",
+          a: "Say so. A good photographer will adapt the pose or move on to the next — there's nothing worse than a photo where discomfort shows. Some poses (like the modern editorial #10) require a specific attitude that not all quinceañeras want to project. It's perfectly fine to stick with the most classic poses if those feel natural."
+        },
+        {
+          q: "How long does a session that covers these 10 poses last?",
+          a: "The 10 basic poses can be covered in 90-120 minutes in studio. If you'll change looks or move outdoors, add 30-60 minutes for each. A complete hybrid session (studio + outdoor + 2-3 outfit changes) takes 2-3 hours. Ask about your quinceañera session for the details of the package you choose."
+        },
+        {
+          q: "Are the poses the same for modern and traditional sessions?",
+          a: "The structure is the same, but execution changes. In traditional sessions, poses 1, 2, 5, 8, and 9 are emphasized (classic, formal, family). In modern editorial sessions, poses 3, 4, 6, 7, and 10 are emphasized (movement, profile, backlight, spontaneity). In hybrid sessions (the most popular option in DR), all are done, distributed between studio and outdoor."
+        }
+      ],
+      related: [
+        {
+          href: "/en/services/",
+          label: "Studio services",
+          description:
+            "Coverage, deliverables and turnaround per studio service: portraits, corporate, food, product, maternity, fashion editorial."
+        },
+        {
+          href: "/en/locations/",
+          label: "Locations we cover",
+          description:
+            "Studio + outdoor locations across Santo Domingo, Punta Cana and the rest of the Dominican Republic."
+        },
+        {
+          href: "/en/prices/",
+          label: "Prices and packages",
+          description:
+            "Published rates for all studio photography services. No surprises."
+        }
+      ],
+      ogImageAlt:
+        "Quinceañera photo poses guide — Babula Shots Studio Santo Domingo Dominican Republic"
+    }
   },
   {
     slug: "zona-colonial-fotos",
