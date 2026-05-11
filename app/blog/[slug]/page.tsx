@@ -141,13 +141,13 @@ export default async function Page({ params }: PageProps) {
     }))
   };
 
-  // Brand Photographer entity — distinct @id from organizationSchema so Google Rich
-  // Results doesn't merge them. Single type (not an array of [LocalBusiness, Photographer])
-  // because the array form makes the validator render both types as separate entities,
-  // surfacing "duplicate url/image" warnings.
+  // Brand LocalBusiness entity — distinct @id from organizationSchema so Google Rich
+  // Results doesn't merge them. Use "LocalBusiness" (not "Photographer"), even though
+  // Photographer extends LocalBusiness — Google's Review Snippet validator only accepts
+  // a fixed list of types as aggregateRating hosts and does not auto-promote subtypes.
   const photographerSchema: Record<string, unknown> = {
     "@context": "https://schema.org",
-    "@type": "Photographer",
+    "@type": "LocalBusiness",
     "@id": `${siteUrl}#localbusiness`,
     name: "Babula Shots Estudio",
     url: siteUrl,

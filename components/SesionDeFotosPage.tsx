@@ -99,10 +99,12 @@ export function SesionDeFotosPage({ page }: { page: SesionPage }) {
 
   const photographerSchema: Record<string, unknown> = {
     "@context": "https://schema.org",
-    // Single type (Photographer extends LocalBusiness in schema.org). Using an array of
-    // both made GSC Rich Results render the entity twice (once per type) with duplicated
-    // url/image fields shown in the validator UI.
-    "@type": "Photographer",
+    // Use "LocalBusiness" (not "Photographer"), even though Photographer extends LocalBusiness
+    // in schema.org. Google's Review Snippet validator only auto-recognizes a fixed set of
+    // types as review-snippet hosts (LocalBusiness, Organization, Product, Service, Movie, ...);
+    // it does NOT auto-promote subtypes like Photographer, so aggregateRating on a Photographer
+    // is flagged "Invalid object type in field <parent_node>" → Critical error.
+    "@type": "LocalBusiness",
     "@id": `${siteUrl}#localbusiness`,
     name: "Babula Shots Estudio",
     url: siteUrl,
