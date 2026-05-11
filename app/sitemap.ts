@@ -22,13 +22,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: p.isMaster ? 1.0 : 0.85
     })),
-    // Native Next blog posts (high-priority informational content)
+    // Native Next blog posts (high-priority informational content) — Spanish + English variants
     ...blogPosts.map((p) => ({
       url: canonicalUrl(`/blog/${p.slug}/`),
       lastModified: new Date(p.dateModified),
       changeFrequency: "monthly" as const,
       priority: 0.85
     })),
+    ...blogPosts
+      .filter((p) => p.en?.enSlug)
+      .map((p) => ({
+        url: canonicalUrl(`/en/blog/${p.en!.enSlug}/`),
+        lastModified: new Date(p.dateModified),
+        changeFrequency: "monthly" as const,
+        priority: 0.85
+      })),
     // English canonical pages
     { url: canonicalUrl("/en/"), lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: canonicalUrl("/en/services/"), lastModified: now, changeFrequency: "monthly", priority: 0.8 },

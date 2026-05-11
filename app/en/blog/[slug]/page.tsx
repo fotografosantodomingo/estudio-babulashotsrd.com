@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CrossSiteCta } from "@/components/CrossSiteCta";
 import { SeoJsonLd } from "@/components/SeoJsonLd";
-import { blogPosts, findBlogPost } from "@/lib/blogPosts";
+import { blogPostsWithEn, findBlogPostByEnSlug } from "@/lib/blogPosts";
 import {
   aggregateRating,
   brandLogoUrl,
@@ -22,49 +22,48 @@ import {
 type PageProps = { params: Promise<{ slug: string }> };
 
 export function generateStaticParams() {
-  return blogPosts.map((p) => ({ slug: p.slug }));
+  return blogPostsWithEn.map((p) => ({ slug: p.en!.enSlug }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const post = findBlogPost(slug);
-  if (!post) return {};
-  const path = `/blog/${slug}/`;
-  const enPath = post.en?.enSlug ? `/en/blog/${post.en.enSlug}/` : null;
-  // Bilingual hreflang when an English variant exists; Spanish-only otherwise.
-  const languages: Record<string, string> = {
-    "es-DO": canonicalUrl(path),
-    es: canonicalUrl(path),
-    "x-default": canonicalUrl(path)
-  };
-  if (enPath) languages.en = canonicalUrl(enPath);
+  const post = findBlogPostByEnSlug(slug);
+  if (!post || !post.en) return {};
+  const en = post.en;
+  const enPath = `/en/blog/${en.enSlug}/`;
+  const esPath = `/blog/${post.slug}/`;
   return {
-    title: post.title,
-    description: post.metaDescription,
+    title: en.title,
+    description: en.metaDescription,
     alternates: {
-      canonical: canonicalUrl(path),
-      languages
+      canonical: canonicalUrl(enPath),
+      languages: {
+        "es-DO": canonicalUrl(esPath),
+        es: canonicalUrl(esPath),
+        en: canonicalUrl(enPath),
+        "x-default": canonicalUrl(esPath)
+      }
     },
     openGraph: {
-      title: post.title,
-      description: post.metaDescription,
-      url: canonicalUrl(path),
+      title: en.title,
+      description: en.metaDescription,
+      url: canonicalUrl(enPath),
       type: "article",
-      locale: "es_DO",
+      locale: "en_US",
       siteName: "Babula Shots Estudio",
       publishedTime: post.datePublished,
       modifiedTime: post.dateModified,
       images: [
         {
           url: `${siteUrl}${post.hero.src}`,
-          alt: post.ogImageAlt ?? post.hero.alt
+          alt: en.ogImageAlt ?? post.hero.alt
         }
       ]
     },
     twitter: {
       card: "summary_large_image",
-      title: post.title,
-      description: post.metaDescription,
+      title: en.title,
+      description: en.metaDescription,
       images: [`${siteUrl}${post.hero.src}`]
     }
   };
@@ -102,30 +101,31 @@ function paragraphWithLinks(text: string): React.ReactNode[] {
 
 export default async function Page({ params }: PageProps) {
   const { slug } = await params;
-  const post = findBlogPost(slug);
-  if (!post) notFound();
+  const post = findBlogPostByEnSlug(slug);
+  if (!post || !post.en) notFound();
+  const en = post.en;
 
-  const url = canonicalUrl(`/blog/${slug}/`);
+  const url = canonicalUrl(`/en/blog/${en.enSlug}/`);
+  const esUrl = canonicalUrl(`/blog/${post.slug}/`);
+
+  const datePublished = post.datePublished.includes("T") ? post.datePublished : isoAst(post.datePublished);
+  const dateModified = post.dateModified.includes("T") ? post.dateModified : isoAst(post.dateModified);
 
   const breadcrumb = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Inicio", item: canonicalUrl("/") },
-      { "@type": "ListItem", position: 2, name: "Blog", item: canonicalUrl("/blog/") },
-      { "@type": "ListItem", position: 3, name: post.h1, item: url }
+      { "@type": "ListItem", position: 1, name: "Home", item: canonicalUrl("/en/") },
+      { "@type": "ListItem", position: 2, name: "Blog", item: canonicalUrl("/en/blog/") },
+      { "@type": "ListItem", position: 3, name: en.h1, item: url }
     ]
   };
-
-  // Auto-coerce date strings to ISO 8601 with Atlantic Standard Time (UTC-4) if a bare date was provided.
-  const datePublished = post.datePublished.includes("T") ? post.datePublished : isoAst(post.datePublished);
-  const dateModified = post.dateModified.includes("T") ? post.dateModified : isoAst(post.dateModified);
 
   const article = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: post.h1,
-    description: post.metaDescription,
+    headline: en.h1,
+    description: en.metaDescription,
     mainEntityOfPage: url,
     datePublished,
     dateModified,
@@ -136,23 +136,21 @@ export default async function Page({ params }: PageProps) {
       name: "Babula Shots",
       logo: { "@type": "ImageObject", url: brandLogoUrl }
     },
-    inLanguage: "es-DO"
+    inLanguage: "en"
   };
 
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: post.faq.map((f) => ({
+    mainEntity: en.faq.map((f) => ({
       "@type": "Question",
       name: f.q,
       acceptedAnswer: { "@type": "Answer", text: f.a }
     }))
   };
 
-  // Brand LocalBusiness entity — distinct @id from organizationSchema so Google Rich
-  // Results doesn't merge them. Use "LocalBusiness" (not "Photographer"), even though
-  // Photographer extends LocalBusiness — Google's Review Snippet validator only accepts
-  // a fixed list of types as aggregateRating hosts and does not auto-promote subtypes.
+  // Brand LocalBusiness — uses LocalBusiness (not Photographer) so aggregateRating
+  // is accepted by Google's Review Snippet validator. See memory/schema_standards.md rule 2c.
   const photographerSchema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -188,20 +186,20 @@ export default async function Page({ params }: PageProps) {
       <SeoJsonLd data={schemas} />
       <article className="article">
         <nav className="breadcrumbs" aria-label="Breadcrumbs">
-          <Link href="/">Inicio</Link>
+          <Link href="/en/">Home</Link>
           <span>/</span>
-          <Link href="/blog/">Blog</Link>
+          <Link href="/en/blog/">Blog</Link>
           <span>/</span>
-          <span>{post.h1}</span>
+          <span>{en.h1}</span>
         </nav>
 
         <header className="article-header">
-          <p className="eyebrow">{post.eyebrow}</p>
-          <h1>{post.h1}</h1>
+          <p className="eyebrow">{en.eyebrow}</p>
+          <h1>{en.h1}</h1>
           <figure className="article-hero">
             <img
               src={post.hero.src}
-              alt={post.hero.alt}
+              alt={en.ogImageAlt ?? post.hero.alt}
               width={post.hero.width}
               height={post.hero.height}
               loading="eager"
@@ -212,11 +210,11 @@ export default async function Page({ params }: PageProps) {
         </header>
 
         <div className="wp-content">
-          {post.introParagraphs.map((p, i) => (
+          {en.introParagraphs.map((p, i) => (
             <p key={`intro-${i}`}>{paragraphWithLinks(p)}</p>
           ))}
 
-          {post.sections.map((sec) => (
+          {en.sections.map((sec) => (
             <section key={sec.heading}>
               <h2>{sec.heading}</h2>
               {sec.body.map((para, i) => (
@@ -226,42 +224,40 @@ export default async function Page({ params }: PageProps) {
           ))}
         </div>
 
-        <aside className="article-cta" aria-label="Reserva tu sesión">
+        <aside className="article-cta" aria-label="Book your session">
           <div className="article-cta-text">
-            <p className="section-tag">¿Lista para tu sesión?</p>
-            <h2>Reserva tu sesión de fotos</h2>
+            <p className="section-tag">Ready to shoot?</p>
+            <h2>Book your Colonial Zone session</h2>
             <p>
-              Escríbenos por WhatsApp con tu fecha tentativa. Te respondemos con disponibilidad y cotización detallada en menos de 24 horas. Reserva con 50% de depósito.
+              Message us on WhatsApp with your tentative date. We respond with availability and a detailed quote within 24 hours. Book with a 50% deposit.
             </p>
           </div>
           <div className="article-cta-actions">
             <a
               className="button button-light"
-              href={whatsappUrl(`Hola, vi el artículo "${post.h1}" y quiero más información sobre la sesión.`)}
+              href={whatsappUrl("Hi, I read the Colonial Zone photo locations guide and want more information about a session.")}
               rel="noopener"
             >
               WhatsApp {phoneDisplay}
             </a>
             <a className="button button-outline" href={`tel:${phoneE164}`}>
-              Llamar {phoneDisplay}
+              Call {phoneDisplay}
             </a>
-            <Link className="button button-ghost" href="/precios/">
-              Ver precios
+            <Link className="button button-ghost" href="/en/prices/">
+              See prices
             </Link>
           </div>
         </aside>
 
-        {post.en?.enSlug && (
-          <p className="article-meta">
-            <span className="meta-label">English version:</span>
-            <Link href={canonicalUrl(`/en/blog/${post.en.enSlug}/`)}>Read in English</Link>
-          </p>
-        )}
+        <p className="article-meta">
+          <span className="meta-label">Spanish version:</span>
+          <Link href={esUrl}>Leer en español</Link>
+        </p>
 
         <section className="faq-wrap">
-          <p className="section-tag">Preguntas frecuentes</p>
-          <h2>{post.h1} — preguntas frecuentes</h2>
-          {post.faq.map((f) => (
+          <p className="section-tag">Frequently asked questions</p>
+          <h2>Colonial Zone photo sessions — FAQ</h2>
+          {en.faq.map((f) => (
             <details key={f.q}>
               <summary>{f.q}</summary>
               <p>{f.a}</p>
@@ -270,15 +266,15 @@ export default async function Page({ params }: PageProps) {
         </section>
       </article>
 
-      {post.related.length > 0 && (
+      {en.related.length > 0 && (
         <section className="section alt-section" aria-labelledby="related-h2">
           <div className="wrap">
-            <p className="section-tag">Sigue leyendo</p>
-            <h2 id="related-h2">Páginas relacionadas en el estudio</h2>
+            <p className="section-tag">Keep reading</p>
+            <h2 id="related-h2">Related pages</h2>
             <div className="card-grid">
-              {post.related.map((r) => (
+              {en.related.map((r) => (
                 <Link key={r.href} className="card" href={r.href}>
-                  <span>Relacionado</span>
+                  <span>Related</span>
                   <h3>{r.label}</h3>
                   <p>{r.description}</p>
                 </Link>
@@ -288,7 +284,7 @@ export default async function Page({ params }: PageProps) {
         </section>
       )}
 
-      <CrossSiteCta locale="es" />
+      <CrossSiteCta locale="en" />
     </main>
   );
 }
