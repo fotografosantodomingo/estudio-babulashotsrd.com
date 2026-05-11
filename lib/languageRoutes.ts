@@ -1,3 +1,5 @@
+import { blogPosts } from "@/lib/blogPosts";
+
 type LanguagePaths = { es: string; en: string };
 
 const normalizePath = (pathname: string) => {
@@ -11,13 +13,31 @@ const normalizePath = (pathname: string) => {
 // EN-canonical slugs are English (/en/services/, /en/locations/, /en/prices/).
 // /en/servicios/, /en/ubicaciones/, /en/precios/ also exist as aliases that
 // render the same English content but point canonical to the EN slug.
-const routePairs: LanguagePaths[] = [
+
+// Static (top-level) bilingual pairs.
+const staticPairs: LanguagePaths[] = [
   { es: "/", en: "/en/" },
   { es: "/servicios/", en: "/en/services/" },
   { es: "/ubicaciones/", en: "/en/locations/" },
   { es: "/precios/", en: "/en/prices/" },
   { es: "/faq/", en: "/en/faq/" }
-].map((pair) => ({ es: normalizePath(pair.es), en: normalizePath(pair.en) }));
+];
+
+// Auto-generated bilingual blog post pairs. Posts without an `en` variant stay
+// Spanish-only (the EN toggle on those pages falls back to /en/ homepage).
+// Adding a new bilingual blog post in lib/blogPosts.ts automatically wires up
+// the language switcher for it — no edit needed here.
+const blogPairs: LanguagePaths[] = blogPosts
+  .filter((p) => p.en?.enSlug)
+  .map((p) => ({
+    es: `/blog/${p.slug}/`,
+    en: `/en/blog/${p.en!.enSlug}/`
+  }));
+
+const routePairs: LanguagePaths[] = [...staticPairs, ...blogPairs].map((pair) => ({
+  es: normalizePath(pair.es),
+  en: normalizePath(pair.en)
+}));
 
 export function languagePathsFor(pathname: string): LanguagePaths {
   const current = normalizePath(pathname);
