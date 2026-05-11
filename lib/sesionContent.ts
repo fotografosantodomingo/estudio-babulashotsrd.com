@@ -18,7 +18,7 @@ export type SesionPage = {
   introParagraphs: string[];
   sections: ClusterSection[];
   faq: SesionFaq[];
-  heroImage: { src: string; alt: string };
+  heroImage: { src: string; alt: string; width: number; height: number };
   isMaster: boolean;      // master = the /sesion-de-fotos/ hub
   // For clusters: which OTHER clusters to show as related
   relatedClusterSlugs?: string[];
@@ -27,31 +27,45 @@ export type SesionPage = {
 const HERO = {
   master: {
     src: "/wp-content/uploads/2025/02/fotografo-pro-de-moda-santo-domingo-sesion-de-fotos-estudio4.webp",
-    alt: "Sesión de fotos profesional en estudio en Santo Domingo, República Dominicana"
+    alt: "Sesión de fotos profesional en estudio en Santo Domingo, República Dominicana",
+    width: 1600,
+    height: 1067
   },
   pareja: {
     src: "/wp-content/uploads/2025/02/fotografoo-sesion-fotos-estudio-santo-domingo-rd-9.webp",
-    alt: "Sesión de fotos para pareja en estudio profesional en Santo Domingo"
+    alt: "Sesión de fotos para pareja en estudio profesional en Santo Domingo",
+    width: 1600,
+    height: 1067
   },
   cumple: {
     src: "/wp-content/uploads/2024/06/Estudio-sesion-de-fotos-republica-dominicana.jpg",
-    alt: "Sesión de fotos para cumpleaños en Santo Domingo con set decorado"
+    alt: "Sesión de fotos para cumpleaños en Santo Domingo con set decorado",
+    width: 1600,
+    height: 1067
   },
   corporate: {
     src: "/wp-content/uploads/2025/03/Fotos-corporativas-en-estudio-1536x1013.webp",
-    alt: "Fotos corporativas en estudio profesional en Santo Domingo"
+    alt: "Fotos corporativas en estudio profesional en Santo Domingo",
+    width: 1536,
+    height: 1013
   },
   headshots: {
     src: "/wp-content/uploads/2024/05/FOTOGRAFO-RETRATOS-santo-domingo-estudio-edited-scaled.jpg",
-    alt: "Headshots y retratos profesionales en estudio Santo Domingo"
+    alt: "Headshots y retratos profesionales en estudio Santo Domingo",
+    width: 1600,
+    height: 1067
   },
   embarazo: {
     src: "/wp-content/uploads/2024/06/Estudio-fotografo-santo-domingo.webp",
-    alt: "Sesión de fotos de embarazo en estudio íntimo en Santo Domingo"
+    alt: "Sesión de fotos de embarazo en estudio íntimo en Santo Domingo",
+    width: 1600,
+    height: 1067
   },
   quinceanera: {
     src: "/wp-content/uploads/2024/06/Santo-Domingo-Fotografo-estudio.png",
-    alt: "Sesión de fotos para quinceañera en Santo Domingo"
+    alt: "Sesión de fotos para quinceañera en Santo Domingo",
+    width: 1600,
+    height: 1067
   }
 };
 
@@ -63,7 +77,7 @@ const master: SesionPage = {
   url: "/sesion-de-fotos/",
   title: "Sesión de Fotos en Santo Domingo | Babula Shots Estudio",
   metaDescription:
-    "Sesión de fotos en Santo Domingo: estudio profesional con iluminación controlada, retratos, parejas, corporativo, embarazo, quinceañera. Precios desde RD$5,960. Cotiza por WhatsApp.",
+    "Sesión de fotos en Santo Domingo con Babula Shots: estudio profesional, retratos, parejas, corporativo, embarazo, quinceañera. WhatsApp +1 809 720 9547.",
   h1: "Sesión de Fotos en Santo Domingo",
   eyebrow: "Babula Shots Estudio",
   introParagraphs: [

@@ -130,7 +130,7 @@ export function SesionDeFotosPage({ page }: { page: SesionPage }) {
           <p className="eyebrow">{page.eyebrow}</p>
           <h1>{page.h1}</h1>
           <figure className="article-hero">
-            <img src={page.heroImage.src} alt={page.heroImage.alt} loading="eager" decoding="async" />
+            <img src={page.heroImage.src} alt={page.heroImage.alt} width={page.heroImage.width} height={page.heroImage.height} loading="eager" fetchPriority="high" decoding="async" />
           </figure>
         </header>
 
@@ -190,7 +190,7 @@ export function SesionDeFotosPage({ page }: { page: SesionPage }) {
             <div className="card-grid">
               {related.map((r) => (
                 <Link key={r.slug} className="card" href={r.url}>
-                  <img src={r.heroImage.src} alt={r.heroImage.alt} loading="lazy" decoding="async" />
+                  <img src={r.heroImage.src} alt={r.heroImage.alt} width={r.heroImage.width} height={r.heroImage.height} loading="lazy" decoding="async" />
                   <span>{r.eyebrow}</span>
                   <h3>{r.h1}</h3>
                   <p>{r.metaDescription.slice(0, 160)}</p>
@@ -209,7 +209,7 @@ export function SesionDeFotosPage({ page }: { page: SesionPage }) {
             <div className="card-grid">
               {Object.values(sesionPages).filter((p) => !p.isMaster).map((p) => (
                 <Link key={p.slug} className="card" href={p.url}>
-                  <img src={p.heroImage.src} alt={p.heroImage.alt} loading="lazy" decoding="async" />
+                  <img src={p.heroImage.src} alt={p.heroImage.alt} width={p.heroImage.width} height={p.heroImage.height} loading="lazy" decoding="async" />
                   <span>{p.eyebrow}</span>
                   <h3>{p.h1}</h3>
                   <p>{p.metaDescription.slice(0, 160)}</p>

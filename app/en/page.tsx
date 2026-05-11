@@ -83,7 +83,7 @@ export default function EnglishHome() {
           <div className="value-strip">
             <div className="value-strip-head">
               <p className="section-tag">What we shoot</p>
-              <h3>Studio sessions for people, food, products and brands</h3>
+              <h2>Studio sessions for people, food, products and brands</h2>
             </div>
             <ul className="value-list">
               <li><strong>Portraits</strong> headshots, LinkedIn, actor and model books</li>

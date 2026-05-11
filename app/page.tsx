@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   description: extendedDescription,
   alternates: {
     canonical: canonicalUrl("/"),
-    languages: { "es-DO": canonicalUrl("/"), "x-default": canonicalUrl("/") }
+    languages: { "es-DO": canonicalUrl("/"), en: canonicalUrl("/en/"), "x-default": canonicalUrl("/") }
   },
   openGraph: {
     title: seo?.ogTitle ?? seo?.title ?? "Estudio fotografico en Santo Domingo",
