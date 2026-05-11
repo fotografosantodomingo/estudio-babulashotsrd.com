@@ -141,11 +141,13 @@ export default async function Page({ params }: PageProps) {
     }))
   };
 
-  // Brand LocalBusiness/Photographer entity — distinct @id from organizationSchema so
-  // Google Rich Results doesn't merge them and surface "duplicate url" warnings.
+  // Brand Photographer entity — distinct @id from organizationSchema so Google Rich
+  // Results doesn't merge them. Single type (not an array of [LocalBusiness, Photographer])
+  // because the array form makes the validator render both types as separate entities,
+  // surfacing "duplicate url/image" warnings.
   const photographerSchema: Record<string, unknown> = {
     "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "Photographer"],
+    "@type": "Photographer",
     "@id": `${siteUrl}#localbusiness`,
     name: "Babula Shots Estudio",
     url: siteUrl,

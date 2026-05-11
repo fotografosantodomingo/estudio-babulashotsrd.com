@@ -84,6 +84,8 @@ export const organizationSchema = {
   image: brandLogoUrl,
   logo: brandLogoUrl,
   address: postalAddress,
-  parentOrganization: { "@type": "Organization", name: "Babula Shots", url: mainBrandUrl },
+  // NOTE: intentionally NOT using `parentOrganization` here. GSC Rich Results flags the
+  // nested `name` as a "duplicate name" warning, and the brand hierarchy is already
+  // signalled via `sameAs` below (which links to the apex brand babulashotsrd.com).
   sameAs: [mainBrandUrl, bodaUrl, inmobiliariaUrl, droneUrl, santoDomingoHubUrl, "https://www.instagram.com/babulashotsrd/"]
 };

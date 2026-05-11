@@ -99,7 +99,10 @@ export function SesionDeFotosPage({ page }: { page: SesionPage }) {
 
   const photographerSchema: Record<string, unknown> = {
     "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "Photographer"],
+    // Single type (Photographer extends LocalBusiness in schema.org). Using an array of
+    // both made GSC Rich Results render the entity twice (once per type) with duplicated
+    // url/image fields shown in the validator UI.
+    "@type": "Photographer",
     "@id": `${siteUrl}#localbusiness`,
     name: "Babula Shots Estudio",
     url: siteUrl,
