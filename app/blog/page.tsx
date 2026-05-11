@@ -3,6 +3,7 @@ import Link from "next/link";
 import { CrossSiteCta } from "@/components/CrossSiteCta";
 import { SeoJsonLd } from "@/components/SeoJsonLd";
 import { extractFirstImage, getSeo, plainExcerpt, plainTitle, posts } from "@/lib/estudioContent";
+import { blogPosts } from "@/lib/blogPosts";
 import { canonicalUrl, organizationSchema, siteUrl } from "@/lib/seo";
 
 const seo = getSeo(`${siteUrl}/blog/`);
@@ -48,13 +49,22 @@ export default function BlogIndex() {
       "@type": "Blog",
       name: "Blog del estudio Babula Shots",
       url: canonicalUrl("/blog/"),
-      blogPost: posts.map((p) => ({
-        "@type": "BlogPosting",
-        headline: plainTitle(p),
-        url: canonicalUrl(`/${p.slug}/`),
-        datePublished: p.date,
-        dateModified: p.modified
-      }))
+      blogPost: [
+        ...blogPosts.map((p) => ({
+          "@type": "BlogPosting",
+          headline: p.h1,
+          url: canonicalUrl(`/blog/${p.slug}/`),
+          datePublished: p.datePublished,
+          dateModified: p.dateModified
+        })),
+        ...posts.map((p) => ({
+          "@type": "BlogPosting",
+          headline: plainTitle(p),
+          url: canonicalUrl(`/${p.slug}/`),
+          datePublished: p.date,
+          dateModified: p.modified
+        }))
+      ]
     },
     {
       "@context": "https://schema.org",
@@ -77,6 +87,14 @@ export default function BlogIndex() {
         <div className="wrap">
           <h2 className="section-heading-h2">Ultimos articulos publicados</h2>
           <div className="card-grid">
+            {blogPosts.map((p) => (
+              <Link key={p.slug} className="card" href={`/blog/${p.slug}/`}>
+                <img src={p.hero.src} alt={p.hero.alt} loading="lazy" decoding="async" />
+                <span>{p.eyebrow}</span>
+                <h3>{p.h1}</h3>
+                <p>{p.metaDescription}</p>
+              </Link>
+            ))}
             {posts.map((p) => {
               const img = extractFirstImage(p);
               return (

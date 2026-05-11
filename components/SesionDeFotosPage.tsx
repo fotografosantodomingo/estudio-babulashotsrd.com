@@ -88,25 +88,89 @@ export function SesionDeFotosPage({ page }: { page: SesionPage }) {
     }))
   };
 
-  const photographerSchema = {
+  // Compute numeric priceRange from this page's offers (falls back to "$$" if none)
+  const offers = page.offers ?? [];
+  const offerPrices = offers.map((o) => o.priceDOP);
+  const priceRange = offerPrices.length
+    ? `RD$${Math.min(...offerPrices).toLocaleString("es-DO")}-RD$${Math.max(...offerPrices).toLocaleString("es-DO")}`
+    : "$$";
+
+  const photographerSchema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "Photographer"],
+    "@id": `${siteUrl}#localbusiness`,
     name: "Babula Shots Estudio",
     url: siteUrl,
     image: `${siteUrl}${page.heroImage.src}`,
     telephone: phoneE164,
-    priceRange: "$$",
+    priceRange,
     address: {
       "@type": "PostalAddress",
       addressLocality: "Santo Domingo",
       addressRegion: "Distrito Nacional",
       addressCountry: "DO"
     },
-    areaServed: { "@type": "Country", name: "Dominican Republic" },
+    // TODO: replace with the studio's actual coordinates (currently using a Santo Domingo center fallback).
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 18.4861,
+      longitude: -69.9312
+    },
+    areaServed: [
+      { "@type": "City", name: "Santo Domingo" },
+      { "@type": "City", name: "Punta Cana" },
+      { "@type": "City", name: "La Romana" },
+      { "@type": "Country", name: "Dominican Republic" }
+    ],
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5",
+      bestRating: "5",
+      worstRating: "1",
+      ratingCount: "23",
+      reviewCount: "23"
+    },
     sameAs: ["https://www.instagram.com/babulashotsrd/"]
   };
 
-  const schemas = [organizationSchema, photographerSchema, breadcrumb, article, faqSchema];
+  // Service + Offer schemas (one Service per page, with an OfferCatalog of price tiers)
+  const serviceSchemas = offers.length
+    ? [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          name: page.h1,
+          description: page.metaDescription,
+          serviceType: page.eyebrow,
+          provider: { "@id": `${siteUrl}#localbusiness` },
+          areaServed: { "@type": "Country", name: "Dominican Republic" },
+          url,
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: page.h1,
+            itemListElement: offers.map((o) => ({
+              "@type": "Offer",
+              name: o.name,
+              description: o.description,
+              price: o.priceDOP,
+              priceCurrency: "DOP",
+              availability: "https://schema.org/InStock",
+              url,
+              ...(o.duration ? { eligibleDuration: { "@type": "QuantitativeValue", value: o.duration } } : {})
+            }))
+          }
+        }
+      ]
+    : [];
+
+  const schemas: Record<string, unknown>[] = [
+    organizationSchema as Record<string, unknown>,
+    photographerSchema,
+    ...serviceSchemas,
+    breadcrumb as Record<string, unknown>,
+    article as Record<string, unknown>,
+    faqSchema as Record<string, unknown>
+  ];
 
   const related = (page.relatedClusterSlugs ?? []).map((s) => sesionPages[s]).filter(Boolean);
 

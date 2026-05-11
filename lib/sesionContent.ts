@@ -8,6 +8,14 @@ export type SesionFaq = { q: string; a: string };
 
 export type ClusterSection = { heading: string; body: string[] };
 
+export type SesionOffer = {
+  name: string;            // schema:Offer.name
+  description: string;     // short description shown in schema only
+  priceDOP: number;        // numeric price in Dominican Pesos
+  priceUSD?: number;       // optional USD equivalent
+  duration?: string;       // e.g. "PT60M"
+};
+
 export type SesionPage = {
   slug: string;
   url: string;            // canonical path
@@ -22,6 +30,8 @@ export type SesionPage = {
   isMaster: boolean;      // master = the /sesion-de-fotos/ hub
   // For clusters: which OTHER clusters to show as related
   relatedClusterSlugs?: string[];
+  // Concrete offers for schema.org Service+Offer (powers rich-results pricing).
+  offers?: SesionOffer[];
 };
 
 const HERO = {
@@ -202,7 +212,17 @@ const master: SesionPage = {
     }
   ],
   heroImage: HERO.master,
-  isMaster: true
+  isMaster: true,
+  offers: [
+    { name: "Retratos individuales", description: "60 minutos, 15 fotos editadas en alta resolución, entrega en 48 horas.", priceDOP: 5960, priceUSD: 100, duration: "PT60M" },
+    { name: "Sesión familiar", description: "60 minutos, hasta 6 personas, 20 fotos editadas, entrega en 5-7 días.", priceDOP: 8940, priceUSD: 150, duration: "PT60M" },
+    { name: "Sesión maternidad", description: "Sesión íntima de 60 minutos en estudio privado, 30 fotos editadas, galería privada.", priceDOP: 8940, priceUSD: 150, duration: "PT60M" },
+    { name: "Sesión newborn", description: "Estudio climatizado y privado, props y mantas incluidas, 25 fotos editadas, entrega en 7 días.", priceDOP: 11920, priceUSD: 200 },
+    { name: "Retratos corporativos", description: "Múltiples looks y fondos, derechos de uso comercial autorizado, entrega 24-48h.", priceDOP: 10700, priceUSD: 180 },
+    { name: "Headshots de equipo (5-15 personas)", description: "Setup en oficina o estudio, mismo fondo y luz para todo el equipo, 3 fotos editadas por persona.", priceDOP: 17880, priceUSD: 300 },
+    { name: "Sesión boudoir", description: "Estudio privado o habitación de hotel de lujo, dirección experta, galería privada en 48-72h.", priceDOP: 23800, priceUSD: 400 },
+    { name: "Editorial de moda", description: "Producción completa, múltiples looks, 50+ fotos editadas, cesión de derechos editoriales y comerciales.", priceDOP: 35760, priceUSD: 600 }
+  ]
 };
 
 // ================================================================
@@ -278,7 +298,12 @@ const pareja: SesionPage = {
   ],
   heroImage: HERO.pareja,
   isMaster: false,
-  relatedClusterSlugs: ["sesion-de-fotos-cumpleanos", "sesion-de-fotos-embarazo"]
+  relatedClusterSlugs: ["sesion-de-fotos-cumpleanos", "sesion-de-fotos-embarazo"],
+  offers: [
+    { name: "Sesión estándar de pareja", description: "60 minutos, 30 fotos editadas, galería online, entrega en 5-7 días.", priceDOP: 5960, priceUSD: 100, duration: "PT60M" },
+    { name: "Sesión preboda extendida", description: "90 minutos, 2 looks, locación a elección, 40 fotos editadas, galería online compartible con familia.", priceDOP: 10700, priceUSD: 180, duration: "PT90M" },
+    { name: "Sesión híbrida estudio + exterior", description: "2 horas, 2-3 looks, edición consistente en ambos formatos, 50 fotos editadas.", priceDOP: 14900, priceUSD: 250, duration: "PT120M" }
+  ]
 };
 
 const cumple: SesionPage = {
@@ -331,7 +356,13 @@ const cumple: SesionPage = {
   ],
   heroImage: HERO.cumple,
   isMaster: false,
-  relatedClusterSlugs: ["sesion-de-fotos-quinceanera", "sesion-de-fotos-pareja"]
+  relatedClusterSlugs: ["sesion-de-fotos-quinceanera", "sesion-de-fotos-pareja"],
+  offers: [
+    { name: "Retrato simple cumpleaños", description: "60 minutos, fondo a elección, 15 fotos editadas.", priceDOP: 5960, priceUSD: 100, duration: "PT60M" },
+    { name: "Sesión con set decorado", description: "90 minutos, set temático preparado, 25 fotos editadas, galería online en 5-7 días.", priceDOP: 8940, priceUSD: 150, duration: "PT90M" },
+    { name: "Smash cake (1 año)", description: "2 horas con descansos, set decorado completo, props incluidos, 30 fotos editadas, entrega en 7 días.", priceDOP: 11920, priceUSD: 200, duration: "PT120M" },
+    { name: "Cobertura de evento (en tu locación)", description: "2 horas, decoración, invitados, momento de la torta y primera vela, 80+ fotos editadas, galería en 7-10 días.", priceDOP: 17880, priceUSD: 300, duration: "PT120M" }
+  ]
 };
 
 const corporativas: SesionPage = {
@@ -395,7 +426,13 @@ const corporativas: SesionPage = {
   ],
   heroImage: HERO.corporate,
   isMaster: false,
-  relatedClusterSlugs: ["headshots-profesionales-santo-domingo"]
+  relatedClusterSlugs: ["headshots-profesionales-santo-domingo"],
+  offers: [
+    { name: "Retrato individual corporativo", description: "60 minutos, múltiples looks y fondos, 6 fotos editadas, derechos comerciales autorizados, entrega 24-48h.", priceDOP: 10700, priceUSD: 180, duration: "PT60M" },
+    { name: "Headshots de equipo (5-15 personas)", description: "3 horas en oficina o estudio, 3 fotos editadas por persona, mismo fondo y luz para todos, derechos de uso comercial.", priceDOP: 17880, priceUSD: 300, duration: "PT180M" },
+    { name: "Branding personal extendido", description: "2-3 horas, múltiples escenarios y outfits, 30-50 fotos editadas, cesión de derechos para uso publicitario y editorial.", priceDOP: 23800, priceUSD: 400, duration: "PT180M" },
+    { name: "Cobertura de evento corporativo", description: "2 horas en oficina o venue, formato documental, 50+ fotos editadas, entrega en 5-7 días.", priceDOP: 14900, priceUSD: 250, duration: "PT120M" }
+  ]
 };
 
 const headshots: SesionPage = {
@@ -461,7 +498,13 @@ const headshots: SesionPage = {
   ],
   heroImage: HERO.headshots,
   isMaster: false,
-  relatedClusterSlugs: ["sesion-de-fotos-corporativas"]
+  relatedClusterSlugs: ["sesion-de-fotos-corporativas"],
+  offers: [
+    { name: "Headshot individual", description: "60 minutos, 1 look + 1 fondo, 6 fotos editadas, entrega en 48h.", priceDOP: 5960, priceUSD: 100, duration: "PT60M" },
+    { name: "Headshot multi-look", description: "90 minutos, 2 looks + 2 fondos a elección, 10 fotos editadas, derechos comerciales autorizados.", priceDOP: 10700, priceUSD: 180, duration: "PT90M" },
+    { name: "Book de actor / modelo", description: "2 horas, múltiples expresiones y looks, 25 fotos editadas, archivos en alta resolución para casting websites e impresión.", priceDOP: 17880, priceUSD: 300, duration: "PT120M" },
+    { name: "Headshots de equipo (5-15 personas)", description: "3 horas, mismo fondo y luz para todos, 3 fotos editadas por persona.", priceDOP: 17880, priceUSD: 300, duration: "PT180M" }
+  ]
 };
 
 const embarazo: SesionPage = {
@@ -527,7 +570,12 @@ const embarazo: SesionPage = {
   ],
   heroImage: HERO.embarazo,
   isMaster: false,
-  relatedClusterSlugs: ["sesion-de-fotos-pareja", "sesion-de-fotos-cumpleanos"]
+  relatedClusterSlugs: ["sesion-de-fotos-pareja", "sesion-de-fotos-cumpleanos"],
+  offers: [
+    { name: "Sesión estándar de embarazo", description: "60 minutos, sesión íntima en estudio cerrado, 30 fotos editadas, galería privada en 7 días.", priceDOP: 8940, priceUSD: 150, duration: "PT60M" },
+    { name: "Sesión extendida con pareja u otros hijos", description: "90 minutos, múltiples looks y composiciones (sola, con pareja, con otros niños), 40 fotos editadas.", priceDOP: 11920, priceUSD: 200, duration: "PT90M" },
+    { name: "Paquete maternidad + newborn", description: "Sesión de embarazo + sesión newborn (cuando nazca el bebé, primeros 14 días). Galerías separadas pero diseño visual consistente.", priceDOP: 17880, priceUSD: 300 }
+  ]
 };
 
 const quinceanera: SesionPage = {
@@ -539,7 +587,7 @@ const quinceanera: SesionPage = {
   eyebrow: "15 años · Editorial · Tradicional",
   introParagraphs: [
     "La sesión de quinceañera marca un momento que vale la pena documentar bien — no con una foto al azar, sino con una sesión profesional que captura tanto el lado tradicional (vestido formal, look elegante) como el lado editorial moderno (looks casuales, fotos en exterior, estética de revista).",
-    "En Babula Shots Estudio en Santo Domingo trabajamos sesiones de quinceañera con múltiples cambios de look (vestido principal, look casual, opcional editorial), maquillaje opcional como add-on, y locaciones que van desde el estudio hasta exteriores en Zona Colonial, Plaza España o golden hour en Malecón.",
+    "En Babula Shots Estudio en Santo Domingo trabajamos sesiones de quinceañera con múltiples cambios de look (vestido principal, look casual, opcional editorial), maquillaje opcional como add-on, y locaciones que van desde el estudio hasta exteriores en Zona Colonial, Plaza España o golden hour en Malecón. Si quieres ideas concretas de qué poses funcionan mejor, lee nuestra guía de [10 mejores poses para fotos de quinceañera](/blog/poses-fotos-quinceanera/) — diez poses con ejemplos, tips de ejecución y FAQ.",
     "Esta página es parte del catálogo de [sesión de fotos](/sesion-de-fotos/) en Babula Shots Estudio. Para cobertura del evento (fiesta, vals, pastel) trabajamos también paquetes separados — pregúntanos por WhatsApp."
   ],
   sections: [
@@ -595,7 +643,14 @@ const quinceanera: SesionPage = {
   ],
   heroImage: HERO.quinceanera,
   isMaster: false,
-  relatedClusterSlugs: ["sesion-de-fotos-cumpleanos", "sesion-de-fotos-pareja"]
+  relatedClusterSlugs: ["sesion-de-fotos-cumpleanos", "sesion-de-fotos-pareja"],
+  offers: [
+    { name: "Sesión sencilla", description: "90 minutos, 1 look (vestido formal), 30 fotos editadas, galería online compartible.", priceDOP: 10700, priceUSD: 180, duration: "PT90M" },
+    { name: "Sesión híbrida estudio + exterior", description: "2-3 horas, 2-3 looks, 50 fotos editadas, edición consistente en ambos formatos.", priceDOP: 17880, priceUSD: 300, duration: "PT180M" },
+    { name: "Sesión completa editorial", description: "3 horas, múltiples looks y locaciones, 60+ fotos editadas con estética de revista.", priceDOP: 23800, priceUSD: 400, duration: "PT180M" },
+    { name: "Cobertura de evento (fiesta)", description: "3 horas en el salón, 80+ fotos editadas, vals, pastel, momentos clave, invitados.", priceDOP: 17880, priceUSD: 300, duration: "PT180M" },
+    { name: "Paquete sesión + cobertura", description: "Sesión de fotos antes del evento + cobertura de la fiesta. Galerías separadas pero estética unificada.", priceDOP: 35760, priceUSD: 600 }
+  ]
 };
 
 export const sesionPages: Record<string, SesionPage> = {
