@@ -31,13 +31,59 @@ export function assetPath(path: string) {
   return path.startsWith("/") ? path : `/${path}`;
 }
 
+// Logo / brand image used by the Organization + as Publisher inside Article/BlogPosting schemas.
+export const brandLogoUrl = `${siteUrl}/wp-content/uploads/2024/06/Babula-Shots-Logo.webp`;
+
+// ISO 8601 datetime helper. Dominican Republic is UTC-4 year-round (no DST).
+// Use this for datePublished/dateModified in any schema — string-only "2026-05-10" fails
+// Google's Rich Results validator with "Invalid datetime / Missing timezone" warnings.
+export function isoAst(dateString: string, time = "12:00:00"): string {
+  // Accepts "YYYY-MM-DD" and returns "YYYY-MM-DDTHH:MM:SS-04:00".
+  const d = dateString.length === 10 ? dateString : dateString.slice(0, 10);
+  return `${d}T${time}-04:00`;
+}
+
+// Canonical address used by Organization + LocalBusiness/Photographer schemas.
+// streetAddress + postalCode intentionally omitted — both are optional in schema.org
+// and we don't have the user's exact address yet (see ~/.claude/.../memory/babula_studio_address.md).
+export const postalAddress = {
+  "@type": "PostalAddress" as const,
+  addressLocality: "Santo Domingo",
+  addressRegion: "Distrito Nacional",
+  addressCountry: "DO"
+};
+
+// Canonical aggregateRating (5/5 from 23 reviews — brand-wide, applies to all subdomains).
+export const aggregateRating = {
+  "@type": "AggregateRating" as const,
+  ratingValue: "5",
+  bestRating: "5",
+  worstRating: "1",
+  ratingCount: "23",
+  reviewCount: "23"
+};
+
+// Canonical geo (Santo Domingo centroid as fallback — see memory entry).
+// TODO: replace with the studio's actual coordinates when provided.
+export const geoCoordinates = {
+  "@type": "GeoCoordinates" as const,
+  latitude: 18.4861,
+  longitude: -69.9312
+};
+
 export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  // Distinct @id so Google Rich Results doesn't merge this with LocalBusiness/Photographer
+  // (which would surface "duplicate url" warnings since both share the same site URL).
+  "@id": `${siteUrl}#organization`,
   name: "Babula Shots Estudio",
   url: siteUrl,
   telephone: phoneE164,
   email,
+  image: brandLogoUrl,
+  logo: brandLogoUrl,
+  address: postalAddress,
   parentOrganization: { "@type": "Organization", name: "Babula Shots", url: mainBrandUrl },
   sameAs: [mainBrandUrl, bodaUrl, inmobiliariaUrl, droneUrl, santoDomingoHubUrl, "https://www.instagram.com/babulashotsrd/"]
 };

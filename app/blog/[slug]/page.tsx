@@ -5,11 +5,16 @@ import { CrossSiteCta } from "@/components/CrossSiteCta";
 import { SeoJsonLd } from "@/components/SeoJsonLd";
 import { blogPosts, findBlogPost } from "@/lib/blogPosts";
 import {
+  aggregateRating,
+  brandLogoUrl,
   canonicalUrl,
+  email,
+  geoCoordinates,
+  isoAst,
   organizationSchema,
   phoneDisplay,
   phoneE164,
-  email,
+  postalAddress,
   siteUrl,
   whatsappUrl
 } from "@/lib/seo";
@@ -104,23 +109,24 @@ export default async function Page({ params }: PageProps) {
     ]
   };
 
+  // Auto-coerce date strings to ISO 8601 with Atlantic Standard Time (UTC-4) if a bare date was provided.
+  const datePublished = post.datePublished.includes("T") ? post.datePublished : isoAst(post.datePublished);
+  const dateModified = post.dateModified.includes("T") ? post.dateModified : isoAst(post.dateModified);
+
   const article = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: post.h1,
     description: post.metaDescription,
     mainEntityOfPage: url,
-    datePublished: post.datePublished,
-    dateModified: post.dateModified,
+    datePublished,
+    dateModified,
     image: `${siteUrl}${post.hero.src}`,
-    author: { "@type": "Organization", name: "Babula Shots", url: siteUrl },
+    author: { "@type": "Organization", name: "Babula Shots", "@id": `${siteUrl}#organization` },
     publisher: {
       "@type": "Organization",
       name: "Babula Shots",
-      logo: {
-        "@type": "ImageObject",
-        url: `${siteUrl}/wp-content/uploads/2024/06/Babula-Shots-Logo.webp`
-      }
+      logo: { "@type": "ImageObject", url: brandLogoUrl }
     },
     inLanguage: "es-DO"
   };
@@ -135,7 +141,8 @@ export default async function Page({ params }: PageProps) {
     }))
   };
 
-  // Brand LocalBusiness/Photographer entity — same shape as service pages
+  // Brand LocalBusiness/Photographer entity — distinct @id from organizationSchema so
+  // Google Rich Results doesn't merge them and surface "duplicate url" warnings.
   const photographerSchema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "Photographer"],
@@ -146,32 +153,15 @@ export default async function Page({ params }: PageProps) {
     telephone: phoneE164,
     email,
     priceRange: "RD$5,960-RD$35,760",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Santo Domingo",
-      addressRegion: "Distrito Nacional",
-      addressCountry: "DO"
-    },
-    // TODO: replace with the studio's actual coordinates.
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: 18.4861,
-      longitude: -69.9312
-    },
+    address: postalAddress,
+    geo: geoCoordinates,
     areaServed: [
       { "@type": "City", name: "Santo Domingo" },
       { "@type": "City", name: "Punta Cana" },
       { "@type": "City", name: "La Romana" },
       { "@type": "Country", name: "Dominican Republic" }
     ],
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5",
-      bestRating: "5",
-      worstRating: "1",
-      ratingCount: "23",
-      reviewCount: "23"
-    },
+    aggregateRating,
     sameAs: ["https://www.instagram.com/babulashotsrd/"]
   };
 

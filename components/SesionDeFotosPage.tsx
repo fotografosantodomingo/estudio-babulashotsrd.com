@@ -3,10 +3,15 @@ import { CrossSiteCta } from "@/components/CrossSiteCta";
 import { SeoJsonLd } from "@/components/SeoJsonLd";
 import { sesionPages, type SesionPage } from "@/lib/sesionContent";
 import {
+  aggregateRating,
   canonicalUrl,
+  brandLogoUrl,
+  geoCoordinates,
+  isoAst,
   organizationSchema,
   phoneDisplay,
   phoneE164,
+  postalAddress,
   siteUrl,
   whatsappUrl
 } from "@/lib/seo";
@@ -63,17 +68,14 @@ export function SesionDeFotosPage({ page }: { page: SesionPage }) {
     headline: page.h1,
     description: page.metaDescription,
     mainEntityOfPage: url,
-    datePublished: "2026-05-10",
-    dateModified: "2026-05-10",
+    datePublished: isoAst("2026-05-10"),
+    dateModified: isoAst("2026-05-10"),
     image: `${siteUrl}${page.heroImage.src}`,
-    author: { "@type": "Organization", name: "Babula Shots" },
+    author: { "@type": "Organization", name: "Babula Shots", "@id": `${siteUrl}#organization` },
     publisher: {
       "@type": "Organization",
       name: "Babula Shots",
-      logo: {
-        "@type": "ImageObject",
-        url: `${siteUrl}/wp-content/uploads/2024/06/Babula-Shots-Logo.webp`
-      }
+      logo: { "@type": "ImageObject", url: brandLogoUrl }
     },
     inLanguage: "es-DO"
   };
@@ -104,32 +106,15 @@ export function SesionDeFotosPage({ page }: { page: SesionPage }) {
     image: `${siteUrl}${page.heroImage.src}`,
     telephone: phoneE164,
     priceRange,
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Santo Domingo",
-      addressRegion: "Distrito Nacional",
-      addressCountry: "DO"
-    },
-    // TODO: replace with the studio's actual coordinates (currently using a Santo Domingo center fallback).
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: 18.4861,
-      longitude: -69.9312
-    },
+    address: postalAddress,
+    geo: geoCoordinates,
     areaServed: [
       { "@type": "City", name: "Santo Domingo" },
       { "@type": "City", name: "Punta Cana" },
       { "@type": "City", name: "La Romana" },
       { "@type": "Country", name: "Dominican Republic" }
     ],
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5",
-      bestRating: "5",
-      worstRating: "1",
-      ratingCount: "23",
-      reviewCount: "23"
-    },
+    aggregateRating,
     sameAs: ["https://www.instagram.com/babulashotsrd/"]
   };
 

@@ -31,8 +31,11 @@ export type BlogPost = {
   metaDescription: string;
   h1: string;                    // visible page heading
   eyebrow: string;               // small label above the H1
-  datePublished: string;         // ISO date
-  dateModified: string;          // ISO date
+  // Full ISO 8601 datetime with timezone, e.g. "2026-05-10T12:00:00-04:00".
+  // Bare "YYYY-MM-DD" works (auto-promoted in the route) but Google Rich Results
+  // flags it as "Invalid datetime / Missing timezone". Always prefer the full form.
+  datePublished: string;
+  dateModified: string;
   hero: BlogPostImage;
   introParagraphs: string[];     // first paragraphs after the hero, before sections
   sections: BlogPostSection[];   // body sections (h2 + paragraphs)
@@ -50,8 +53,8 @@ const POSTS: BlogPost[] = [
       "Las 10 poses esenciales para tu sesión de fotos de quinceañera: clásicas, editoriales modernas y momentos espontáneos. Guía 2026 con tips de fotógrafo profesional en Santo Domingo.",
     h1: "10 Mejores Poses para Fotos de Quinceañera (Guía 2026)",
     eyebrow: "Quinceañera · Guía de poses",
-    datePublished: "2026-05-10",
-    dateModified: "2026-05-10",
+    datePublished: "2026-05-10T12:00:00-04:00",
+    dateModified: "2026-05-10T12:00:00-04:00",
     hero: {
       src: "/wp-content/uploads/2024/06/Santo-Domingo-Fotografo-estudio.png",
       alt: "Quinceañera posando para sesión de fotos profesional en estudio en Santo Domingo",
