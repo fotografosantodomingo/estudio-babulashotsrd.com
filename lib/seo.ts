@@ -32,7 +32,8 @@ export function assetPath(path: string) {
 }
 
 // Logo / brand image used by the Organization + as Publisher inside Article/BlogPosting schemas.
-export const brandLogoUrl = `${siteUrl}/wp-content/uploads/2024/06/Babula-Shots-Logo.webp`;
+// Points to apex (canonical brand logo); the previous /2024/06/...webp path never existed in any repo.
+export const brandLogoUrl = `${mainBrandUrl}/wp-content/uploads/2023/05/cropped-babulashotslogo-1.png`;
 
 // ISO 8601 datetime helper. Dominican Republic is UTC-4 year-round (no DST).
 // Use this for datePublished/dateModified in any schema — string-only "2026-05-10" fails
