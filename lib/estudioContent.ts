@@ -143,11 +143,27 @@ export function plainTitle(p: WpPost) {
   return decodeEntities(p.title.rendered.replace(/<[^>]+>/g, "").trim());
 }
 
+// Strip WP's -WxH size suffix from any wp-content image URL so we serve the
+// original. e.g. /foo-768x512.webp → /foo.webp. Per user directive (2026-05-14):
+// originals are pre-optimized for web; always serve them so Retina renders sharp.
+function stripSizeSuffix(url: string): string {
+  return url.replace(/-\d+x\d+(\.(?:jpe?g|png|webp|gif|avif))/gi, "$1");
+}
+
 export function rewriteContentLinks(html: string): string {
   if (!html) return "";
   let out = html
     .replace(new RegExp(`href=["']${ORIGIN.replace(/[.*+?^${}()|[\\]\\\\]/g, "\\$&")}/`, "g"), 'href="/')
     .replace(new RegExp(`src=["']${ORIGIN.replace(/[.*+?^${}()|[\\]\\\\]/g, "\\$&")}/`, "g"), 'src="/');
+
+  // Force every <img> to use the ORIGINAL source file, not WP's -WxH thumbnails.
+  out = out.replace(/<img\b[^>]*>/gi, (tag) => {
+    let next = tag;
+    next = next.replace(/\ssrc=["']([^"']+)["']/i, (_m, v) => ` src="${stripSizeSuffix(v)}"`);
+    next = next.replace(/\ssrcset=["'][^"']*["']/gi, "");
+    next = next.replace(/\ssizes=["'][^"']*["']/gi, "");
+    return next;
+  });
   // Promote heading levels so the page's h1 -> WP h2 -> WP h3 sequence is intact.
   // First find the highest heading level used in WP content, demote so it starts at h2.
   let topLevel = 7;
@@ -174,25 +190,9 @@ export function rewriteContentLinks(html: string): string {
 }
 
 function pickSmallerSize(fm: NonNullable<WpPost["_embedded"]>["wp:featuredmedia"]) {
+  // Always return the ORIGINAL full-size source URL. Per user directive
+  // (2026-05-14): hero images must use the original file, not WP's -WxH variants.
   if (!fm || !fm[0]) return null;
-  const sizes = fm[0].media_details?.sizes;
-  if (!sizes) return fm[0].source_url;
-  const candidates = [
-    "medium_large",
-    "large",
-    "1536x1536",
-    "2048x2048",
-    "medium",
-    "thumbnail",
-    "full"
-  ];
-  for (const k of candidates) {
-    const s = sizes[k];
-    if (s?.source_url && s.width <= 1200) return s.source_url;
-  }
-  for (const s of Object.values(sizes)) {
-    if (s.source_url && s.width <= 1200) return s.source_url;
-  }
   return fm[0].source_url;
 }
 
