@@ -54,14 +54,14 @@ export const postalAddress = {
   addressCountry: "DO"
 };
 
-// Canonical aggregateRating (5/5 from 23 reviews — brand-wide, applies to all subdomains).
+// Canonical aggregateRating (4.9/5 from 91 Google reviews — brand-wide).
 export const aggregateRating = {
   "@type": "AggregateRating" as const,
-  ratingValue: "5",
+  ratingValue: "4.9",
   bestRating: "5",
   worstRating: "1",
-  ratingCount: "23",
-  reviewCount: "23"
+  ratingCount: "91",
+  reviewCount: "91"
 };
 
 // Canonical geo (Santo Domingo centroid as fallback — see memory entry).
