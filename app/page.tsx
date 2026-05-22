@@ -5,29 +5,24 @@ import { canonicalUrl } from "@/lib/seo";
 
 const seo = getSeo("https://estudio.babulashotsrd.com/");
 
-const scrapedDescription = seo?.description ?? "";
-const extendedDescription =
-  scrapedDescription && scrapedDescription.length < 140
-    ? `${scrapedDescription} Cotiza por WhatsApp.`
-    : scrapedDescription ||
-      "Estudio fotografico en Santo Domingo: retratos, fotos de comida y bebida, exteriores y campanas para empresas.";
-
-const scrapedOgDescription = seo?.ogDescription ?? "";
-const extendedOgDescription =
-  scrapedOgDescription && scrapedOgDescription.length < 140
-    ? `${scrapedOgDescription} Cotiza por WhatsApp.`
-    : scrapedOgDescription || extendedDescription;
+// CTR-tuned homepage title + description. Overrides the scraped WP SEO because
+// GSC shows the page ranks pos 8.7 for "sesion de fotos" (979 impressions, 3
+// clicks → 0.3% CTR). Leading with the top-query phrase + 4.9★ rating badge.
+// Covers both top intent clusters: "sesion de fotos" + "estudio santo domingo".
+const homepageTitle = "Sesión de Fotos · Estudio en Santo Domingo · 4.9★ Babula Shots";
+const homepageDescription =
+  "Estudio fotográfico profesional en Santo Domingo. Sesiones de retrato, comida, moda y corporativo. Reserva 809 720 9547 · 4.9★ 98 reseñas Google.";
 
 export const metadata: Metadata = {
-  title: seo?.title ?? "Estudio fotografico en Santo Domingo | Babula Shots",
-  description: extendedDescription,
+  title: homepageTitle,
+  description: homepageDescription,
   alternates: {
     canonical: canonicalUrl("/"),
     languages: { "es-DO": canonicalUrl("/"), en: canonicalUrl("/en/"), "x-default": canonicalUrl("/") }
   },
   openGraph: {
-    title: seo?.ogTitle ?? seo?.title ?? "Estudio fotografico en Santo Domingo",
-    description: extendedOgDescription,
+    title: homepageTitle,
+    description: homepageDescription,
     url: canonicalUrl("/"),
     type: "website",
     locale: "es_DO",

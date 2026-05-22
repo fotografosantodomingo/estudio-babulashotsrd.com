@@ -64,6 +64,12 @@ export const aggregateRating = {
   reviewCount: "98"
 };
 
+// CTR-focused title suffix. Append to base titles to render
+// "· 4.9★ 98 reseñas Google" / "· 4.9★ 98 Google Reviews" in SERPs.
+// Reads from aggregateRating so the title stays in sync with schema + badge.
+export const ratingBadgeEs = ` · ${aggregateRating.ratingValue}★ ${aggregateRating.reviewCount} reseñas Google`;
+export const ratingBadgeEn = ` · ${aggregateRating.ratingValue}★ ${aggregateRating.reviewCount} Google Reviews`;
+
 // Canonical geo (Santo Domingo centroid as fallback — see memory entry).
 // TODO: replace with the studio's actual coordinates when provided.
 export const geoCoordinates = {
