@@ -105,6 +105,11 @@ export const organizationSchema = {
   image: brandLogoUrl,
   logo: brandLogoUrl,
   address: postalAddress,
+  founder: {
+    "@type": "Person",
+    name: "Michal Nikodem Babula",
+    sameAs: "https://www.wikidata.org/wiki/Q139892966"
+  },
   // NOTE: intentionally NOT using `parentOrganization` here. GSC Rich Results flags the
   // nested `name` as a "duplicate name" warning, and the brand hierarchy is already
   // signalled via `sameAs` below (which links to the apex brand babulashotsrd.com).
