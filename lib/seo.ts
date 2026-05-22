@@ -72,6 +72,20 @@ export const geoCoordinates = {
   longitude: -69.9312
 };
 
+// Studio coverage. Studio is in Santo Domingo; outdoor sessions extend across DR.
+// Per schema_standards.md rule 6, list specific cities + country.
+export const localBusinessAreaServed = [
+  { "@type": "City", name: "Santo Domingo" },
+  { "@type": "City", name: "Punta Cana" },
+  { "@type": "City", name: "La Romana" },
+  { "@type": "City", name: "Santiago" },
+  { "@type": "Country", name: "Dominican Republic" }
+];
+
+// Numeric priceRange computed from studio offerings (Retratos → Boudoir / Snoot Premium).
+// Per schema_standards.md rule 5: prefer concrete numeric ranges over "$$".
+export const localBusinessPriceRange = "RD$5,960-RD$23,800";
+
 export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -88,5 +102,18 @@ export const organizationSchema = {
   // NOTE: intentionally NOT using `parentOrganization` here. GSC Rich Results flags the
   // nested `name` as a "duplicate name" warning, and the brand hierarchy is already
   // signalled via `sameAs` below (which links to the apex brand babulashotsrd.com).
-  sameAs: [mainBrandUrl, bodaUrl, inmobiliariaUrl, droneUrl, santoDomingoHubUrl, "https://www.instagram.com/babulashotsrd/"]
+  sameAs: [mainBrandUrl, bodaUrl, inmobiliariaUrl, droneUrl, santoDomingoHubUrl, "https://www.instagram.com/babulashotsrd/", "https://www.wikidata.org/wiki/Q139892828"]
 };
+
+export function breadcrumbSchema(items: Array<{ name: string; path?: string; item?: string }>) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((entry, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: entry.name,
+      item: entry.item ?? canonicalUrl(entry.path ?? "/")
+    }))
+  };
+}
