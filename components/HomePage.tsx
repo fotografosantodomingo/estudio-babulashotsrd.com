@@ -11,7 +11,20 @@ import {
   plainTitle,
   posts
 } from "@/lib/estudioContent";
-import { canonicalUrl, niche, organizationSchema, phoneE164, siteUrl } from "@/lib/seo";
+import {
+  aggregateRating,
+  brandLogoUrl,
+  canonicalUrl,
+  email,
+  geoCoordinates,
+  localBusinessAreaServed,
+  localBusinessPriceRange,
+  niche,
+  organizationSchema,
+  phoneE164,
+  postalAddress,
+  siteUrl
+} from "@/lib/seo";
 
 const featuredServiceSlugs = [
   "retratos-profesionales-en-estudio-santo-domingo",
@@ -42,14 +55,34 @@ export function HomePage() {
     organizationSchema,
     {
       "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "@id": `${siteUrl}/#estudio`,
+      // Use "LocalBusiness" (NOT "ProfessionalService") per schema_standards.md
+      // rule 2c — Google's Review Snippet validator only accepts LocalBusiness/
+      // Organization/Product/Service/etc as aggregateRating hosts; subtypes like
+      // ProfessionalService trigger a CRITICAL "Invalid object type in parent
+      // field" error and disqualify the page from Review Snippet rich results.
+      "@type": "LocalBusiness",
+      "@id": `${siteUrl}/#localbusiness`,
       name: "Babula Shots Estudio",
       url: siteUrl,
       telephone: phoneE164,
-      areaServed: { "@type": "Country", name: "Dominican Republic" },
-      priceRange: "$$",
+      email,
       image: `${siteUrl}/wp-content/uploads/2024/06/Estudio-fotografo-santo-domingo.webp`,
+      logo: brandLogoUrl,
+      address: postalAddress,
+      geo: geoCoordinates,
+      // Numeric priceRange computed from estudio offerings (rule 5).
+      priceRange: localBusinessPriceRange,
+      // Specific cities + country (rule 6).
+      areaServed: localBusinessAreaServed,
+      aggregateRating,
+      sameAs: [
+        "https://babulashotsrd.com/",
+        "https://boda.babulashotsrd.com/",
+        "https://dron.babulashotsrd.com/",
+        "https://inmobiliaria.babulashotsrd.com/",
+        "https://www.instagram.com/babulashotsrd/",
+        "https://www.wikidata.org/wiki/Q139892828"
+      ],
       hasOfferCatalog: {
         "@type": "OfferCatalog",
         name: "Servicios de estudio",
