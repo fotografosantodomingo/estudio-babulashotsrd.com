@@ -35,6 +35,34 @@ const featuredServiceSlugs = [
   "session-de-fotos-embrazada-estudio-en-santo-domingo"
 ];
 
+// Concrete priced Offers for the studio LocalBusiness — sourced from the
+// shared raw-pricing.json catalogue (~/Documents/.shared-content/raw-pricing.json).
+// Replaces the previous `featured.map` pattern that emitted Offer entries with
+// title-only itemOffered Services and no price. Per schema_standards.md rule 5,
+// concrete numeric DOP prices unlock numeric priceRange + Service Listings.
+const STUDIO_OFFERS = [
+  { id: "retratos", name: "Retratos en estudio", price: 5960, duration: "PT1H",
+    desc: "Sesión en estudio o locación, 15 fotos editadas en alta resolución, entrega en 48h." },
+  { id: "maternidad", name: "Sesión de maternidad", price: 8940, duration: "PT1H",
+    desc: "Sesión íntima en locación, 30 fotos editadas, galería privada." },
+  { id: "infantiles", name: "Sesiones infantiles", price: 8940, duration: "PT1H",
+    desc: "Ambiente relajado y divertido, 20 fotos editadas, galería digital." },
+  { id: "headshots-corp", name: "Headshots corporativos", price: 10700, duration: "PT1H",
+    desc: "Múltiples looks y fondos, uso comercial autorizado, entrega en 24-48h." },
+  { id: "comercial", name: "Fotografía comercial", price: 14900, duration: "PT1H",
+    desc: "Productos, hoteles, restaurantes, derechos de uso comercial, edición profesional." },
+  { id: "alimentos", name: "Fotografía de alimentos y bebidas", price: 14900, duration: "PT2H",
+    desc: "Sesión en estudio o locación, 30 imágenes editadas, apta para redes y menús." },
+  { id: "snoot-premium", name: "Snoot Óptico Premium — 15 fotos", price: 14900, duration: "PT2H",
+    desc: "Iluminación cinematográfica Snoot Óptico, 15 fotos editadas, 2h con cambios de look." },
+  { id: "boudoir", name: "Sesión boudoir", price: 23800, duration: "PT2H",
+    desc: "Estudio privado o habitación de hotel de lujo, iluminación profesional, galería en 48-72h." }
+];
+
+const STUDIO_OFFER_MIN = Math.min(...STUDIO_OFFERS.map((o) => o.price));
+const STUDIO_OFFER_MAX = Math.max(...STUDIO_OFFERS.map((o) => o.price));
+const STUDIO_PRICE_RANGE = `RD$${STUDIO_OFFER_MIN.toLocaleString()}-RD$${STUDIO_OFFER_MAX.toLocaleString()}`;
+
 const galleryPageSlugs = [
   "galeria",
   "galeria-retratos",
@@ -70,8 +98,8 @@ export function HomePage() {
       logo: brandLogoUrl,
       address: postalAddress,
       geo: geoCoordinates,
-      // Numeric priceRange computed from estudio offerings (rule 5).
-      priceRange: localBusinessPriceRange,
+      // Numeric priceRange computed from this page's actual Offers (rule 5).
+      priceRange: STUDIO_PRICE_RANGE,
       // Specific cities + country (rule 6).
       areaServed: localBusinessAreaServed,
       aggregateRating,
@@ -86,9 +114,23 @@ export function HomePage() {
       hasOfferCatalog: {
         "@type": "OfferCatalog",
         name: "Servicios de estudio",
-        itemListElement: featured.map((p) => ({
+        itemListElement: STUDIO_OFFERS.map((o) => ({
           "@type": "Offer",
-          itemOffered: { "@type": "Service", name: plainTitle(p) }
+          "@id": `${siteUrl}/#offer-${o.id}`,
+          name: o.name,
+          description: o.desc,
+          price: o.price.toString(),
+          priceCurrency: "DOP",
+          availability: "https://schema.org/InStock",
+          url: `${siteUrl}/precios/`,
+          category: "Studio photography",
+          itemOffered: {
+            "@type": "Service",
+            name: o.name,
+            description: o.desc,
+            serviceType: "Studio photography",
+            provider: { "@type": "LocalBusiness", "@id": `${siteUrl}/#localbusiness` }
+          }
         }))
       }
     },
