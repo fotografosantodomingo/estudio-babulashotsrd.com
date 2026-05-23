@@ -437,6 +437,232 @@ export const EN_SERVICE_PAGES: EnServicePage[] = [
     priceFromUsd: 600
   },
   {
+    esPath: "/sesion-de-fotografia-de-producto-con-tecnica-avanzada-de-iluminacion-2/",
+    enPath: "/en/product-photography-studio-dominican-republic/",
+    enSlug: "product-photography-studio-dominican-republic",
+    topic: "Product photography",
+    title: "Product Photography Studio Dominican Republic · Babula Shots · 4.9★ 98 reviews",
+    description: "E-commerce, packaging and editorial product photography in Santo Domingo. White-background, lifestyle, hero-shot lighting. 48-hour delivery with commercial usage included.",
+    h1: "Product Photography Studio in the Dominican Republic",
+    eyebrow: "Product photography · Babula Shots Estudio",
+    intro: "Whether you sell on Mercado Libre, Amazon, Shopify or in physical retail, your product images carry the weight of selling without a salesperson in the room. We shoot product photography for Dominican Republic brands and e-commerce sellers — clean white-background catalogue shots, atmospheric lifestyle photography, and high-impact hero shots for ads and packaging.",
+    sections: [
+      {
+        h2: "Product photography styles we shoot",
+        list: [
+          "White-background e-commerce — clean, consistent, marketplace-ready",
+          "Ghost mannequin — apparel without distracting mannequins or models",
+          "Lifestyle product — in-use shots with models, props and ambient setting",
+          "Hero / advertising — single dramatic shot for campaigns and landing pages",
+          "Packaging detail — close-up texture, material and branding shots",
+          "360° rotation — for e-commerce product viewers (separate package)"
+        ]
+      },
+      {
+        h2: "Studio capacity and turnaround",
+        paragraphs: [
+          "Our Santo Domingo studio handles small products (cosmetics, electronics, accessories) through medium (apparel, food packaging) efficiently. Typical capacity: 20–40 SKUs per day for white-background catalogue work, 8–15 SKUs for styled lifestyle shoots.",
+          "Standard delivery is 48 hours for catalogue work, 72 hours for lifestyle and hero shots. All images include full commercial license — use on your website, ads, social media, packaging without per-use fees."
+        ]
+      },
+      {
+        h2: "What to send before the shoot",
+        paragraphs: [
+          "Send your product spec list (SKU, name, dimensions) and any brand guidelines (colours, mood references, competitor inspiration). We use this to plan the lighting style and shot list. For large catalogues we set up a shot-tracking sheet so nothing is missed."
+        ]
+      }
+    ],
+    faq: [
+      { q: "Do I need to ship the products to the studio?", a: "Yes — ship in advance with a packing list. We unpack, photograph, repack and can return-ship if you need them back." },
+      { q: "Can you photograph fragile or valuable items?", a: "Yes — we handle jewelry, electronics, glassware, art with appropriate care. Insurance considerations are discussed during quote." },
+      { q: "Do you offer styling and props?", a: "For lifestyle shoots we work with a stylist who brings props or sources them. For pure white-background work no styling is needed." },
+      { q: "Can you match the lighting of my existing catalogue?", a: "Yes — send sample images of your existing catalogue and we'll match treatment, angle and shadow style." },
+      { q: "Pricing per SKU?", a: "Typical pricing is per-product for catalogue work, per-day for lifestyle/hero shoots. Send your SKU count for a tailored quote." }
+    ],
+    priceFromDop: 14900,
+    priceFromUsd: 250
+  },
+  {
+    esPath: "/fotos-pantalla-verde-estudio-santo-domingo/",
+    enPath: "/en/green-screen-chroma-key-photography-santo-domingo/",
+    enSlug: "green-screen-chroma-key-photography-santo-domingo",
+    topic: "Green screen photography",
+    title: "Green Screen Chroma Key Photography Studio Santo Domingo · Babula Shots",
+    description: "Professional green screen (chroma key) photo and video in Santo Domingo. For composite imagery, virtual backgrounds, broadcast and creative campaigns. Studio in Santo Domingo.",
+    h1: "Green Screen / Chroma Key Photography in Santo Domingo",
+    eyebrow: "Chroma key studio · Babula Shots Estudio",
+    intro: "Green screen photography opens creative possibilities that no location shoot can match — drop your subject into any background, build composite scenes, produce broadcast-ready footage with virtual sets. Our Santo Domingo studio is set up for both photo and video chroma key work with proper lighting, evenly-lit screens and clean edge separation.",
+    sections: [
+      {
+        h2: "What we shoot on green screen",
+        list: [
+          "Composite advertising imagery — subject + custom background composited in post",
+          "Broadcast and virtual-set video for TV presenters and YouTube creators",
+          "Real estate virtual staging — show people in spaces they've never visited",
+          "Corporate training videos with branded backgrounds",
+          "Editorial fashion with surreal or impossible backgrounds",
+          "E-commerce product cutouts for transparent-background catalogue images"
+        ]
+      },
+      {
+        h2: "Why studio chroma key matters",
+        paragraphs: [
+          "A clean key starts with even lighting on the green screen, separated by at least 2m from the subject so green spill doesn't contaminate skin and hair edges. Our studio is set up with the lighting separation that makes post-production keying clean, fast and refund-proof.",
+          "Bad chroma key shoots create work that can't be fixed in post — green fringes, halos around hair, blown-out highlights. We light to avoid all of that from the start."
+        ]
+      },
+      {
+        h2: "Delivery options",
+        paragraphs: [
+          "We can deliver the raw keyed image (transparent background PNG/EXR) for you to composite, OR we can do the full composite in-house if you provide the background plate. Discuss when you book."
+        ]
+      }
+    ],
+    faq: [
+      { q: "Can you handle blonde or curly hair on green screen?", a: "Yes — these are the hardest cases for keying but with proper edge lighting and a backlight rim we get clean separation. Send a sample of hair type when booking." },
+      { q: "Photo and video in the same session?", a: "Yes — same setup serves both. Most sessions deliver photo composites + a video clip." },
+      { q: "Do you provide the composited background or just the keyed subject?", a: "Both options available. Pure keying is faster/cheaper; full composite includes background plate sourcing or creation." },
+      { q: "Can I direct from a remote location?", a: "Yes — we set up a tethered shooting station so a remote art director can review every shot live via screen-share." }
+    ],
+    priceFromDop: 11900,
+    priceFromUsd: 200
+  },
+  {
+    esPath: "/lugares-recomendados-para-alquilar-un-estudio-de-fotografia-en-republica-dominicana/",
+    enPath: "/en/rent-photography-studio-dominican-republic/",
+    enSlug: "rent-photography-studio-dominican-republic",
+    topic: "Studio rental",
+    title: "Rent a Photography Studio in the Dominican Republic · Babula Shots Estudio",
+    description: "Professional photography studio rental in Santo Domingo. Profoto lighting, multiple backdrops, equipment included. Hourly and daily rates for photographers and brands.",
+    h1: "Rent a Photography Studio in the Dominican Republic",
+    eyebrow: "Studio rental · Babula Shots Estudio",
+    intro: "If you're a photographer, brand or content creator and you need a fully-equipped photography studio in Santo Domingo for your own production, we offer studio rental at hourly and daily rates. Profoto lighting, multiple backdrops, modifiers, dressing area — everything ready, you just bring your camera (or rent ours too).",
+    sections: [
+      {
+        h2: "What's included in studio rental",
+        list: [
+          "Full Profoto lighting kit (strobes + modifiers — softboxes, octaboxes, beauty dish, grids, gels)",
+          "Multiple backdrops — white seamless, black, grey, coloured paper, textured fabric",
+          "C-stands, light stands, sandbags, gobos",
+          "Dressing area with mirror, steamer and hangers",
+          "WiFi, AC, beverages",
+          "Loading-area access for equipment cases"
+        ]
+      },
+      {
+        h2: "Rates",
+        paragraphs: [
+          "Hourly: from RD$2,500/hr (3-hour minimum). Half-day (4 hr): from RD$8,000. Full-day (8 hr): from RD$14,000. Add-ons: assistant from RD$1,500/hr, camera kit rental, hair/makeup coordination."
+        ]
+      },
+      {
+        h2: "Who rents from us",
+        list: [
+          "Independent photographers without studio space",
+          "International photographers visiting the DR for client work",
+          "Brand teams running in-house photo days",
+          "Content creators producing video and photo simultaneously",
+          "Educators teaching photography workshops"
+        ]
+      }
+    ],
+    faq: [
+      { q: "Do I need to book in advance?", a: "Yes — at least 48h ahead. Weekend slots fill 1–2 weeks out. Weekday slots often available same-week." },
+      { q: "Can I bring my own lighting?", a: "Yes — we have plenty of outlets and floor space. Most renters use our Profoto kit because the modifier collection is hard to match." },
+      { q: "Is there parking?", a: "Yes — street parking nearby, with a loading zone for equipment cases." },
+      { q: "Can I rent overnight or weekend?", a: "Yes — weekend rentals available with advance booking. Overnight productions case-by-case." }
+    ],
+    priceFromDop: 2500,
+    priceFromUsd: 42
+  },
+  {
+    esPath: "/tecnicas-en-estudio/",
+    enPath: "/en/studio-photography-lighting-techniques/",
+    enSlug: "studio-photography-lighting-techniques",
+    topic: "Studio techniques",
+    title: "Studio Photography Lighting Techniques · Babula Shots Estudio",
+    description: "Studio photography lighting techniques we use at Babula Shots: Rembrandt, butterfly, split, loop, broad, short lighting. How each shapes the portrait and when to use which.",
+    h1: "Studio Photography Lighting Techniques",
+    eyebrow: "Studio techniques · Babula Shots Estudio",
+    intro: "Studio portraits live or die on light direction. The same person, same camera, same backdrop will produce a completely different image with Rembrandt vs. butterfly lighting. Here are the techniques we use at our Santo Domingo studio and when each one is the right call.",
+    sections: [
+      {
+        h2: "The six classic lighting patterns",
+        listIntro: "Every studio portrait can be traced to one of these patterns:",
+        list: [
+          "Rembrandt lighting — small triangle of light on the shadow-side cheek. Dramatic, character-focused. Works on most faces.",
+          "Butterfly / paramount lighting — light directly in front and above the subject, creating a shadow under the nose. Classic Hollywood glamour. Best for symmetric faces.",
+          "Split lighting — light from 90° to one side, splitting the face in half. Bold, dramatic, character study.",
+          "Loop lighting — small loop-shaped shadow from the nose. Most versatile, flattering on nearly everyone. Default for headshots.",
+          "Broad lighting — main light on the side of the face turned toward camera. Makes face look wider. Used for slim or angular faces.",
+          "Short lighting — main light on the side turned away. Slims the face. Used for fuller faces."
+        ]
+      },
+      {
+        h2: "Hard vs soft light",
+        paragraphs: [
+          "Soft light (large modifier close to the subject) creates gradual shadow transitions and flatters skin. Used for most portraits, fashion, beauty. Hard light (small modifier or bare bulb) creates sharp shadow edges and emphasizes texture. Used for character portraits, B&W work, dramatic editorial.",
+          "Most of our portrait work uses soft light from a large octabox or softbox. We switch to hard light for editorial sessions where character matters more than flattery."
+        ]
+      },
+      {
+        h2: "Adding accent lights",
+        paragraphs: [
+          "Beyond the key light, accent lights shape the image: a hair light separates the subject from the background, a fill light softens shadows, a rim light traces the silhouette. We typically use 2–4 lights per portrait depending on the look."
+        ]
+      }
+    ],
+    faq: [
+      { q: "Can I request a specific lighting style?", a: "Yes — if you have a reference image you love, send it and we'll match the lighting style." },
+      { q: "What lights do you use?", a: "Profoto strobes (D2 and B10X kit) with modifiers from softboxes through grids and gels." },
+      { q: "Do you teach workshops?", a: "Occasionally we run small private workshops for photographers. Email if interested." },
+      { q: "Can I see a behind-the-scenes of a shoot?", a: "Yes — request when booking and we'll film a short BTS of your session." }
+    ]
+  },
+  {
+    esPath: "/galeria/",
+    enPath: "/en/photo-gallery/",
+    enSlug: "photo-gallery",
+    topic: "Studio portfolio",
+    title: "Photo Studio Gallery — Portfolio · Babula Shots Estudio · Santo Domingo",
+    description: "Photo studio portfolio from Babula Shots Estudio in Santo Domingo. Portraits, fashion, food, corporate, maternity and creative studio sessions. Real client work.",
+    h1: "Photo Studio Gallery",
+    eyebrow: "Portfolio · Babula Shots Estudio",
+    intro: "Below is selected work from our Santo Domingo studio — portrait, fashion, food, corporate, maternity, boudoir and creative sessions. Every image is real client work shot in our studio; no stock, no AI, no third-party stock licensing.",
+    sections: [
+      {
+        h2: "What's in the portfolio",
+        list: [
+          "Editorial portraits — natural and styled, colour and black & white",
+          "Corporate headshots — executive, team, LinkedIn-style",
+          "Fashion sessions — designer lookbooks and model portfolios",
+          "Food and beverage — menu, packaging and atmospheric scene shots",
+          "Maternity and family — soft natural sessions with curated wardrobe",
+          "Boudoir — private, respectful sessions in studio or hotel suite",
+          "Creative & experimental — Snoot Óptico, gels, hard light editorial"
+        ]
+      },
+      {
+        h2: "How we work",
+        paragraphs: [
+          "Each session is direction-led — we talk through your goal in advance, plan a shot list, then shoot in short focused bursts so the energy stays high. Standard delivery is 5–7 days for portraits, 48 hours for headshots and product, 72 hours for editorial.",
+          "Want to see specific examples in your category? Email us — we have extensive archives organised by session type and can share relevant portfolio links."
+        ]
+      },
+      {
+        h2: "Book your own session",
+        paragraphs: [
+          "If you want a session like the work you've seen, just message us with your date, topic and any reference images. We respond within 24 hours with a proposal."
+        ]
+      }
+    ],
+    faq: [
+      { q: "Can I see full sessions, not just selects?", a: "Yes — request examples in your category by email and we'll send a private link to full session galleries." },
+      { q: "Do you have a video reel?", a: "We're working on a portfolio reel — for now the static gallery is the most current view of our work." },
+      { q: "Can I license images from the portfolio for my own use?", a: "No — all portfolio images are client work and not licensed for third-party use." }
+    ]
+  },
+  {
     esPath: "/fotografias-de-retrato-en-blanco-y-negro/",
     enPath: "/en/black-and-white-portrait-photography/",
     enSlug: "black-and-white-portrait-photography",
