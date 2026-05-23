@@ -20,7 +20,11 @@ const staticPairs: LanguagePaths[] = [
   { es: "/servicios/", en: "/en/services/" },
   { es: "/ubicaciones/", en: "/en/locations/" },
   { es: "/precios/", en: "/en/prices/" },
-  { es: "/faq/", en: "/en/faq/" }
+  { es: "/faq/", en: "/en/faq/" },
+  // Hand-translated deep service pages (the two highest-impression Spanish-only
+  // pages by GSC 2026-05-10: corporate photography 213 imp/mo, studio session 166).
+  { es: "/fotografia-corporativa-en-estudio-rd/", en: "/en/corporate-photography-studio-dr/" },
+  { es: "/sesion-de-fotos-estudio-santo-domingo/", en: "/en/studio-photo-session-santo-domingo/" }
 ];
 
 // Auto-generated bilingual blog post pairs. Posts without an `en` variant stay
