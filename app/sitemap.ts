@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { categories, pages, posts, tags } from "@/lib/estudioContent";
 import { blogPosts } from "@/lib/blogPosts";
+import { EN_SERVICE_PAGES } from "@/lib/enServicePages";
 import { canonicalUrl } from "@/lib/seo";
 import { sesionPages } from "@/lib/sesionContent";
 
@@ -45,7 +46,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: canonicalUrl("/en/faq/"), lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     // Hand-translated deep service pages (2026-05-22 — top Spanish-only by GSC impressions)
     { url: canonicalUrl("/en/corporate-photography-studio-dr/"), lastModified: now, changeFrequency: "monthly", priority: 0.85 },
-    { url: canonicalUrl("/en/studio-photo-session-santo-domingo/"), lastModified: now, changeFrequency: "monthly", priority: 0.85 }
+    { url: canonicalUrl("/en/studio-photo-session-santo-domingo/"), lastModified: now, changeFrequency: "monthly", priority: 0.85 },
+    // Dynamic-route EN service pages from EN_SERVICE_PAGES map
+    ...EN_SERVICE_PAGES.map((p) => ({
+      url: canonicalUrl(p.enPath),
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.8
+    }))
   ];
   const RESERVED = new Set(["servicios", "ubicaciones", "precios", "faq", "blog"]);
   for (const p of pages) {

@@ -1,4 +1,5 @@
 import { blogPosts } from "@/lib/blogPosts";
+import { EN_SERVICE_PAGES } from "@/lib/enServicePages";
 
 type LanguagePaths = { es: string; en: string };
 
@@ -38,7 +39,14 @@ const blogPairs: LanguagePaths[] = blogPosts
     en: `/en/blog/${p.en!.enSlug}/`
   }));
 
-const routePairs: LanguagePaths[] = [...staticPairs, ...blogPairs].map((pair) => ({
+// Bilingual pairs from the EN_SERVICE_PAGES map — adding an entry to that map
+// automatically wires up the lang toggle for the page (no edit here needed).
+const servicePagePairs: LanguagePaths[] = EN_SERVICE_PAGES.map((p) => ({
+  es: p.esPath,
+  en: p.enPath
+}));
+
+const routePairs: LanguagePaths[] = [...staticPairs, ...blogPairs, ...servicePagePairs].map((pair) => ({
   es: normalizePath(pair.es),
   en: normalizePath(pair.en)
 }));
