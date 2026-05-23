@@ -51,6 +51,9 @@ export const metadata: Metadata = {
       "max-snippet": -1
     }
   },
+  verification: {
+    google: "O1tSOujyggdY8fJKs7scDwU6Gwfs_aEH9YSWLMHg1kw"
+  },
   icons: {
     icon: [
       { url: assetPath("/wp-content/uploads/2024/06/Babula-Shots-Logo-150x150.webp"), sizes: "32x32", type: "image/webp" },
