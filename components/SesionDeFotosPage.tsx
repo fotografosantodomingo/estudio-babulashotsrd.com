@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { CrossSiteCta } from "@/components/CrossSiteCta";
 import { SeoJsonLd } from "@/components/SeoJsonLd";
-import { sesionPages, type SesionPage } from "@/lib/sesionContent";
+import { sesionPages, enSesionPages, type SesionPage } from "@/lib/sesionContent";
 import {
   aggregateRating,
   canonicalUrl,
@@ -46,17 +46,59 @@ function paragraphWithLinks(text: string): React.ReactNode[] {
   return parts;
 }
 
-export function SesionDeFotosPage({ page }: { page: SesionPage }) {
+export function SesionDeFotosPage({ page, locale = "es" }: { page: SesionPage; locale?: "es" | "en" }) {
+  const isEn = locale === "en";
   const url = canonicalUrl(page.url);
+  const t = isEn
+    ? {
+        home: "Home",
+        hub: "Photo session",
+        hubUrl: "/en/photo-session/",
+        bookEyebrow: "Book your session",
+        bookH2: "Ready to book?",
+        bookCopy: "Send us a WhatsApp with your tentative date. We reply with availability and a detailed quote in under 24 hours. Book with a 50% deposit.",
+        whatsappPrefix: "Hi, I'd like to book a",
+        whatsappLabel: "WhatsApp",
+        callLabel: "Call",
+        pricesLabel: "See prices",
+        pricesUrl: "/en/prices/",
+        faqEyebrow: "Frequently asked",
+        faqMasterH2: "Photo session in Santo Domingo — FAQ",
+        faqClusterH2Suffix: "— FAQ",
+        relatedEyebrow: "Related sessions",
+        relatedH2: "Other session types we cover",
+        clusterEyebrow: "Specialized sessions",
+        clusterH2: "Dedicated pages by session type"
+      }
+    : {
+        home: "Inicio",
+        hub: "Sesión de fotos",
+        hubUrl: "/sesion-de-fotos/",
+        bookEyebrow: "Reserva tu sesión",
+        bookH2: "Listo para reservar?",
+        bookCopy: "Escríbenos por WhatsApp con tu fecha tentativa. Te respondemos con disponibilidad y cotización detallada en menos de 24 horas. Reserva con 50% de depósito.",
+        whatsappPrefix: "Hola, quiero reservar una",
+        whatsappLabel: "WhatsApp",
+        callLabel: "Llamar",
+        pricesLabel: "Ver precios",
+        pricesUrl: "/precios/",
+        faqEyebrow: "Preguntas frecuentes",
+        faqMasterH2: "Sesión de fotos en Santo Domingo — FAQ",
+        faqClusterH2Suffix: "— FAQ",
+        relatedEyebrow: "Sesiones relacionadas",
+        relatedH2: "Otros tipos de sesión que cubrimos",
+        clusterEyebrow: "Sesiones especializadas",
+        clusterH2: "Páginas dedicadas por tipo de sesión"
+      };
   const breadcrumb = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Inicio", item: canonicalUrl("/") },
+      { "@type": "ListItem", position: 1, name: t.home, item: canonicalUrl("/") },
       ...(page.isMaster
-        ? [{ "@type": "ListItem", position: 2, name: "Sesión de fotos", item: url }]
+        ? [{ "@type": "ListItem", position: 2, name: t.hub, item: url }]
         : [
-            { "@type": "ListItem", position: 2, name: "Sesión de fotos", item: canonicalUrl("/sesion-de-fotos/") },
+            { "@type": "ListItem", position: 2, name: t.hub, item: canonicalUrl(t.hubUrl) },
             { "@type": "ListItem", position: 3, name: page.h1, item: url }
           ])
     ]
@@ -77,7 +119,7 @@ export function SesionDeFotosPage({ page }: { page: SesionPage }) {
       name: "Babula Shots",
       logo: { "@type": "ImageObject", url: brandLogoUrl }
     },
-    inLanguage: "es-DO"
+    inLanguage: isEn ? "en" : "es-DO"
   };
 
   const faqSchema = {
@@ -162,18 +204,19 @@ export function SesionDeFotosPage({ page }: { page: SesionPage }) {
     faqSchema as Record<string, unknown>
   ];
 
-  const related = (page.relatedClusterSlugs ?? []).map((s) => sesionPages[s]).filter(Boolean);
+  const allPages = isEn ? enSesionPages : sesionPages;
+  const related = (page.relatedClusterSlugs ?? []).map((s) => allPages[s]).filter(Boolean);
 
   return (
     <main>
       <SeoJsonLd data={schemas as Record<string, unknown>[]} />
       <article className="article">
         <nav className="breadcrumbs" aria-label="Breadcrumbs">
-          <Link href="/">Inicio</Link>
+          <Link href={isEn ? "/en/" : "/"}>{t.home}</Link>
           {!page.isMaster && (
             <>
               <span>/</span>
-              <Link href="/sesion-de-fotos/">Sesión de fotos</Link>
+              <Link href={t.hubUrl}>{t.hub}</Link>
             </>
           )}
           <span>/</span>
@@ -203,30 +246,28 @@ export function SesionDeFotosPage({ page }: { page: SesionPage }) {
           ))}
         </div>
 
-        <aside className="article-cta" aria-label="Reserva tu sesión">
+        <aside className="article-cta" aria-label={t.bookEyebrow}>
           <div className="article-cta-text">
-            <p className="section-tag">Reserva tu sesión</p>
-            <h2>Listo para reservar?</h2>
-            <p>
-              Escríbenos por WhatsApp con tu fecha tentativa. Te respondemos con disponibilidad y cotización detallada en menos de 24 horas. Reserva con 50% de depósito.
-            </p>
+            <p className="section-tag">{t.bookEyebrow}</p>
+            <h2>{t.bookH2}</h2>
+            <p>{t.bookCopy}</p>
           </div>
           <div className="article-cta-actions">
-            <a className="button button-light" href={whatsappUrl(`Hola, quiero reservar una ${page.h1.toLowerCase()}`)} rel="noopener">
-              WhatsApp {phoneDisplay}
+            <a className="button button-light" href={whatsappUrl(`${t.whatsappPrefix} ${page.h1.toLowerCase()}`)} rel="noopener">
+              {t.whatsappLabel} {phoneDisplay}
             </a>
             <a className="button button-outline" href={`tel:${phoneE164}`}>
-              Llamar {phoneDisplay}
+              {t.callLabel} {phoneDisplay}
             </a>
-            <Link className="button button-ghost" href="/precios/">
-              Ver precios
+            <Link className="button button-ghost" href={t.pricesUrl}>
+              {t.pricesLabel}
             </Link>
           </div>
         </aside>
 
         <section className="faq-wrap">
-          <p className="section-tag">Preguntas frecuentes</p>
-          <h2>{page.isMaster ? "Sesión de fotos en Santo Domingo — FAQ" : `${page.h1} — FAQ`}</h2>
+          <p className="section-tag">{t.faqEyebrow}</p>
+          <h2>{page.isMaster ? t.faqMasterH2 : `${page.h1} ${t.faqClusterH2Suffix}`}</h2>
           {page.faq.map((f) => (
             <details key={f.q}>
               <summary>{f.q}</summary>
@@ -239,8 +280,8 @@ export function SesionDeFotosPage({ page }: { page: SesionPage }) {
       {related.length > 0 && (
         <section className="section alt-section" aria-labelledby="related-h2">
           <div className="wrap">
-            <p className="section-tag">Sesiones relacionadas</p>
-            <h2 id="related-h2">Otros tipos de sesión que cubrimos</h2>
+            <p className="section-tag">{t.relatedEyebrow}</p>
+            <h2 id="related-h2">{t.relatedH2}</h2>
             <div className="card-grid">
               {related.map((r) => (
                 <Link key={r.slug} className="card" href={r.url}>
@@ -258,10 +299,10 @@ export function SesionDeFotosPage({ page }: { page: SesionPage }) {
       {page.isMaster && (
         <section className="section section-divider" aria-labelledby="cluster-h2">
           <div className="wrap">
-            <p className="section-tag">Sesiones especializadas</p>
-            <h2 id="cluster-h2">Páginas dedicadas por tipo de sesión</h2>
+            <p className="section-tag">{t.clusterEyebrow}</p>
+            <h2 id="cluster-h2">{t.clusterH2}</h2>
             <div className="card-grid">
-              {Object.values(sesionPages).filter((p) => !p.isMaster).map((p) => (
+              {Object.values(allPages).filter((p) => !p.isMaster).map((p) => (
                 <Link key={p.slug} className="card" href={p.url}>
                   <img src={p.heroImage.src} alt={p.heroImage.alt} width={p.heroImage.width} height={p.heroImage.height} loading="lazy" decoding="async" />
                   <span>{p.eyebrow}</span>
@@ -274,7 +315,7 @@ export function SesionDeFotosPage({ page }: { page: SesionPage }) {
         </section>
       )}
 
-      <CrossSiteCta locale="es" />
+      <CrossSiteCta locale={locale} />
     </main>
   );
 }

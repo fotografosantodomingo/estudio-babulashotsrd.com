@@ -25,7 +25,15 @@ const staticPairs: LanguagePaths[] = [
   // Hand-translated deep service pages (the two highest-impression Spanish-only
   // pages by GSC 2026-05-10: corporate photography 213 imp/mo, studio session 166).
   { es: "/fotografia-corporativa-en-estudio-rd/", en: "/en/corporate-photography-studio-dr/" },
-  { es: "/sesion-de-fotos-estudio-santo-domingo/", en: "/en/studio-photo-session-santo-domingo/" }
+  { es: "/sesion-de-fotos-estudio-santo-domingo/", en: "/en/studio-photo-session-santo-domingo/" },
+  // /sesion-de-fotos/ cluster — master + 6 cluster pages (PLAN.md task 1.1+1.2).
+  { es: "/sesion-de-fotos/", en: "/en/photo-session/" },
+  { es: "/sesion-de-fotos-pareja/", en: "/en/couples-photoshoot/" },
+  { es: "/sesion-de-fotos-cumpleanos/", en: "/en/birthday-photoshoot/" },
+  { es: "/sesion-de-fotos-corporativas/", en: "/en/corporate-photoshoot/" },
+  { es: "/headshots-profesionales-santo-domingo/", en: "/en/professional-headshots/" },
+  { es: "/sesion-de-fotos-embarazo/", en: "/en/maternity-photoshoot/" },
+  { es: "/sesion-de-fotos-quinceanera/", en: "/en/quinceanera-photoshoot/" }
 ];
 
 // Auto-generated bilingual blog post pairs. Posts without an `en` variant stay

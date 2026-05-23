@@ -664,3 +664,588 @@ export const sesionPages: Record<string, SesionPage> = {
 };
 
 export const sesionSlugs = Object.keys(sesionPages);
+
+// ================================================================
+// EN MIRRORS — /en/photo-session/ + 6 cluster pages
+// English translations of the same cluster, with localized internal links.
+// ================================================================
+
+const masterEn: SesionPage = {
+  slug: "photo-session",
+  url: "/en/photo-session/",
+  title: "Photo Session in Santo Domingo | Babula Shots Studio",
+  metaDescription:
+    "Photo session in Santo Domingo with Babula Shots: professional studio, portraits, couples, corporate, maternity, quinceañera. WhatsApp +1 809 720 9547.",
+  h1: "Photo Session in Santo Domingo",
+  eyebrow: "Babula Shots Studio",
+  introParagraphs: [
+    "A professional photo session in Santo Domingo isn't just pressing a button. It's pose direction, light reading, consistent editing, and fast delivery that arrives ready to print, share, or publish. At Babula Shots we cover every one of those points in our own studio, with Sony G Master gear, Profoto lighting, and a bilingual team that works the same way from the first WhatsApp message to the final online gallery.",
+    "We cover individual portraits, couples, families, maternity, birthday sessions, communions, quinceañeras, corporate headshots, model books, personal branding, and brand editorials. We work at fixed published prices (no surprises) and deliver edited photos on short timelines: 24-48 hours for corporate, 5-7 days for personal portraits, 7-10 days for editorials with full production.",
+    "This page is the entry point to the full catalog. Below you'll find the available session types with pricing and links to specialized pages, popular outdoor locations in Santo Domingo where we usually work, a comparison between studio and outdoor sessions, advice on what clothing works best on camera, and answers to the most common questions."
+  ],
+  sections: [
+    {
+      heading: "Session types we cover",
+      body: [
+        "Each session type has its own lighting logic, direction, and editing. We don't treat a couples session like a corporate one, nor a fashion editorial like a newborn. Below are the most requested formats:",
+        "**Couples session:** ideal for engagement, anniversary, or simply capturing a moment together without waiting for an occasion. We work with soft light in studio or outdoors, natural pose direction, and deliver 30-40 edited photos. [See couples photoshoot details](/en/couples-photoshoot/).",
+        "**Birthday session:** from themed studio sessions with decorated sets to coverage of the celebration. We adapt the setup based on age (newborn, kids, young adults, senior). [See birthday photoshoot details](/en/birthday-photoshoot/).",
+        "**Corporate session:** portraits for LinkedIn, leadership teams, photos for the corporate website, personal branding for independent professionals. Fast delivery (24-48 hours) with commercial rights included. [See corporate photoshoot details](/en/corporate-photoshoot/).",
+        "**Professional headshots:** portraits with a neutral background — actor, model, or executive book style. Multiple looks, same background and light for consistency. [See professional headshots](/en/professional-headshots/).",
+        "**Maternity session:** intimate session between week 30 and 36, in a closed studio, with gentle direction and a private gallery only you decide to share. [See maternity photoshoot details](/en/maternity-photoshoot/).",
+        "**Quinceañera session:** from the traditional set with formal dress to modern outdoor editorials. Includes multiple look changes and optional makeup as add-on. [See quinceañera photoshoot details](/en/quinceanera-photoshoot/).",
+        "**Family session:** groups up to 6 people with children or babies, in studio or outdoors. We keep the youngest calm with an adapted set and work in short blocks.",
+        "**Editorial / personal branding session:** larger productions with multiple looks, locations, props, and editorial or commercial rights per contract. Ideal for entrepreneurs, artists, and personal brands under construction."
+      ]
+    },
+    {
+      heading: "Photo session pricing",
+      body: [
+        "All prices are fixed, published, and apply to sessions in our studio in Santo Domingo. For sessions in other cities we add a fixed travel fee covering transport and, when it applies, team lodging. The full quote via WhatsApp arrives in under 24 hours.",
+        "**Individual portraits — from RD$ 5,960 / US$ 100.** 60 minutes, 15 high-resolution edited photos, delivery in 48 hours, shareable online gallery.",
+        "**Family session — from RD$ 8,940 / US$ 150.** 60 minutes, up to 6 people, 20 edited photos, delivery in 5-7 days.",
+        "**Maternity session — from RD$ 8,940 / US$ 150.** Intimate 60-minute session in a private studio, 30 edited photos, private gallery.",
+        "**Newborn session — from RD$ 11,920 / US$ 200.** Climate-controlled and private studio, props and wraps included, 25 softly edited photos, delivery in 7 days.",
+        "**Corporate portraits — from RD$ 10,700 / US$ 180.** Multiple looks and backgrounds, authorized commercial use rights, delivery 24-48h.",
+        "**Team headshots — from RD$ 17,880 / US$ 300.** Setup in office or studio, same background and light for the whole team (5-15 people), 3 edited photos per person.",
+        "**Boudoir session — from RD$ 23,800 / US$ 400.** Private studio or luxury hotel room, expert direction, private gallery in 48-72h.",
+        "**Fashion editorial — from RD$ 35,760 / US$ 600.** Full production, multiple looks, 50+ edited photos, editorial and commercial rights assignment.",
+        "Prices include professional editing, shareable online gallery, and high-resolution files ready to print or publish. Reservation is confirmed with a 50% deposit; the balance is paid on session day. We accept local transfer, Visa, Mastercard, AmEx, and for international clients Wise or Zelle. [See full pricing and comparison](/en/prices/)."
+      ]
+    },
+    {
+      heading: "How it works — from WhatsApp to gallery",
+      body: [
+        "**Step 1 — Contact.** Send us a WhatsApp at +1 809 720 9547 with the session type, tentative date, and any visual references (Pinterest, Instagram screenshot). We reply in under 24 hours with availability and a detailed proposal.",
+        "**Step 2 — Booking.** We confirm the date with a 50% deposit. You receive a simple agreement, logistical instructions, the studio address, and a checklist of what to bring.",
+        "**Step 3 — Preparation.** We send a mini-guide via WhatsApp with clothing, makeup, and hair tips based on the session type. If you need makeup as an add-on, we coordinate it in this step (5 days in advance).",
+        "**Step 4 — The session.** Arrive 15 minutes early to review lighting, go over references, and start relaxed. We work with active direction: we don't expect you to know how to pose, we direct in real time.",
+        "**Step 5 — Editing.** We process the photos with a consistent look for your specific session (we don't apply a generic filter). This takes between 24 hours and 10 days depending on the service.",
+        "**Step 6 — Delivery.** You receive a private link to an online gallery where you can download high-resolution for print and low-resolution for social media. The gallery stays active for 6 months; can be extended on request."
+      ]
+    },
+    {
+      heading: "Best locations for a photo session in Santo Domingo",
+      body: [
+        "For outdoor sessions within Santo Domingo, these are the spots where we usually work and know in depth (best time of day, access, permits when applicable):",
+        "**Colonial Zone.** Calle Las Damas, Plaza España, Fortaleza Ozama, Primada Cathedral. Best time: 7-9 AM (soft light, fewer tourists) or golden hour 5-6 PM. Ideal for couples, quinceañeras, editorial sessions with a historical aesthetic.",
+        "**Malecón and Avenida George Washington.** Ocean view, perfect for golden hour and sunsets. Free access, watch the wind.",
+        "**Mirador Sur Park.** Large park with trees, ideal for family sessions, maternity, and relaxed portraits with green backgrounds. Best on weekdays or Saturday early morning.",
+        "**Plaza de la Cultura.** Modernist architecture, stairs, open spaces. Very good for corporate sessions with a more urban-institutional backdrop.",
+        "**Boca Chica and nearby beaches.** For ocean sessions, usually a 30-45 minute drive from Santo Domingo. We arrive before dawn to avoid crowds and use the light.",
+        "**Naco, Piantini, Bella Vista.** If you prefer urban exteriors close to the studio, there are corners with good architectural light beyond the typical clichés."
+      ]
+    },
+    {
+      heading: "Studio vs. outdoor — which suits you?",
+      body: [
+        "**Studio session.** Controlled light, your choice of backgrounds (seamless paper, textured fabric, white cyclorama), air conditioning, private changing area, props and wraps for newborn or themed sessions. Main advantage: zero weather dependency, consistent look, faster session.",
+        "**Outdoor session.** Natural light, more relaxed feel, more background variety for the same session. Works best for couples, families, maternity in gardens, and editorials with location narrative. Weather dependency: we monitor 48 hours ahead; if rain probability exceeds 60%, we reschedule at no cost.",
+        "**Hybrid.** When the client wants both looks, we start in studio (1 hour) and move to a nearby outdoor location (1 more hour). This usually applies to quinceañeras and editorial sessions with two clearly differentiated looks."
+      ]
+    },
+    {
+      heading: "What to wear for a photo session",
+      body: [
+        "General recommendations that work for almost any session type:",
+        "**Solid colors.** Avoid small patterns like fine plaids or stripes — they vibrate on camera and complicate editing. Earth tones, neutrals, pastels, and jewel tones work in any studio.",
+        "**Bring 2-3 looks.** 60 minutes fits 2 outfits comfortably; 90 minutes up to 3. Arrive 15 minutes early with clothes ready (wrinkle-free — we have a steamer in the studio if you need it).",
+        "**Natural makeup** for corporate or personal portraits. More defined for model books, quinceañeras, or editorials (we offer makeup service as an add-on at RD$3,500-6,000).",
+        "**Jewelry:** minimal and deliberate. Avoid shiny bracelets or watches that reflect light directly into the lens.",
+        "**Bring a backup white t-shirt.** If something doesn't convince on camera, a basic white shirt always works as a reset.",
+        "For specific sessions (newborn, maternity, quinceañera, editorial) we send a detailed guide via WhatsApp after confirming the booking."
+      ]
+    }
+  ],
+  faq: [
+    {
+      q: "How much does a photo session in Santo Domingo cost?",
+      a: "Fixed published prices go from RD$5,960 (US$100) for individual portraits to RD$35,760 (US$600) for fashion editorials with production. The most requested sessions are individual portraits (RD$5,960), family (RD$8,940), maternity (RD$8,940), corporate (RD$10,700), and newborn (RD$11,920). All prices include professional editing, online gallery, and high-resolution files."
+    },
+    {
+      q: "How long does a studio photo session last?",
+      a: "Standard duration is 60 minutes for individual portraits, 90-120 minutes for corporate sessions with multiple looks, 60 minutes for maternity and family, 2-3 hours for newborn (with breaks to feed the baby), and 2-4 hours for fashion editorials with production. We confirm exact duration when quoting."
+    },
+    {
+      q: "Can I change clothes during the session?",
+      a: "Yes. The studio has a private changing area with full-length mirror, hangers, and a steamer. A 60-minute session fits 2 looks comfortably; 90 minutes up to 3. We recommend arriving 15 minutes early with clothes ready to maximize camera time."
+    },
+    {
+      q: "How do I receive my photos after the session?",
+      a: "You receive a private online gallery with all edited photos, accessible from your email and shareable by link with whomever you choose. From the gallery you can download in high resolution (for print) and low resolution (for social media). Delivery times: corporate 24-48 hours, portraits 5-7 days, newborn 7 days, editorials 7-10 days."
+    },
+    {
+      q: "Do sessions include hair and makeup?",
+      a: "Standard sessions don't include hair or makeup, but we have a trusted makeup artist and hair stylist who can come to the studio on request (add-on with separate cost: RD$3,500-6,000). The service is booked 5 days in advance. For corporate we recommend natural makeup; for books or editorials it adjusts to the concept."
+    },
+    {
+      q: "How do I check availability?",
+      a: "Send us a WhatsApp at +1 809 720 9547 with the tentative date, session type, and number of people. We reply in under 24 hours with confirmed availability and a detailed proposal. The studio calendar fills 1-3 weeks in advance, especially weekends."
+    },
+    {
+      q: "Do prices apply outside Santo Domingo?",
+      a: "Published prices apply to sessions in our Santo Domingo studio. For sessions in other cities (Santiago, Punta Cana, La Romana, Casa de Campo, Cap Cana, Bávaro, and others) we add a fixed travel fee covering transport and, when applicable, one night of team lodging. Quote your specific zone via WhatsApp."
+    },
+    {
+      q: "Can I book a session on short notice?",
+      a: "Yes, we try to accommodate last-minute bookings when there's availability. Corporate or portrait sessions sometimes fit in the schedule with 24-48 hours notice. For newborn, editorial, or sessions that require coordination with a makeup artist we need 5-7 days minimum. Ask us via WhatsApp and we'll respond fast."
+    },
+    {
+      q: "Who is the best studio photographer in Santo Domingo?",
+      a: "It's a subjective question, but objective criteria to evaluate include: consistent portfolio in the style you want, professional gear (Sony A7 series + Profoto/Godox lighting are quality standards), documented delivery times, clear cancellation and refund policy, and real client reviews. Babula Shots meets all five criteria and publishes fixed prices, but we recommend comparing 2-3 studios before booking."
+    },
+    {
+      q: "Do you work with minors / children?",
+      a: "Yes. We have experience with baby sessions (newborn from 2 weeks), children, birthday sessions, communions, and quinceañeras. The studio has controlled air conditioning, a baby feeding area, and a props set. For minors, at least one responsible adult must be present throughout the entire session."
+    }
+  ],
+  heroImage: HERO.master,
+  isMaster: true,
+  offers: [
+    { name: "Individual portraits", description: "60 minutes, 15 high-resolution edited photos, delivery in 48 hours.", priceDOP: 5960, priceUSD: 100, duration: "PT60M" },
+    { name: "Family session", description: "60 minutes, up to 6 people, 20 edited photos, delivery in 5-7 days.", priceDOP: 8940, priceUSD: 150, duration: "PT60M" },
+    { name: "Maternity session", description: "Intimate 60-minute session in a private studio, 30 edited photos, private gallery.", priceDOP: 8940, priceUSD: 150, duration: "PT60M" },
+    { name: "Newborn session", description: "Climate-controlled and private studio, props and wraps included, 25 edited photos, delivery in 7 days.", priceDOP: 11920, priceUSD: 200 },
+    { name: "Corporate portraits", description: "Multiple looks and backgrounds, authorized commercial use rights, delivery 24-48h.", priceDOP: 10700, priceUSD: 180 },
+    { name: "Team headshots (5-15 people)", description: "Setup in office or studio, same background and light for the whole team, 3 edited photos per person.", priceDOP: 17880, priceUSD: 300 },
+    { name: "Boudoir session", description: "Private studio or luxury hotel room, expert direction, private gallery in 48-72h.", priceDOP: 23800, priceUSD: 400 },
+    { name: "Fashion editorial", description: "Full production, multiple looks, 50+ edited photos, editorial and commercial rights assignment.", priceDOP: 35760, priceUSD: 600 }
+  ]
+};
+
+const couplesEn: SesionPage = {
+  slug: "couples-photoshoot",
+  url: "/en/couples-photoshoot/",
+  title: "Couples Photoshoot in Santo Domingo | Babula Shots",
+  metaDescription: "Couples photoshoot in Santo Domingo: engagement, anniversary, announcement. Studio or outdoor. From RD$5,960. Quote via WhatsApp.",
+  h1: "Couples Photoshoot in Santo Domingo",
+  eyebrow: "Couples · Engagement · Anniversary",
+  introParagraphs: [
+    "A couples photoshoot captures the real dynamic between two people — not the forced Pinterest-manual pose. We work in studio with soft light or outdoors in recognizable Santo Domingo locations (Colonial Zone, Malecón, Plaza España), with active direction so both partners feel comfortable on camera even if they've never posed together before.",
+    "Couples book this session for various reasons: engagement for save-the-dates and a pre-event gallery, anniversary to mark a specific year, pregnancy or engagement announcement, or simply because they'd wanted professional photos for a while and never got around to it. Any reason is valid. What matters is that the photos turn out worth printing, gifting to family, and posting.",
+    "This is a specific page within the [photo session](/en/photo-session/) catalog at Babula Shots Studio. Below you'll find pricing, what the session includes, how to prepare, and answers to the most common questions."
+  ],
+  sections: [
+    {
+      heading: "Why book a couples photoshoot?",
+      body: [
+        "**Engagement session.** Helps both partners relax on camera before the wedding day, try outfits and locations, and get images for the save-the-date, wedding website, and reception slideshow. Couples who do it arrive at the wedding day much more comfortable — pre-camera nerves are already resolved.",
+        "**Anniversary.** Capturing a specific year. Wedding photos from 5-10 years ago no longer represent where you are today; a new session does.",
+        "**Engagement or pregnancy announcement.** Session photos work as content for the announcement on social media and to send to family.",
+        "**Couple branding.** If you run a business together or build a shared personal brand (content creators, joint venture), professional photos are press and social material you use all year."
+      ]
+    },
+    {
+      heading: "How the session works",
+      body: [
+        "**Duration:** 60 minutes standard, 90 minutes with an additional look change or second location.",
+        "**Location:** studio in Santo Domingo (controlled light, 3-4 backgrounds to choose) or outdoors in a recognizable location (Colonial Zone, Malecón, Mirador Sur Park, Plaza de la Cultura). Also hybrid sessions: we start in studio and move to a nearby outdoor spot.",
+        "**Direction:** we work with active direction — we don't expect you to know how to pose. We give clear instructions, show references on the spot if needed, and build poses from least to most natural: walking, looking, hugging, laughing.",
+        "**Outfits:** we recommend 2 coordinated but not identical looks. Earth tones and neutrals always work. Avoid small patterns that vibrate on camera.",
+        "**Delivery:** 30-40 high-resolution edited photos, private and shareable online gallery, 5-7 day turnaround."
+      ]
+    },
+    {
+      heading: "Couples session pricing",
+      body: [
+        "**Standard couples session — from RD$ 5,960 / US$ 100.** 60 minutes, 30 edited photos, online gallery, delivery in 5-7 days.",
+        "**Extended engagement session — from RD$ 10,700 / US$ 180.** 90 minutes, 2 looks, location of choice, 40 edited photos, online gallery shareable with family.",
+        "**Hybrid studio + outdoor session — from RD$ 14,900 / US$ 250.** 2 hours, 2-3 looks, consistent editing across both formats, 50 edited photos.",
+        "Prices include professional editing and personal use rights. For commercial use (couples who are content creators or have a joint brand) we quote as an add-on with rights assignment."
+      ]
+    },
+    {
+      heading: "Recommended locations in Santo Domingo",
+      body: [
+        "**Colonial Zone.** The most requested option for couples. Calle Las Damas, Plaza España, Fortaleza Ozama, and Primada Cathedral offer architectural backgrounds with personality. Best time: 7-9 AM (soft light, no tourists) or golden hour 5-6 PM.",
+        "**Malecón and Avenida George Washington.** Ocean view, perfect for golden hour. Free access. Bring a change of clothes in the car in case of wind.",
+        "**Mirador Sur Park.** Green, trees, paths. Ideal for more relaxed and romantic sessions. Best weekdays in the morning.",
+        "**Studio.** If you prefer total control and don't want to depend on weather or schedule, the Santo Domingo studio covers the full range with seamless backgrounds (white, gray, black, beige) and a curved white cyclorama for full-body shots."
+      ]
+    },
+    {
+      heading: "How to prepare",
+      body: [
+        "**Coordinate outfits in advance.** Looks don't need to be identical but should complement each other. Avoid both wearing large patterns simultaneously.",
+        "**Arrive 15 minutes early.** We have coffee, talk about how you met, look at references. This relaxes a lot and improves the photos.",
+        "**Review visual references 2-3 days before.** Pinterest, Instagram saves. Share them with us via WhatsApp so we know the aesthetic direction you like.",
+        "**Hydration + rest the night before.** Photos thank you for it — under-eye circles and dehydrated skin show more on camera than in the mirror.",
+        "**If one of you is nervous, say so.** We handle it with softer direction at the start and build confidence progressively."
+      ]
+    }
+  ],
+  faq: [
+    { q: "How much does a couples photoshoot cost?", a: "From RD$5,960 (US$100) for a standard 60-minute session with 30 edited photos. Extended engagement (90 minutes, 2 looks, 40 photos) from RD$10,700, and hybrid studio + outdoor session (2 hours, 2-3 looks, 50 photos) from RD$14,900." },
+    { q: "How long is the session?", a: "60 minutes standard, 90 minutes for engagement with a look change, 2 hours for hybrid studio + outdoor. We recommend arriving 15 minutes early to review lighting and relax before shooting starts." },
+    { q: "Do you do engagement sessions?", a: "Yes. The engagement session is one of our most requested formats. We work in studio or at the couple's chosen location and deliver files ready for save-the-dates, wedding website, and reception slideshow." },
+    { q: "What if we've never posed together?", a: "It's the most common case — most couples haven't posed professionally together. We work with active direction: clear step-by-step instructions, we don't expect you to know what to do. We build poses progressively and show first shots on camera to adjust on the spot if something doesn't convince." },
+    { q: "Can we bring a pet?", a: "Yes, pets are welcome both in studio and outdoors. For sessions with pets we recommend 60 extra minutes and bringing water, snacks, and a helper who can manage the animal while we shoot couple-only photos." }
+  ],
+  heroImage: HERO.pareja,
+  isMaster: false,
+  relatedClusterSlugs: ["birthday-photoshoot", "maternity-photoshoot"],
+  offers: [
+    { name: "Standard couples session", description: "60 minutes, 30 edited photos, online gallery, delivery in 5-7 days.", priceDOP: 5960, priceUSD: 100, duration: "PT60M" },
+    { name: "Extended engagement session", description: "90 minutes, 2 looks, location of choice, 40 edited photos, online gallery shareable with family.", priceDOP: 10700, priceUSD: 180, duration: "PT90M" },
+    { name: "Hybrid studio + outdoor session", description: "2 hours, 2-3 looks, consistent editing across both formats, 50 edited photos.", priceDOP: 14900, priceUSD: 250, duration: "PT120M" }
+  ]
+};
+
+const birthdayEn: SesionPage = {
+  slug: "birthday-photoshoot",
+  url: "/en/birthday-photoshoot/",
+  title: "Birthday Photoshoot in Santo Domingo | Babula Shots",
+  metaDescription: "Birthday photoshoot in Santo Domingo: smash cake, kids, adults, senior. Decorated studio set or event coverage. From RD$8,940.",
+  h1: "Birthday Photoshoot in Santo Domingo",
+  eyebrow: "Birthday · Smash cake · Family",
+  introParagraphs: [
+    "A birthday photoshoot covers everything from the first-year smash cake to senior portraits, individual birthday portraits with a decorated set, or coverage of the actual event with family and guests. Each format calls for a different setup: for newborns and babies we work with small sets and soft light; for older kids and teens with custom themed sets; for adults with classic studio portraits or more editorial productions.",
+    "This page is part of the [photo session](/en/photo-session/) catalog at Babula Shots Studio in Santo Domingo. If what you want is event coverage (decorations, guests, key moments), we also work more extensive event packages — ask us via WhatsApp."
+  ],
+  sections: [
+    {
+      heading: "Birthday session types",
+      body: [
+        "**Smash cake (1 year).** Decorated studio set with balloons, number ones, themed accessories, and the traditional cake for the baby to destroy. 90-minute session with look changes (one or two outfits) and breaks to feed/change the baby. 30 edited photos.",
+        "**Children (2-12 years).** Set adapted to age and preferred theme (superheroes, princesses, sports, nature). We work in short blocks to keep attention. We recommend bringing 2-3 outfits and having the kid rested and fed.",
+        "**Teens (13-18 years) and quinceañeras.** Formats vary here: more mature editorials, photos with friends as a complement to the main event, model-book-style sessions. For quinceañeras we have a dedicated page — see [quinceañera photoshoot](/en/quinceanera-photoshoot/).",
+        "**Adults (individual birthday).** Classic portrait to celebrate a round birthday (30, 40, 50, 60). Usually a more editorial format, in studio with careful lighting, treating yourself to a professional session.",
+        "**Event coverage.** If what you want is the party documented (decoration, guests, cake moment, first candle), we work coverage packages of 2-4 hours at your venue. We quote via WhatsApp based on hours and guest count."
+      ]
+    },
+    {
+      heading: "How the studio session works",
+      body: [
+        "**Duration:** 60 minutes for a simple portrait, 90 minutes with decorated set, 2 hours for smash cake with breaks.",
+        "**Decorated set:** we can prepare balloons, numbers, paper backdrop in color (red, beige, gray, green, blue, pink), and basic props (chair, frame, plushies). For specific themes (superheroes, Disney princesses, dinosaurs) we recommend the client bring characteristic props.",
+        "**Makeup:** optional as add-on. For kids under 8 we don't recommend full makeup; for teens and adults the service is available with 5 days notice.",
+        "**Chaperone:** for baby and child sessions there must always be at least one responsible adult present. We have a changing area + rest area with chairs for chaperones."
+      ]
+    },
+    {
+      heading: "Birthday session pricing",
+      body: [
+        "**Simple birthday portrait — from RD$ 5,960 / US$ 100.** 60 minutes, background of choice, 15 edited photos.",
+        "**Session with decorated set — from RD$ 8,940 / US$ 150.** 90 minutes, prepared themed set, 25 edited photos, online gallery in 5-7 days.",
+        "**Smash cake (1 year) — from RD$ 11,920 / US$ 200.** 2 hours with breaks, full decorated set, props included, 30 edited photos, delivery in 7 days.",
+        "**Event coverage (at your venue) — from RD$ 17,880 / US$ 300.** 2 hours, we cover decoration, guests, cake moment and first candle, 80+ edited photos, gallery in 7-10 days."
+      ]
+    }
+  ],
+  faq: [
+    { q: "How much does a birthday photoshoot cost?", a: "From RD$5,960 for a simple 60-minute portrait. Session with decorated set from RD$8,940. Smash cake (1 year) from RD$11,920. Full event coverage from RD$17,880." },
+    { q: "Do you do smash cake?", a: "Yes. The first-year smash cake is one of our most requested formats. We prepare a decorated set with balloons, numbers, background of choice, and classic props. The session lasts 2 hours with breaks to feed/change the baby." },
+    { q: "Do you do themed sets?", a: "Yes — for basic themes (solid color, balloons, numbers, frame) we prepare it in the studio. For very specific themes (Marvel superheroes, Disney princesses, specific characters) we recommend the client bring characteristic props. We coordinate via WhatsApp 5 days before." },
+    { q: "How many outfit changes can my kid do?", a: "A 90-minute session fits 2 looks comfortably. For smash cake sessions (2 hours) 2-3 looks fit: clean pre-cake outfit + clothes to destroy the cake + final post-bath outfit." },
+    { q: "Can you come to my house for the event?", a: "Yes. We work event coverage at any location within Santo Domingo at no extra travel cost. For events outside the city we quote a travel fee based on zone." }
+  ],
+  heroImage: HERO.cumple,
+  isMaster: false,
+  relatedClusterSlugs: ["quinceanera-photoshoot", "couples-photoshoot"],
+  offers: [
+    { name: "Simple birthday portrait", description: "60 minutes, background of choice, 15 edited photos.", priceDOP: 5960, priceUSD: 100, duration: "PT60M" },
+    { name: "Session with decorated set", description: "90 minutes, prepared themed set, 25 edited photos, online gallery in 5-7 days.", priceDOP: 8940, priceUSD: 150, duration: "PT90M" },
+    { name: "Smash cake (1 year)", description: "2 hours with breaks, full decorated set, props included, 30 edited photos, delivery in 7 days.", priceDOP: 11920, priceUSD: 200, duration: "PT120M" },
+    { name: "Event coverage (at your venue)", description: "2 hours, decoration, guests, cake moment and first candle, 80+ edited photos, gallery in 7-10 days.", priceDOP: 17880, priceUSD: 300, duration: "PT120M" }
+  ]
+};
+
+const corporateEn: SesionPage = {
+  slug: "corporate-photoshoot",
+  url: "/en/corporate-photoshoot/",
+  title: "Corporate Photoshoot in Studio Santo Domingo | Babula Shots",
+  metaDescription: "Corporate photoshoot in studio in Santo Domingo: LinkedIn portraits, leadership teams, executive headshots. 24-48h delivery. Commercial rights. From RD$10,700.",
+  h1: "Corporate Photoshoot in Studio in Santo Domingo",
+  eyebrow: "Corporate · LinkedIn · Personal branding",
+  introParagraphs: [
+    "Professional corporate photos are an investment that pays off for 2-3 years on LinkedIn, corporate website, press materials, and email signature. A bad photo costs credibility every time a client, investor, or recruiter sees it. A good one lasts years before needing a refresh.",
+    "At Babula Shots we cover individual corporate portraits, team headshots (5-15 people with the same background and light for consistency), personal branding for independent professionals, and more editorial productions for entrepreneurs building a personal brand.",
+    "This page is part of the [photo session](/en/photo-session/) catalog in Santo Domingo. For large teams (20+ people) and recurring productions we offer contracts with preferential rates — ask us."
+  ],
+  sections: [
+    {
+      heading: "Corporate session types",
+      body: [
+        "**Individual executive portrait.** One person, 60-90 minutes, 2-3 looks (formal, semi-formal, casual), 6-10 final edited photos. Ideal for LinkedIn, team page on corporate website, biography in a book or publication.",
+        "**Team headshots.** 5-15 people with the same background and light. We work 10-15 minutes per person, 3 final edited photos per head. Consistent result that looks like a team, not a collection of photos taken in different places. [See professional headshots details](/en/professional-headshots/).",
+        "**Personal branding.** For entrepreneurs, consultants, coaches, and content creators. Longer session (2-3 hours) with multiple scenarios and looks: formal portrait, simulated action photo (writing, speaking), editorial photo. 30-50 final photos to feed social media all year.",
+        "**On-site corporate coverage.** We go to the office with portable lighting setup. More natural results with the real work environment. Ideal for companies that want to show their culture and space."
+      ]
+    },
+    {
+      heading: "How we work a corporate day",
+      body: [
+        "**Pre-session.** We coordinate by email 5-7 days before: shot list, dress code briefing (formal vs business casual), brand guidelines if any (color palette, restricted backgrounds), and hour-by-hour agenda if it's a team session.",
+        "**Session day.** We arrive 30 minutes early to set up. For teams, the flow is one person every 10-15 minutes. We take the first shots, show on screen to validate direction, adjust, and complete.",
+        "**Consistent editing.** For teams we edit all photos with the same look (same white balance, same facial retouch level, same crop and aspect ratio). Result: the whole gallery looks like a unified team.",
+        "**Fast delivery.** Corporate is our fastest delivery — 24-48 hours for individual and small team sessions, 3-5 days for personal branding productions. We deliver high-resolution JPEGs ready to print or upload, and low-resolution for LinkedIn (cropped to the correct ratio)."
+      ]
+    },
+    {
+      heading: "Corporate pricing",
+      body: [
+        "**Individual corporate portrait — from RD$ 10,700 / US$ 180.** 60 minutes, multiple looks and backgrounds, 6 edited photos, authorized commercial rights, delivery 24-48h.",
+        "**Team headshots (5-15 people) — from RD$ 17,880 / US$ 300.** 3 hours in office or studio, 3 edited photos per person, same background and light for all, commercial use rights.",
+        "**Extended personal branding — from RD$ 23,800 / US$ 400.** 2-3 hours, multiple scenarios and outfits, 30-50 edited photos, rights assignment for advertising and editorial use.",
+        "**Corporate event coverage (in office or venue) — from RD$ 14,900 / US$ 250.** 2 hours, documentary format, 50+ edited photos, delivery in 5-7 days.",
+        "For companies with recurring needs (quarterly team refresh, monthly events) we offer fixed-rate contracts with volume discount. Net-30 invoice payment available."
+      ]
+    },
+    {
+      heading: "Corporate preparation tips",
+      body: [
+        "**Dress code:** keep it conservative. A formal shirt in a solid color (white, light blue, black) almost always works. Avoid small patterns and loud colors that dominate the photo and compete with the face.",
+        "**Makeup:** natural and matte. If skin shines on camera, photos look less polished. For men we recommend translucent powder on forehead and nose if skin is oily.",
+        "**Hair:** done the day before, not freshly cut (cut scratches show on camera), not freshly dyed (tones don't fully settle for 24 hours).",
+        "**Jewelry:** minimal and matte. Bracelets or shiny watches reflect light directly into the lens.",
+        "**Hydration + rest.** Under-eye circles and dehydrated skin are the first things noticed. A week of good hydration and a good night's sleep before has visible impact."
+      ]
+    }
+  ],
+  faq: [
+    { q: "How much does a corporate photoshoot cost?", a: "Individual portrait from RD$10,700 (US$180), team headshots from RD$17,880, personal branding from RD$23,800, corporate event coverage from RD$14,900. All include commercial use rights." },
+    { q: "What's the delivery time?", a: "24-48 hours for individual portraits and team headshots. 3-5 days for personal branding with production. 5-7 days for event coverage. 12-hour express service available with additional cost." },
+    { q: "Do you come to the office?", a: "Yes. We work with portable lighting setup that covers any office or meeting room with a minimum 4x3 meter space. No travel cost in Santo Domingo and Distrito Nacional; fixed fee for Santiago, Punta Cana, La Romana, Bávaro." },
+    { q: "Do photos include commercial rights?", a: "Yes. All corporate sessions include authorized commercial use rights: corporate website, LinkedIn, press materials, presentations, email signature, fairs. For paid advertising use (Meta ads, Google, OOH) we quote extended assignment as an add-on." },
+    { q: "Can you do a team of 30 people?", a: "Yes. For teams of 20+ people we split the session into 2 days or coordinate a full day in office with a flow of 8-10 people per hour. Pricing scales per person with volume discount." }
+  ],
+  heroImage: HERO.corporate,
+  isMaster: false,
+  relatedClusterSlugs: ["professional-headshots"],
+  offers: [
+    { name: "Individual corporate portrait", description: "60 minutes, multiple looks and backgrounds, 6 edited photos, authorized commercial rights, delivery 24-48h.", priceDOP: 10700, priceUSD: 180, duration: "PT60M" },
+    { name: "Team headshots (5-15 people)", description: "3 hours in office or studio, 3 edited photos per person, same background and light for all, commercial use rights.", priceDOP: 17880, priceUSD: 300, duration: "PT180M" },
+    { name: "Extended personal branding", description: "2-3 hours, multiple scenarios and outfits, 30-50 edited photos, rights assignment for advertising and editorial use.", priceDOP: 23800, priceUSD: 400, duration: "PT180M" },
+    { name: "Corporate event coverage", description: "2 hours in office or venue, documentary format, 50+ edited photos, delivery in 5-7 days.", priceDOP: 14900, priceUSD: 250, duration: "PT120M" }
+  ]
+};
+
+const headshotsEn: SesionPage = {
+  slug: "professional-headshots",
+  url: "/en/professional-headshots/",
+  title: "Professional Headshots in Santo Domingo | Babula Shots Studio",
+  metaDescription: "Professional headshots in Santo Domingo for LinkedIn, actors, models, executives. Studio with controlled light. Multiple looks. 48h delivery. From RD$5,960.",
+  h1: "Professional Headshots in Santo Domingo",
+  eyebrow: "Headshots · LinkedIn · Actor / model books",
+  introParagraphs: [
+    "A professional headshot is the most profitable photo you can have: it lasts years on LinkedIn, casting websites, corporate website, biographies, and email signature. It's the only photo potentially seen by thousands of people — clients, recruiters, casting directors — and in less than 3 seconds they'll form a first impression.",
+    "At Babula Shots Studio in Santo Domingo we shoot headshots with controlled lighting (Profoto / Godox), multiple looks and backgrounds in a single session, consistent editing, and fast delivery (48 hours). We cover executive LinkedIn, actor and model books, editorial headshots for journalists and authors, and personal branding for independent professionals.",
+    "This page is part of the [photo session](/en/photo-session/) catalog at Babula Shots. For broader corporate sessions with a team, see [corporate photoshoot in studio](/en/corporate-photoshoot/)."
+  ],
+  sections: [
+    {
+      heading: "What is a professional headshot?",
+      body: [
+        "A headshot is a tight portrait (shoulders up) with absolute focus on the face and expression. The difference between a professional headshot and a selfie isn't the camera — it's the direction of light, face position, the expression captured, and the editing that polishes without distorting.",
+        "**For LinkedIn / corporate:** confident and approachable expression, direct gaze to camera, neutral background (gray, white, beige). Formal or business casual shirt.",
+        "**For actor / model:** multiple expressions (neutral, smile, intense, joyful), clean background without distractions, high-resolution file for print and casting websites.",
+        "**For author / journalist:** a more editorial look — textured or solid color background, thoughtful expression, possibility of including hands or a characteristic gesture."
+      ]
+    },
+    {
+      heading: "How the headshot session works",
+      body: [
+        "**Duration:** 60 minutes for 1 look + 1 background, 90-120 minutes for 2-3 looks or multiple backgrounds.",
+        "**Lighting setup.** We work with a professional lighting scheme (key light + fill light + rim light when applicable) that sculpts the face without hardening it. Light adjusts in real time based on skin tone, face shape, and references you bring.",
+        "**Active direction.** We don't expect you to know how to pose. We give simple precise instructions: 'tilt your head 5 degrees', 'look at the light point', 'imagine you're listening to something funny'. We build expressions from neutral up to most natural.",
+        "**On-camera validation.** Every 10-15 photos we show on screen so you validate the direction. This avoids finishing the session and discovering later that the angle or expression doesn't convince.",
+        "**Final selection.** After the session we preselect 6-15 photos based on the package and edit. You approve the selection before final editing if you want to adjust."
+      ]
+    },
+    {
+      heading: "Headshot pricing",
+      body: [
+        "**Individual headshot — from RD$ 5,960 / US$ 100.** 60 minutes, 1 look + 1 background, 6 edited photos, delivery in 48h.",
+        "**Multi-look headshot — from RD$ 10,700 / US$ 180.** 90 minutes, 2 looks + 2 backgrounds of choice, 10 edited photos, authorized commercial rights.",
+        "**Actor / model book — from RD$ 17,880 / US$ 300.** 2 hours, multiple expressions and looks, 25 edited photos, high-resolution files for casting websites and print.",
+        "**Team headshots (5-15 people) — from RD$ 17,880 / US$ 300.** 3 hours, same background and light for all, 3 edited photos per person. See details in [corporate photoshoot](/en/corporate-photoshoot/).",
+        "All packages include professional editing with natural facial retouching (skin cleanup, highlight control, tone adjustment — no feature distortion). For advanced editorial retouching (skin smoothing, frequency separation) we quote as an add-on."
+      ]
+    },
+    {
+      heading: "Tips for your headshot",
+      body: [
+        "**Formal shirt in solid color.** White, light blue, or light gray are the most versatile. Avoid small patterns or very saturated colors that compete with the face.",
+        "**Natural matte makeup.** Shiny skin on camera looks worse than matte. If you'll apply makeup, translucent powder on forehead, nose, and chin.",
+        "**Haircut 5-10 days before the session.** Not freshly cut (scratches show), not too long (loses definition). Washed and styled day of the session.",
+        "**Hydration + sleep 48 hours before.** Under-eye circles and dehydrated skin are the first things seen. A week of good habits has visible impact.",
+        "**Arrive 15 minutes early** with clothes ready. We have a full-length mirror and steamer if you need a touch-up.",
+        "**Bring a coffee or water that relaxes you.** First shots are usually tense; the following ones come out better once you're comfortable on set."
+      ]
+    }
+  ],
+  faq: [
+    { q: "How much does a professional headshot cost?", a: "Individual headshot from RD$5,960 (US$100, 60 minutes, 6 photos). Multi-look from RD$10,700. Actor or model book from RD$17,880. For teams of 5-15 people see corporate photoshoot." },
+    { q: "How long is the session?", a: "60 minutes for 1 look + 1 background. 90-120 minutes for 2-3 looks. We recommend arriving 15 minutes early." },
+    { q: "How many final photos do I get?", a: "Depends on the package: 6 photos in individual headshot, 10 in multi-look, 25 in actor / model book. All professionally edited." },
+    { q: "Do the photos work for LinkedIn and casting websites at the same time?", a: "Yes. We deliver high-resolution files (for print and casting) and low-resolution pre-cropped to the square LinkedIn / Instagram ratio. A single package covers multiple destinations." },
+    { q: "Do you do skin retouching?", a: "Yes — natural retouching included in all packages: blemish cleanup, highlight control, tone adjustment. What we DO NOT do in the standard package is aggressive editorial retouching (heavy skin smoothing, frequency separation, feature alteration). That's quoted as an add-on for model books or editorials." }
+  ],
+  heroImage: HERO.headshots,
+  isMaster: false,
+  relatedClusterSlugs: ["corporate-photoshoot"],
+  offers: [
+    { name: "Individual headshot", description: "60 minutes, 1 look + 1 background, 6 edited photos, delivery in 48h.", priceDOP: 5960, priceUSD: 100, duration: "PT60M" },
+    { name: "Multi-look headshot", description: "90 minutes, 2 looks + 2 backgrounds of choice, 10 edited photos, authorized commercial rights.", priceDOP: 10700, priceUSD: 180, duration: "PT90M" },
+    { name: "Actor / model book", description: "2 hours, multiple expressions and looks, 25 edited photos, high-resolution files for casting websites and print.", priceDOP: 17880, priceUSD: 300, duration: "PT120M" },
+    { name: "Team headshots (5-15 people)", description: "3 hours, same background and light for all, 3 edited photos per person.", priceDOP: 17880, priceUSD: 300, duration: "PT180M" }
+  ]
+};
+
+const maternityEn: SesionPage = {
+  slug: "maternity-photoshoot",
+  url: "/en/maternity-photoshoot/",
+  title: "Maternity Photoshoot in Santo Domingo | Babula Shots",
+  metaDescription: "Maternity photoshoot in Santo Domingo: intimate private studio, ideal weeks 30-36, gentle direction. 30 edited photos. From RD$8,940.",
+  h1: "Maternity Photoshoot in Santo Domingo",
+  eyebrow: "Maternity · Private · Intimate",
+  introParagraphs: [
+    "A professional maternity session documents one of the few unrepeatable months of life. The idea isn't just to have a pretty photo — it's to capture the body's transformation and the connection with the life growing inside, in a moment that doesn't return.",
+    "At Babula Shots we close the studio entirely for maternity sessions. Only the assigned team, the pregnant person, and one companion (partner, mom, friend). The final gallery is private and only you decide who gets the link.",
+    "We recommend the session between week 30 and 36: the bump has clear presence and there's still mobility and energy. This page is part of the [photo session](/en/photo-session/) catalog in Santo Domingo."
+  ],
+  sections: [
+    {
+      heading: "How the maternity session works",
+      body: [
+        "**Total privacy.** We close the studio during the session. Only the assigned team and your companion (if you bring one) enter. After the session the gallery is private — only you have the link and decide who to share it with.",
+        "**Duration.** 60 minutes standard, 90 minutes if you want to include more outfit changes or a second participant (partner, other children).",
+        "**Wardrobe.** We recommend 2-3 outfits that show the bump: bralette + long skirt, fitted dress, body, elegant lingerie if the session is boudoir-maternal. If you don't have options, we have a collection of fabrics and basic bodies in studio for loan.",
+        "**Gentle direction.** We work with non-invasive direction. We start with simple poses (standing, profile, seated) and build confidence progressively. If at any point you feel uncomfortable, we pause and regroup.",
+        "**Partner and other participants.** Many sessions include partner, other children, or pet at some point. Individual and accompanied photos balance per your preference."
+      ]
+    },
+    {
+      heading: "Maternity session pricing",
+      body: [
+        "**Standard maternity session — from RD$ 8,940 / US$ 150.** 60 minutes, intimate session in closed studio, 30 edited photos, private gallery in 7 days.",
+        "**Extended session with partner / other kids — from RD$ 11,920 / US$ 200.** 90 minutes, multiple looks and compositions (alone, with partner, with other kids), 40 edited photos.",
+        "**Maternity + newborn (package) — from RD$ 17,880 / US$ 300.** Maternity session + newborn session (when the baby is born, first 14 days). Separate galleries but consistent visual design.",
+        "Prices include professional editing, private gallery, and high-resolution files. Hair and makeup available as add-on (RD$3,500-6,000 with 5 days notice)."
+      ]
+    },
+    {
+      heading: "When to do the session",
+      body: [
+        "**Weeks 30-36.** The sweet spot. The bump has visible and rounded presence, there's still mobility without exhaustion, and there's margin before delivery.",
+        "**Weeks 28-30.** If the bump grew fast (second or third pregnancy), it works. For first pregnancy sometimes it's too early.",
+        "**Weeks 36-38.** Last opportunity before birth. Energy drops a bit but the bump is at peak. We recommend shorter sessions (45 minutes) and low-demand direction.",
+        "**After week 38.** Only if the client asks. Risk of canceling due to early labor and rescheduling is high.",
+        "Book 2-3 weeks in advance to secure the date. If the baby comes early, we reschedule without penalty."
+      ]
+    },
+    {
+      heading: "How to prepare",
+      body: [
+        "**Hydration 48h before.** Skin and face thank you.",
+        "**Clean discreet manicure.** Hands appear a lot in maternity sessions (holding the bump, on the face, in the hair).",
+        "**Bralette + long skirt / body / fitted dress** work better than loose clothing. The idea is for the bump silhouette to read clearly.",
+        "**Bring your partner (optional)** if you want to include them in part of the session. Don't feel obligated — many sessions are just of the pregnant person.",
+        "**Eat something light before leaving.** Don't arrive hungry — 60 minutes of session while pregnant is a lot.",
+        "**If you need a break, say so.** We pause when you need. We have chairs, water, and controlled air conditioning."
+      ]
+    }
+  ],
+  faq: [
+    { q: "When is the best week for the session?", a: "Between week 30 and 36. The bump has visible presence and there's still mobility without exhaustion. For second or third pregnancies where the bump grows fast, weeks 28-30 also work." },
+    { q: "How much does a maternity session cost?", a: "Standard 60-minute session from RD$8,940 (US$150) with 30 edited photos. Extended session with partner or other kids from RD$11,920. Maternity + newborn package from RD$17,880." },
+    { q: "Is the session private?", a: "Completely. We close the studio during the session — only the assigned team and your companion (if you bring one). The final gallery is private with a link shareable only by you." },
+    { q: "Can I bring my partner or other children?", a: "Yes. Many sessions include partner or other children for part of the time. The extended session (90 minutes) is designed exactly for this." },
+    { q: "What if the baby comes early?", a: "We reschedule at no cost. If the session was already paid and the baby arrives early, we apply the deposit to a newborn session when you're ready. The rescheduling policy is flexible for any medical event." }
+  ],
+  heroImage: HERO.embarazo,
+  isMaster: false,
+  relatedClusterSlugs: ["couples-photoshoot", "birthday-photoshoot"],
+  offers: [
+    { name: "Standard maternity session", description: "60 minutes, intimate session in closed studio, 30 edited photos, private gallery in 7 days.", priceDOP: 8940, priceUSD: 150, duration: "PT60M" },
+    { name: "Extended session with partner or other kids", description: "90 minutes, multiple looks and compositions (alone, with partner, with other kids), 40 edited photos.", priceDOP: 11920, priceUSD: 200, duration: "PT90M" },
+    { name: "Maternity + newborn package", description: "Maternity session + newborn session (when the baby is born, first 14 days). Separate galleries but consistent visual design.", priceDOP: 17880, priceUSD: 300 }
+  ]
+};
+
+const quinceaneraEn: SesionPage = {
+  slug: "quinceanera-photoshoot",
+  url: "/en/quinceanera-photoshoot/",
+  title: "Quinceañera Photoshoot in Santo Domingo | Babula Shots",
+  metaDescription: "Quinceañera photoshoot in Santo Domingo: studio or outdoor, multiple looks, formal dress and editorial. Optional makeup. From RD$10,700.",
+  h1: "Quinceañera Photoshoot in Santo Domingo",
+  eyebrow: "15 years · Editorial · Traditional",
+  introParagraphs: [
+    "The quinceañera session marks a moment worth documenting well — not with a random photo, but with a professional session that captures both the traditional side (formal dress, elegant look) and the modern editorial side (casual looks, outdoor photos, magazine aesthetic).",
+    "At Babula Shots Studio in Santo Domingo we work quinceañera sessions with multiple look changes (main dress, casual look, optional editorial), optional makeup as add-on, and locations from the studio to outdoor spots in the Colonial Zone, Plaza España, or golden hour at the Malecón.",
+    "This page is part of the [photo session](/en/photo-session/) catalog at Babula Shots Studio. For event coverage (party, waltz, cake) we also work separate packages — ask us via WhatsApp."
+  ],
+  sections: [
+    {
+      heading: "Quinceañera session types",
+      body: [
+        "**Traditional session.** Formal quinceañera dress, elegant background, formal hair and makeup, classic photos later printed for invitations, family frames, and event materials. Location: studio in Santo Domingo or church for pre-event session.",
+        "**Modern editorial session.** Multiple looks (formal dress + casual + editorial), photos with magazine aesthetic, outdoors in Colonial Zone, Plaza de la Cultura, Malecón. Result closer to a model book than to a traditional session.",
+        "**Hybrid session (most popular).** Combines both: we start with formal dress in studio, change to casual or editorial look, and move outdoors. The best of both worlds in one session.",
+        "**Session with friends / squad.** Some quinceañeras include their friends or court in part of the session. This requires coordinating wardrobe (everyone can wear the same color or complementary) and booking 30-60 extra minutes.",
+        "**Event coverage.** If you need the party documented (waltz, cake, decorated venue, guests), we work separate event coverage packages — ask us via WhatsApp with venue and schedule details."
+      ]
+    },
+    {
+      heading: "How the session works",
+      body: [
+        "**Duration.** 90-120 minutes for a simple session with one look. 2-3 hours for hybrid session with 2-3 looks and outdoor move. Event coverage is separate (3-6 hours).",
+        "**Hair and makeup.** Available as add-on (RD$3,500-6,000) with 5 days notice. We work with a trusted makeup artist and hair stylist who come to the studio. We recommend full makeup for traditional session; natural for editorial / outdoor looks.",
+        "**Dresses.** The quinceañera brings the formal dress (can be the same as the event or a secondary dress for the session). For casual or editorial looks, we recommend 1-2 additional outfits that show her personal style.",
+        "**Locations.** Studio (controlled light, backgrounds of choice), Colonial Zone (Plaza España, Calle Las Damas, Cathedral), Malecón (golden hour), Plaza de la Cultura (modernist architecture). Also any location the family prefers with prior coordination.",
+        "**Chaperones.** For sessions with minors there must always be at least one responsible adult present throughout the session. Mom, dad, or aunt usually accompanies."
+      ]
+    },
+    {
+      heading: "Quinceañera session pricing",
+      body: [
+        "**Simple session — from RD$ 10,700 / US$ 180.** 90 minutes, 1 look (formal dress), 30 edited photos, shareable online gallery.",
+        "**Hybrid studio + outdoor session — from RD$ 17,880 / US$ 300.** 2-3 hours, 2-3 looks, 50 edited photos, consistent editing across both formats.",
+        "**Full editorial session — from RD$ 23,800 / US$ 400.** 3 hours, multiple looks and locations, 60+ edited photos with magazine aesthetic.",
+        "**Event coverage (party) — from RD$ 17,880 / US$ 300.** 3 hours at the venue, 80+ edited photos, waltz, cake, key moments, guests.",
+        "**Session + coverage package — from RD$ 35,760 / US$ 600.** Photo session before the event + party coverage. Separate galleries but unified aesthetic.",
+        "Hair and makeup add-on: RD$3,500-6,000 based on service. Professional print add-on (poster, frames, album): quoted based on format."
+      ]
+    },
+    {
+      heading: "Tips for a good session",
+      body: [
+        "**Pre-planned wardrobe.** Define looks 1-2 weeks before with the quinceañera. If there will be changes, coordinate the order (formal first, casual after is easier than the reverse).",
+        "**Hair and makeup trial** a week before. This avoids surprises on session day and allows adjusting if something doesn't convince.",
+        "**Arrival with time.** If the session is at 10 AM, arriving at 9:15 AM gives margin to dress, hydrate, adjust hair, and start relaxed.",
+        "**Light snack before leaving.** 2-3 hours of session without eating is exhausting, especially in a structured formal dress.",
+        "**Review visual references** on Pinterest or Instagram with the quinceañera. Knowing what she likes visually gives us clear direction and the session comes out on the first take.",
+        "**Pet or sentimental accessories.** If the quinceañera has a pet or an important accessory for her (grandmother's necklace, for example), including it in some photos gives emotional significance to the material."
+      ]
+    }
+  ],
+  faq: [
+    { q: "How much does a quinceañera photoshoot cost?", a: "Simple session from RD$10,700 (90 minutes, 1 look, 30 photos). Hybrid studio + outdoor from RD$17,880 (2-3 hours, 2-3 looks). Full editorial from RD$23,800. Event coverage (separate) from RD$17,880. Combined session + coverage package from RD$35,760." },
+    { q: "How many looks can she use?", a: "1 look in simple session, 2-3 in hybrid, 3-4+ in full editorial. We recommend coordinating the order (formal first for hair/makeup logistics, casual after)." },
+    { q: "Do you include hair and makeup?", a: "As add-on. RD$3,500-6,000 based on service. We work with trusted makeup artist and hair stylist. Book with 5 days notice. We recommend a trial one week before to avoid surprises." },
+    { q: "Do you do sessions with friends / court?", a: "Yes. For group sessions (quinceañera + 4-8 friends) we book 30-60 extra minutes. Coordinating complementary wardrobe or the same color tone works well visually." },
+    { q: "Do you cover the party too?", a: "Yes, as a separate service or as a combined package with the session. Event coverage (3 hours) covers waltz, cake, moments with family and guests, decorated venue. The combined package gives the best price." }
+  ],
+  heroImage: HERO.quinceanera,
+  isMaster: false,
+  relatedClusterSlugs: ["birthday-photoshoot", "couples-photoshoot"],
+  offers: [
+    { name: "Simple session", description: "90 minutes, 1 look (formal dress), 30 edited photos, shareable online gallery.", priceDOP: 10700, priceUSD: 180, duration: "PT90M" },
+    { name: "Hybrid studio + outdoor session", description: "2-3 hours, 2-3 looks, 50 edited photos, consistent editing across both formats.", priceDOP: 17880, priceUSD: 300, duration: "PT180M" },
+    { name: "Full editorial session", description: "3 hours, multiple looks and locations, 60+ edited photos with magazine aesthetic.", priceDOP: 23800, priceUSD: 400, duration: "PT180M" },
+    { name: "Event coverage (party)", description: "3 hours at the venue, 80+ edited photos, waltz, cake, key moments, guests.", priceDOP: 17880, priceUSD: 300, duration: "PT180M" },
+    { name: "Session + coverage package", description: "Photo session before the event + party coverage. Separate galleries but unified aesthetic.", priceDOP: 35760, priceUSD: 600 }
+  ]
+};
+
+export const enSesionPages: Record<string, SesionPage> = {
+  "photo-session": masterEn,
+  "couples-photoshoot": couplesEn,
+  "birthday-photoshoot": birthdayEn,
+  "corporate-photoshoot": corporateEn,
+  "professional-headshots": headshotsEn,
+  "maternity-photoshoot": maternityEn,
+  "quinceanera-photoshoot": quinceaneraEn
+};
+
+export const enSesionSlugs = Object.keys(enSesionPages);

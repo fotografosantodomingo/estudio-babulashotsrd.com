@@ -13,7 +13,12 @@ export const metadata: Metadata = (() => {
     description: p.metaDescription,
     alternates: {
       canonical: canonicalUrl(p.url),
-      languages: { "es-DO": canonicalUrl(p.url), en: canonicalUrl("/en/services/"), "x-default": canonicalUrl(p.url) }
+      languages: {
+        "es-DO": canonicalUrl(p.url),
+        es: canonicalUrl(p.url),
+        en: canonicalUrl("/en/photo-session/"),
+        "x-default": canonicalUrl(p.url)
+      }
     },
     openGraph: {
       title: p.title,

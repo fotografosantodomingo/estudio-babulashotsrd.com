@@ -1,23 +1,24 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { SesionDeFotosPage } from "@/components/SesionDeFotosPage";
-import { sesionPages } from "@/lib/sesionContent";
+import { enSesionPages } from "@/lib/sesionContent";
 import { canonicalUrl, siteUrl } from "@/lib/seo";
 
-const SLUG = "sesion-de-fotos-pareja";
+const SLUG = "birthday-photoshoot";
+const ES_MIRROR = canonicalUrl("/sesion-de-fotos-cumpleanos/");
 
 export const metadata: Metadata = (() => {
-  const p = sesionPages[SLUG];
+  const p = enSesionPages[SLUG];
   return {
     title: p.title,
     description: p.metaDescription,
     alternates: {
       canonical: canonicalUrl(p.url),
       languages: {
-        "es-DO": canonicalUrl(p.url),
-        es: canonicalUrl(p.url),
-        en: canonicalUrl("/en/couples-photoshoot/"),
-        "x-default": canonicalUrl(p.url)
+        "es-DO": ES_MIRROR,
+        es: ES_MIRROR,
+        en: canonicalUrl(p.url),
+        "x-default": ES_MIRROR
       }
     },
     openGraph: {
@@ -25,7 +26,7 @@ export const metadata: Metadata = (() => {
       description: p.metaDescription,
       url: canonicalUrl(p.url),
       type: "article",
-      locale: "es_DO",
+      locale: "en_US",
       siteName: "Babula Shots Estudio",
       images: [{ url: `${siteUrl}${p.heroImage.src}`, alt: p.heroImage.alt }]
     },
@@ -39,7 +40,7 @@ export const metadata: Metadata = (() => {
 })();
 
 export default function Page() {
-  const page = sesionPages[SLUG];
+  const page = enSesionPages[SLUG];
   if (!page) notFound();
-  return <SesionDeFotosPage page={page} />;
+  return <SesionDeFotosPage page={page} locale="en" />;
 }

@@ -3,7 +3,7 @@ import { categories, pages, posts, tags } from "@/lib/estudioContent";
 import { blogPosts } from "@/lib/blogPosts";
 import { EN_SERVICE_PAGES } from "@/lib/enServicePages";
 import { canonicalUrl } from "@/lib/seo";
-import { sesionPages } from "@/lib/sesionContent";
+import { sesionPages, enSesionPages } from "@/lib/sesionContent";
 
 export const dynamic = "force-static";
 
@@ -16,12 +16,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: canonicalUrl("/ubicaciones/"), lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: canonicalUrl("/precios/"), lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: canonicalUrl("/faq/"), lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    // Sesión de fotos topical authority cluster (P0 SEO)
+    // Sesión de fotos topical authority cluster (P0 SEO) — ES + EN mirrors
     ...Object.values(sesionPages).map((p) => ({
       url: canonicalUrl(p.url),
       lastModified: now,
       changeFrequency: "monthly" as const,
       priority: p.isMaster ? 1.0 : 0.85
+    })),
+    ...Object.values(enSesionPages).map((p) => ({
+      url: canonicalUrl(p.url),
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: p.isMaster ? 0.95 : 0.8
     })),
     // Native Next blog posts (high-priority informational content) — Spanish + English variants
     ...blogPosts.map((p) => ({
