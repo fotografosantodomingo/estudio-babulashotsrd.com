@@ -1629,9 +1629,16 @@ p {
   width: 100%;
   aspect-ratio: 16 / 10;
   object-fit: cover;
+  object-position: center 30%;
   margin: -1.2rem -1.2rem .6rem;
   width: calc(100% + 2.4rem);
   display: block;
+}
+
+@media (max-width: 720px) {
+  .card-grid img {
+    aspect-ratio: 3 / 2;
+  }
 }
 
 .section-heading-h2 {
