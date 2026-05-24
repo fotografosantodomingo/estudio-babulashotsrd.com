@@ -1645,5 +1645,293 @@ export const EN_SERVICE_PAGES: EnServicePage[] = [
       { q: "Do you offer green screen video as well as photos?", a: "Yes. Our studio supports both photo and video projects. We capture high-resolution video with quality audio, making the content ready for websites, social media, and broadcast use." },
       { q: "Where is Babula Shots Estudio located?", a: "We're based in Santo Domingo, Dominican Republic. Contact us via WhatsApp or phone to get the exact address and confirm your appointment time." }
     ],
+  },
+  {
+    esPath: "/session-de-fotos-en-estudio-santo-domingo/",
+    enPath: "/en/studio-photography-session-santo-domingo/",
+    enSlug: "studio-photography-session-santo-domingo",
+    topic: "Studio photography sessions",
+    title: "Studio Photography Sessions in Santo Domingo · Babula Shots · 4.9★ 98 reviews",
+    description: "Professional studio photo sessions in Santo Domingo, DR. Controlled lighting, creative direction & a relaxed vibe. Book your session — call +1 809 729 547.",
+    h1: "Studio Photography Sessions in Santo Domingo, Dominican Republic",
+    eyebrow: "Studio photography · Babula Shots Estudio",
+    intro: "Step into Babula Shots Estudio and leave with images that actually look like you — at your best. Our Santo Domingo studio is built around professional softbox lighting, thoughtful creative direction, and a laid-back atmosphere that puts even first-time subjects completely at ease. Whether you're building a portfolio, celebrating a birthday, or simply want stunning portraits, we turn your session into an experience worth remembering.",
+    sections: [
+      {
+        h2: "A Studio Built for Creative Portraits",
+        paragraphs: ["Our Santo Domingo studio is equipped with strategically positioned softboxes that produce the soft, even light flattering photographers obsess over. That diffused glow wraps around your features, smooths harsh shadows, and gives every frame a polished, editorial quality — without feeling stiff or over-produced.", "As the session progresses we adjust the lighting setup to add depth and dimension, shifting from a clean single-source look to a more dynamic two-light configuration. The result is a diverse gallery of images from a single visit."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "What to Expect During Your Session",
+        paragraphs: ["From the moment you walk in, the focus is on making you feel comfortable. We start with straightforward poses and simple coaching — chin angle, posture, where to place your hands — so confidence builds naturally rather than being forced. Most clients are surprised by how quickly they settle in.", "Outfit changes are encouraged. Swapping looks mid-session gives you variety and keeps the creative energy fresh. By the end you'll have a full range of images: relaxed and candid, bold and editorial, everything in between."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "Who We Photograph",
+        paragraphs: [],
+        listIntro: "Babula Shots Estudio works with a wide range of clients across the Dominican Republic, including:",
+        list: ["Aspiring and professional models building or refreshing their portfolios", "Birthday and milestone celebration shoots", "Individuals who simply want high-quality portraits for personal use or social media", "Clients visiting Santo Domingo from Punta Cana, Santiago, La Romana, and beyond"]
+      },
+      {
+        h2: "Why Choose Babula Shots Estudio in Santo Domingo",
+        paragraphs: ["We don't just take photos — we craft an experience. The session is collaborative: your personality, your style, your story. Our role is to create the right light, the right direction, and the right atmosphere so that what comes through in every frame is genuinely you.", "Clients consistently leave feeling bold and confident, with a gallery of images they're proud to share. That combination of technical quality and a welcoming human experience is what keeps people coming back — and what earns us the recommendations we rely on."],
+        list: [],
+        listIntro: ""
+      }
+    ],
+    faq: [
+      { q: "How long does a studio photo session at Babula Shots last?", a: "Session length varies depending on the package you choose, but most portrait sessions run between one and two hours. That typically allows time for outfit changes and multiple lighting setups." },
+      { q: "Do I need modelling experience to book a studio session?", a: "Not at all. Most of our clients have never done a professional shoot before. We guide you through poses and expressions from start to finish, so you don't need any prior experience." },
+      { q: "Where is Babula Shots Estudio located?", a: "Our studio is based in Santo Domingo, Dominican Republic. We also serve clients travelling from Punta Cana, Santiago, La Romana, and other major cities across the DR." },
+      { q: "Can I use the photos for my modelling portfolio or social media?", a: "Absolutely. Our studio sessions are popular with models building portfolios as well as individuals who want polished, professional images for personal use or social platforms." },
+      { q: "How do I book a studio session?", a: "The easiest way is to call or message us directly at +1 809 729 547, or send an email to info@babulashotsrd.com. We'll walk you through available dates and everything you need to prepare." },
+      { q: "What should I bring or wear to my studio photo session?", a: "We recommend bringing at least two or three outfit options so we can vary the look throughout your session. Beyond that, our team will advise you on colours and styles that photograph well under studio lighting." }
+    ],
+  },
+  {
+    esPath: "/manejando-luz-en-estudio/",
+    enPath: "/en/studio-lighting-photography-santo-domingo/",
+    enSlug: "studio-lighting-photography-santo-domingo",
+    topic: "Studio lighting & photography techniques",
+    title: "Studio Lighting Photography Santo Domingo · Babula Shots · 4.9★ 98 reviews",
+    description: "Professional studio lighting in Santo Domingo — softboxes, cyclorama backdrops & expert model direction. Book your session with Babula Shots Estudio today.",
+    h1: "Professional Studio Lighting Photography in Santo Domingo",
+    eyebrow: "Studio photography · Babula Shots Estudio · Dominican Republic",
+    intro: "Great studio photography lives or dies by the light. At Babula Shots Estudio in Santo Domingo, Dominican Republic, we combine professional-grade softboxes, seamless cyclorama backdrops, and hands-on model direction to give every image that polished, high-end look. Whether you're shooting portraits, fashion, or commercial work, our team manages every variable so you walk away with results that genuinely stand out.",
+    sections: [
+      {
+        h2: "Softbox Lighting: Soft, Even Light That Flatters Every Subject",
+        paragraphs: ["Softboxes are the workhorse of professional studio photography. By diffusing light across a wide, even surface, they eliminate the harsh shadows and hot spots that make amateur shots look flat or unflattering. The result is a clean, dimensional look that works beautifully for portraits, headshots, brand content, and fashion.", "At Babula Shots Estudio, we stock softboxes in multiple sizes and shapes — from large rectangular panels that wrap light around a subject to smaller octa boxes ideal for tight, moody portraits. We choose the right combination for each session rather than defaulting to a one-size-fits-all setup."],
+        listIntro: "Why softbox lighting makes a difference:",
+        list: ["Produces gentle, wrap-around light that minimises unflattering shadows", "Gives the photographer precise control over direction and intensity", "Adapts easily to portrait, beauty, fashion, and product photography styles", "Creates the consistent, reproducible results that brands and agencies expect"]
+      },
+      {
+        h2: "Cyclorama Backdrop: The Seamless Background That Keeps Focus on You",
+        paragraphs: ["A cyclorama — or 'cyc wall' — is a curved, seamless surface where the floor flows smoothly into the back wall with no visible corners or seams. That unbroken line removes every visual distraction, keeping all the attention exactly where it belongs: on your subject. It also allows light to bounce and spread evenly, making consistent exposure across the frame far easier to achieve.", "Our Santo Domingo studio features a high-quality cyclorama that accommodates everything from solo portrait sessions to small-group shoots and fashion editorials. Whether you need a classic white background, dramatic shadows, or a coloured gel effect, the cyc wall gives us a blank canvas to work with."],
+        listIntro: "What the cyclorama brings to your shoot:",
+        list: ["Clean, distraction-free background that puts the subject front and centre", "No corner lines or floor shadows to remove in post-production", "Flexible enough for portraiture, fashion, commercial, and video projects", "Consistent light bounce that makes exposure control straightforward"]
+      },
+      {
+        h2: "Model Direction: Posing, Expression & Confidence on Set",
+        paragraphs: ["Even perfect lighting can't save a stiff, uncomfortable pose. That's why model direction is built into every session at Babula Shots Estudio. Our photographers actively guide subjects — whether professional models or first-time clients — through poses that complement the light setup and bring out their best features.", "We work on three things in tandem: posture and body placement that reads well on camera, natural expressions that match the mood of the shoot, and overall comfort on set. When people feel at ease, it shows in the final images — and that ease is something you genuinely can't retouch in."],
+        listIntro: "Our on-set model coaching covers:",
+        list: ["Pose guidance tailored to body type and the specific lighting configuration", "Expression coaching to hit the right emotional tone — editorial, warm, confident, or bold", "Ongoing communication during the shoot so subjects stay relaxed and engaged", "Real-time image review so clients can see progress and course-correct on the spot"]
+      },
+      {
+        h2: "Book Your Studio Session in Santo Domingo",
+        paragraphs: ["Babula Shots Estudio is based in Santo Domingo, Dominican Republic, and serves clients across the country — from personal branding portraits and influencer content to commercial campaigns and fashion editorials. Every booking starts with a free video call where we talk through your vision, confirm the right lighting setup, and plan the session from start to finish.", "Ready to see what professional studio lighting can do for your images? Reach out to schedule your session — we'll handle the technical side so you can focus on looking great."],
+        list: [],
+        listIntro: ""
+      }
+    ],
+    faq: [
+      { q: "What is a softbox and why does it matter for studio photography?", a: "A softbox is a light modifier that diffuses a flash or continuous light source across a large surface, producing soft, even illumination with minimal harsh shadows. It's one of the most important tools in studio photography because it creates flattering, professional-looking results — particularly for portraits and beauty work." },
+      { q: "What is a cyclorama backdrop used for?", a: "A cyclorama (cyc wall) is a seamless curved background where the floor and wall meet in a smooth curve rather than a sharp corner. It eliminates visible seams and shadows, giving you a completely clean, distraction-free background. It's used for portraits, fashion, commercial photography, and video production." },
+      { q: "Do I need modelling experience to shoot at Babula Shots Estudio?", a: "Not at all. Our photographers provide active direction throughout the session — guiding your poses, expressions, and movement so you look natural and confident on camera. Many of our clients have never modelled before, and they're consistently happy with the results." },
+      { q: "Where is Babula Shots Estudio located?", a: "We're based in Santo Domingo, Dominican Republic. We serve clients across the DR for portrait, fashion, commercial, and personal branding photography sessions." },
+      { q: "How do I book a studio photography session?", a: "The easiest way to get started is to schedule a free video call through our website. We'll discuss your goals, walk you through the available setups, and confirm all the details before your shoot date." },
+      { q: "What types of photography sessions work best with professional studio lighting?", a: "Studio lighting is ideal for portraits, headshots, personal branding, fashion editorials, beauty photography, and commercial product shoots. The controlled environment means consistent, repeatable results regardless of the time of day or weather outside." }
+    ],
+  },
+  {
+    esPath: "/fotografo-de-retratos/",
+    enPath: "/en/portrait-photographer-santo-domingo/",
+    enSlug: "portrait-photographer-santo-domingo",
+    topic: "Portrait photography",
+    title: "Portrait Photographer in Santo Domingo · Babula Shots · 4.9★ 98 reviews",
+    description: "Studio portrait sessions in Santo Domingo, DR — family, professional & creative portraits with soft-light technique. Book your session with Babula Shots today.",
+    h1: "Portrait Photographer in Santo Domingo, Dominican Republic",
+    eyebrow: "Studio Photography · Babula Shots Estudio",
+    intro: "At Babula Shots Estudio, we specialize in portrait photography that goes beyond a simple headshot. Based in Santo Domingo, Dominican Republic, our studio combines creative vision with advanced soft-light techniques to produce images that are both flattering and authentic — whether you need family portraits, professional headshots, or something uniquely personal.",
+    sections: [
+      {
+        h2: "A Portrait Studio Built Around You",
+        paragraphs: ["Every portrait session at Babula Shots Estudio is designed around the individual. We take the time to understand what you want to walk away with — confidence, connection, a moment frozen in time — and then we build the shoot around that goal. No cookie-cutter poses, no assembly-line workflow.", "Our Santo Domingo studio is equipped with professional-grade lighting rigs and the latest camera technology, giving us the flexibility to create virtually any mood or aesthetic you have in mind."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "Soft-Light Technique: Our Signature Approach",
+        paragraphs: ["Lighting is everything in portrait photography. Our go-to method is soft-light photography — a technique that diffuses light evenly across the subject, eliminating harsh shadows and bringing out natural skin texture. The result is imagery that looks polished without feeling over-edited.", "This approach works beautifully for all skin tones and age groups, making it ideal for family portraits, executive headshots, and creative personal projects alike."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "Portrait Services We Offer",
+        paragraphs: [],
+        listIntro: "We offer a wide range of personalized portrait sessions to suit different needs and occasions:",
+        list: ["Family portraits — relaxed, genuine moments captured in a comfortable studio setting", "Professional headshots — polished portraits for LinkedIn, corporate bios, and press materials", "Creative personal portraits — expressive sessions for actors, models, artists, and individuals", "Location portraits — available at our Santo Domingo studio and select Punta Cana locations"]
+      },
+      {
+        h2: "Why Clients Choose Babula Shots Estudio",
+        paragraphs: ["We use advanced equipment and stay current with modern photography techniques — but what truly sets us apart is our commitment to a great client experience from booking to final gallery delivery. We're proud to be recognized as one of Santo Domingo's leading portrait studios.", "Whether you're visiting from Punta Cana or right here in the capital, our team is ready to make your portrait session comfortable, creative, and memorable."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "How to Book Your Portrait Session",
+        paragraphs: ["Booking is straightforward. Browse our portfolio, choose the style that resonates with you, and reach out to reserve your date. We'll handle the rest — from session planning to retouching — so all you have to do is show up and feel confident.", "Ready to get started? Visit our booking page or contact Babula Shots Estudio directly to check availability and secure your session in Santo Domingo or Punta Cana."],
+        list: [],
+        listIntro: ""
+      }
+    ],
+    faq: [
+      { q: "What types of portrait sessions does Babula Shots Estudio offer?", a: "We offer family portraits, professional headshots, and creative personal portrait sessions. Sessions are available at our Santo Domingo studio and select locations in Punta Cana." },
+      { q: "How long does a portrait session typically take?", a: "Session length varies depending on the package and scope of the shoot. We'll confirm the estimated duration when you book so you can plan your day accordingly." },
+      { q: "What is soft-light photography and why does it matter for portraits?", a: "Soft-light photography uses diffused lighting to minimize harsh shadows and evenly illuminate the subject's features. It's especially flattering for skin tones and produces a natural, polished look that holds up beautifully in both print and digital formats." },
+      { q: "Can I book a portrait session if I'm staying in Punta Cana, not Santo Domingo?", a: "Yes — Babula Shots Estudio serves clients in both Santo Domingo and Punta Cana. Reach out to discuss the best location option for your visit." },
+      { q: "How do I book a portrait session with Babula Shots Estudio?", a: "You can book directly through the Babula Shots Estudio website. Check availability, pick your preferred session type, and reserve your date online. The team will follow up to confirm all the details." },
+      { q: "What should I wear or bring to my portrait session?", a: "Our team will give you personalized guidance after you book, based on the style of session you've chosen. Generally, solid colors and well-fitted clothing photograph best in a studio environment." }
+    ],
+  },
+  {
+    esPath: "/fotografia-de-estudio-santo-domingo/",
+    enPath: "/en/studio-photography-santo-domingo/",
+    enSlug: "studio-photography-santo-domingo",
+    topic: "Studio photography",
+    title: "Studio Photography in Santo Domingo · Babula Shots · 4.9★ 98 reviews",
+    description: "Professional studio photography in Santo Domingo, DR. Controlled lighting, consistent results & sessions tailored to you. Book your shoot — call Babula Shots today.",
+    h1: "Studio Photography in Santo Domingo, Dominican Republic",
+    eyebrow: "Studio photography · Babula Shots Estudio",
+    intro: "Great studio photography starts with great light. At Babula Shots Estudio in Santo Domingo, we've built our entire workflow around mastering controlled lighting — so every session delivers images that are sharp, emotive, and genuinely impressive. Whether you're shooting portraits, products, or personal branding content, our studio gives you the consistent, high-quality results you're looking for.",
+    sections: [
+      {
+        h2: "Why Lighting Makes or Breaks a Studio Shot",
+        paragraphs: ["Light is the single most powerful tool in studio photography. The wrong setup flattens faces, kills product detail, and drains emotion from an image. The right setup does the opposite — it sculpts, flatters, and draws the viewer in. At Babula Shots Estudio, understanding exactly how light behaves is at the core of everything we do.", "Every session we run is lit with intention. We read the subject — whether that's a person, a product, or a scene — and choose a lighting approach that serves the story you want to tell. That deliberate process is what separates a competent photo from one that genuinely stops people scrolling."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "What Sets Our Studio Lighting Apart",
+        paragraphs: ["We don't rely on presets or one-size-fits-all lighting rigs. Our team adapts the setup for each client and each creative brief, which means your photos look like yours — not like every other studio session shot in Santo Domingo."],
+        listIntro: "Here's what you can expect when you book a studio session with us:",
+        list: ["Fully controlled lighting tailored to your subject and goals", "Advanced techniques that bring out texture, depth, and dimension", "Consistent, repeatable results — ideal for ongoing brand or product work", "Setups designed to convey mood and emotion, not just clarity", "Collaborative sessions where we explain the process as we go"]
+      },
+      {
+        h2: "From Good Photo to Visual Art",
+        paragraphs: ["There's a meaningful difference between a technically correct photo and one that genuinely moves people. Proper studio lighting is often what closes that gap. It transforms a well-composed shot into something that carries weight — an image that communicates, not just documents.", "At Babula Shots Estudio, that elevation is the standard we hold ourselves to on every shoot. Our portfolio reflects sessions where lighting was used creatively, not just functionally — and we're proud to show prospective clients exactly what that looks like in practice."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "Sessions Tailored to Your Goals",
+        paragraphs: ["No two clients come to us with the same brief, and we don't treat them as if they do. Before we set up a single light, we talk through what you need — the platform, the audience, the feeling you want the images to carry. That conversation shapes every decision we make in the studio.", "Whether you're a brand looking for polished product imagery, an individual booking a portrait session, or a creative team with a specific vision, Babula Shots Estudio has the setup, the skills, and the experience to deliver exceptional results right here in Santo Domingo."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "Ready to Book Your Studio Session in Santo Domingo?",
+        paragraphs: ["Take a look at our portfolio to see how controlled lighting transforms studio photography into visual art. Then let's talk about your project — we offer a free video call so you can walk us through your vision before committing to anything.", "Reach out today and let's plan a session that exceeds your expectations."],
+        list: [],
+        listIntro: ""
+      }
+    ],
+    faq: [
+      { q: "Where is Babula Shots Estudio located?", a: "Babula Shots Estudio is based in Santo Domingo, Dominican Republic. Contact us directly for the exact studio address and directions." },
+      { q: "What types of studio photography do you offer?", a: "We cover a wide range of studio sessions including portraits, personal branding, product photography, and creative shoots. Every session is customised to suit your specific goals and audience." },
+      { q: "How do you approach lighting for studio sessions?", a: "We tailor the lighting setup to each subject and creative brief rather than using a generic rig. Our goal is to use light intentionally — to shape mood, highlight detail, and give every image genuine visual impact." },
+      { q: "Can I see examples of your studio work before booking?", a: "Absolutely. We encourage all prospective clients to review our portfolio before booking. It gives you a clear sense of our style, lighting approach, and the quality you can expect." },
+      { q: "How do I book a studio photography session?", a: "The easiest first step is to schedule a free video call with our team. We'll discuss your vision, answer your questions, and map out exactly what your session will look like — no pressure, no commitment required upfront." },
+      { q: "Do you shoot for brands and businesses as well as individuals?", a: "Yes. We work with both individual clients and businesses. Whether you need a one-off portrait or a consistent library of branded imagery, our studio is equipped to deliver at the standard your project demands." }
+    ],
+  },
+  {
+    esPath: "/introduction-to-studio-photography/",
+    enPath: "/en/professional-studio-photography/",
+    enSlug: "professional-studio-photography",
+    topic: "Studio photography",
+    title: "Professional Studio Photography · Babula Shots · 4.9★ 98 reviews",
+    description: "Controlled lighting, creative direction, stunning results. Book a professional studio photography session at Babula Shots Estudio in Santo Domingo. Call or schedule a video call today.",
+    h1: "Professional Studio Photography in Santo Domingo, Dominican Republic",
+    eyebrow: "Studio photography · Babula Shots Estudio",
+    intro: "At Babula Shots Estudio, we turn ideas into images that speak for themselves. Whether you need polished portraits, sharp product shots, or a creative concept brought to life, our fully controlled studio environment gives us the tools to capture exactly what you're envisioning — with precision, intentionality, and a level of finish that stands out.",
+    sections: [
+      {
+        h2: "Why a Controlled Studio Environment Makes All the Difference",
+        paragraphs: ["Shooting in a professional studio means nothing is left to chance. We control every variable — light direction, intensity, background, and shadow — so the final image reflects your vision rather than whatever the weather or location decided to throw at us that day.", "That level of control translates directly into consistency and quality. Details that get lost in outdoor or on-location shoots come through clearly in studio. Textures, expressions, product finishes — everything reads the way it's supposed to."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "What We Photograph at Babula Shots Estudio",
+        paragraphs: ["Our studio handles a wide range of photography projects, and we bring the same standard of care and creativity to every one of them. No session is treated as routine."],
+        listIntro: "Our most popular studio sessions include:",
+        list: ["Personal portraits and headshots", "Product and commercial photography", "Brand and content creation shoots", "Creative concept and editorial sessions", "Family and group portraits"]
+      },
+      {
+        h2: "Our Approach: Meticulous, Creative, Story-Driven",
+        paragraphs: ["We don't just press the shutter and hand you files. Before a session begins, we think carefully about what story each image needs to tell — what feeling should come through, what details matter most, how light and composition can work together to make the subject look its best.", "That thoughtful, detail-oriented process is what separates a technically correct photo from one that actually moves people. Every project at Babula Shots gets that same level of attention, whether it's a single headshot or a full product catalog."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "See the Work — Then Let's Talk About Yours",
+        paragraphs: ["The best way to understand what we do is to look at what we've already done. Browse our portfolio to see how we've helped clients across Santo Domingo and the Dominican Republic transform their ideas into images they're proud to share.", "When you're ready to move forward, reach out to us directly. We offer a video call consultation so we can walk through your project, answer your questions, and make sure we're aligned before the session starts."],
+        list: [],
+        listIntro: ""
+      }
+    ],
+    faq: [
+      { q: "Where is Babula Shots Estudio located?", a: "Babula Shots Estudio is based in Santo Domingo, Dominican Republic. Contact us directly for the studio address and directions." },
+      { q: "What types of studio photography sessions do you offer?", a: "We offer personal portraits, headshots, product photography, brand content shoots, editorial sessions, and family portraits, among others. If you have a specific concept in mind, get in touch and we'll discuss whether it's a fit." },
+      { q: "How do I book a studio session?", a: "You can book directly through our website or schedule a free video call consultation to discuss your project first. We recommend the consultation for more complex or custom shoots." },
+      { q: "Do I need to prepare anything before my studio session?", a: "We'll walk you through everything during your pre-session consultation or video call. We'll cover wardrobe, props, timing, and any specific requirements so you arrive ready and confident." },
+      { q: "How is professional studio photography different from on-location photography?", a: "In a studio we control all lighting, backgrounds, and environmental conditions, which means more consistent, polished results with fewer variables. It's especially valuable for product photography, headshots, and any project where precision and repeatability matter." },
+      { q: "How much does a studio photography session at Babula Shots cost?", a: "Pricing varies depending on the type of session, duration, and deliverables. Reach out to us or schedule a video call and we'll provide a clear quote tailored to your project." }
+    ],
+  },
+  {
+    esPath: "/dominando-la-manipulacion-de-la-luz-en-el-estudio-fotografico/",
+    enPath: "/en/soft-light-studio-photography-santo-domingo/",
+    enSlug: "soft-light-studio-photography-santo-domingo",
+    topic: "Studio lighting techniques",
+    title: "Soft Light Studio Photography in Santo Domingo · Babula Shots · 4.9★ 98 reviews",
+    description: "Master soft light studio photography in Santo Domingo with Babula Shots Estudio. Learn setup, modifiers & post-production tips. Book your session today.",
+    h1: "Soft Light Studio Photography in Santo Domingo, Dominican Republic",
+    eyebrow: "Studio photography guide · Babula Shots Estudio",
+    intro: "Great portraits start with great light — and nothing flatters a subject quite like soft, even studio light. At Babula Shots Estudio in Santo Domingo, we've built our workflow around mastering soft light: the gradual shadows, the smooth skin tones, and the professional polish that separates a snapshot from a standout image. Whether you're a photographer looking to level up or a client curious about what happens behind the scenes, this guide walks you through how we do it.",
+    sections: [
+      {
+        h2: "What Is Soft Light and Why Does It Matter?",
+        paragraphs: ["Soft light is defined by gentle, gradual transitions between the lit areas of a subject and the shadows behind them. Instead of harsh lines and deep contrast, you get smooth, diffused shadows that wrap around the subject and reveal texture without exaggerating every imperfection.", "This quality of light is especially valuable for portrait photography — the bread and butter of our studio in Santo Domingo. It's flattering, versatile, and works beautifully across skin tones, clothing textures, and a wide range of creative concepts, from commercial headshots to artistic fine-art portraits."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "Setting Up Your Studio for Soft Light",
+        paragraphs: ["Achieving genuine soft light isn't accidental — it comes down to deliberate studio setup. At Babula Shots Estudio, our starting point is always the angle and distance of the key light. Positioning the main light source at roughly 45 degrees to the subject is a reliable baseline that creates dimension without going harsh.", "Distance matters just as much as angle. Moving a light source closer to your subject (relative to its size) produces softer, more flattering light. Pull it farther away and the light gets harder. Experimenting with these variables in a controlled studio environment is exactly what separates professional results from guesswork."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "Light Modifiers: The Tools That Make It Happen",
+        paragraphs: ["Raw studio strobes and monolights produce hard, punchy light on their own. The real magic happens when you introduce light modifiers — the accessories that shape, diffuse, and redirect light before it hits your subject."],
+        listIntro: "The modifiers we rely on most at Babula Shots Estudio include:",
+        list: ["Softboxes — large diffusion panels that spread light evenly across a broad area, reducing harsh shadows", "Octaboxes — similar to softboxes but with a circular shape that produces a more natural, eye-like catchlight", "Umbrella diffusers — an affordable, portable option that scatters light widely for a soft, wrapping effect", "Reflectors — bounce light back into shadow areas without adding another powered light source", "Diffusion panels — placed directly in front of a light to knock down its intensity and soften the beam"]
+      },
+      {
+        h2: "Lighting Techniques to Try in the Studio",
+        paragraphs: ["Once your modifiers are in place, the creative decisions really begin. Two classic approaches we use regularly are low-key and high-key lighting. Low-key setups use a darker background and limited fill light to sculpt the subject with strong shadows, ideal for dramatic portraits and emphasizing shape and texture. High-key lighting floods the frame with bright, even illumination for an airy, luminous look — perfect for beauty work, maternity sessions, and editorial portraits.", "Neither approach is inherently better; they serve different creative goals. The key is knowing which technique matches the mood your client — or your own creative vision — is chasing, then dialing in your light placement and intensity accordingly."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "Post-Production: Refining the Light After the Shoot",
+        paragraphs: ["Even a perfectly lit shot can benefit from thoughtful post-production. Tools like Adobe Lightroom and Photoshop let you fine-tune exposure, lift shadow detail, and smooth transitions in ways that are simply impossible to nail 100% in-camera every time. At Babula Shots Estudio, we use post-production to complement our lighting — not to rescue it.", "The golden rule: keep it natural. Over-processed images are easy to spot and undermine the very quality that makes soft light so appealing. A light touch in editing preserves the integrity of what was captured in the studio and delivers images that feel authentic, polished, and genuinely professional."],
+        list: [],
+        listIntro: ""
+      }
+    ],
+    faq: [
+      { q: "What is soft light in studio photography?", a: "Soft light refers to illumination that creates gradual, diffused shadow transitions rather than harsh, sharp edges. It's achieved by using large light sources or modifiers like softboxes and diffusers that spread light broadly and evenly across the subject." },
+      { q: "What light modifiers are best for soft light portraits?", a: "Softboxes and octaboxes are the most popular choices for soft portrait lighting because they produce large, even light sources. Umbrella diffusers are a great budget-friendly alternative, and reflectors help fill in shadows on the opposite side of the subject." },
+      { q: "How far should my studio light be from my subject for soft light?", a: "Generally, the closer a large light source is to your subject, the softer the light will appear. Start with your softbox or octabox around 3–5 feet from the subject and adjust from there based on the intensity and spread you need." },
+      { q: "Can I book a soft light studio session at Babula Shots Estudio in Santo Domingo?", a: "Absolutely. Babula Shots Estudio is based in Santo Domingo, Dominican Republic, and offers professional studio sessions with fully controllable soft light setups. Reach out via the contact page or schedule a video call to discuss your project details." },
+      { q: "Do I need Photoshop to achieve soft light, or is it all done in the studio?", a: "The foundation of soft light is always built in the studio through proper lighting setup and modifiers. Post-production in Lightroom or Photoshop is used to refine and polish the result, but it should never be a substitute for getting the light right at the source." },
+      { q: "What's the difference between high-key and low-key soft light photography?", a: "High-key lighting uses bright, even illumination and light backgrounds for an airy, clean aesthetic — common in beauty and commercial work. Low-key lighting uses controlled shadows and darker tones to create drama and depth, great for artistic portraits and editorial concepts. Both can be executed with soft light modifiers." }
+    ],
   }
 ];
