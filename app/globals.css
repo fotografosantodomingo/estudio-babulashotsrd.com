@@ -1852,18 +1852,31 @@ p {
   color: #fff;
 }
 
-/* WP author content with EXPLICIT inline background-color: force dark text on assumption
-   the inline bg is light (most common). Without this, dark-mode --text would be light
-   on top of an author-set light bg = unreadable. We restrict to elements that actually
-   set a bg color rather than the bare .has-background flag (which is often empty). */
-.wp-content [style*="background-color"]:not(.has-text-color),
-.wp-content [style*="background-color"]:not(.has-text-color) *:not(a),
-.wp-content [class*="-background-color"]:not(.has-text-color),
-.wp-content [class*="-background-color"]:not(.has-text-color) *:not(a) {
+/* WP author content with EXPLICIT inline background-color:#hex — the bg actually
+   renders, so force dark text. Safe on both themes (the bg is a real light color). */
+.wp-content [style*="background-color:#"]:not(.has-text-color),
+.wp-content [style*="background-color:#"]:not(.has-text-color) *:not(a) {
   color: #18201d;
 }
-.wp-content [style*="background-color"]:not(.has-text-color) a,
-.wp-content [class*="-background-color"]:not(.has-text-color) a {
+.wp-content [style*="background-color:#"]:not(.has-text-color) a {
+  color: #0a4480;
+}
+
+/* WP author content with CLASS-based background (has-*-background-color) — these
+   reference WP theme CSS vars (e.g. --wp--preset--color--base-2) that are NOT
+   loaded in our build, so the background often falls back to transparent. On
+   dark theme, forcing dark text on a transparent wrapper = invisible text on
+   the dark page bg. Only force dark text on light theme. On dark theme, leave
+   text to inherit from --text (light), which renders correctly over the
+   transparent wrapper.
+
+   The rule still excludes elements that opt into has-text-color, since those
+   have an author-defined color that should win. */
+:root[data-theme="light"] .wp-content [class*="-background-color"]:not(.has-text-color),
+:root[data-theme="light"] .wp-content [class*="-background-color"]:not(.has-text-color) *:not(a) {
+  color: #18201d;
+}
+:root[data-theme="light"] .wp-content [class*="-background-color"]:not(.has-text-color) a {
   color: #0a4480;
 }
 
