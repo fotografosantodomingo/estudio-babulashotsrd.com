@@ -856,8 +856,8 @@ export const EN_SERVICE_PAGES: EnServicePage[] = [
   },
   {
     esPath: "/sesion-y-servicio-de-fotografia-en-estudio-profesional-en-santo-domingo/",
-    enPath: "/en/professional-studio-photography-santo-domingo/",
-    enSlug: "professional-studio-photography-santo-domingo",
+    enPath: "/en/studio-photo-sessions-santo-domingo/",
+    enSlug: "studio-photo-sessions-santo-domingo",
     topic: "Professional studio photography",
     title: "Professional Studio Photography in Santo Domingo · Babula Shots · 4.9★ 98 reviews",
     description: "Book a professional photo session at Babula Shots Estudio in Santo Domingo, DR. Portraits, fashion, products & more. High-end gear, expert editing. Call to reserve today.",
@@ -1185,6 +1185,465 @@ export const EN_SERVICE_PAGES: EnServicePage[] = [
       { q: "Can you also create video content for Instagram Reels or TikTok?", a: "Yes. We produce high-quality short-form videos showing dish preparation, plating, and presentation — ideal for Instagram Reels, TikTok, and Facebook. Video content can be added to any photography package." },
       { q: "Do you work outside Santo Domingo — for example in Punta Cana or Santiago?", a: "Absolutely. Our team shoots throughout the Dominican Republic, including Santo Domingo, Santiago, Punta Cana, Boca Chica, La Romana, and Puerto Plata. Travel fees may apply for locations outside the capital." },
       { q: "How long does it take to receive the final edited photos?", a: "Turnaround time varies by project size, but clients typically receive a first gallery of edited images within a few business days of the shoot. Rush delivery can be arranged on request." }
+    ],
+  },
+  {
+    esPath: "/precios/",
+    enPath: "/en/studio-photography-packages-santo-domingo/",
+    enSlug: "studio-photography-packages-santo-domingo",
+    topic: "Studio photography pricing",
+    title: "Studio Photography Packages Santo Domingo · Babula Shots · 4.9★ 98 reviews",
+    description: "Professional studio photo sessions in Santo Domingo from RD$3,000. 3-day delivery, max-quality digital gallery. Book online or call Babula Shots Estudio today.",
+    h1: "Studio Photography Packages in Santo Domingo, Dominican Republic",
+    eyebrow: "Studio photography pricing · Babula Shots Estudio",
+    intro: "Looking for a professional photo session in Santo Domingo without the guesswork on price? Babula Shots Estudio offers straightforward studio packages starting at RD$3,000, with fully retouched digital images delivered in as little as three days. Whether you need a quick portrait session or a full two-hour creative shoot, there's a plan built for you — and custom quotes are always available.",
+    sections: [
+      {
+        h2: "Our Studio Photography Packages",
+        listIntro: "All packages include a professional studio session, fully retouched digital photos, and a high-resolution downloadable gallery delivered within 3 days. Choose the plan that fits your needs:",
+        paragraphs: ["Every session takes place in our fully equipped Santo Domingo studio with professional lighting and backdrops. Your edited images arrive via a private download link — no watermarks, maximum resolution, ready to print or share."],
+        list: ["Starter — 5 retouched digital photos · 30-minute session · RD$3,000", "Standard — 10 retouched digital photos · 120-minute session · RD$9,000", "Premium — 15 retouched digital photos · 120-minute session · RD$12,000"]
+      },
+      {
+        h2: "What Kind of Sessions Can We Shoot?",
+        paragraphs: ["Our studio is set up for a wide range of styles and occasions. From maternity portraits and birthday shoots to influencer content and themed editorial sessions, we tailor the lighting, backdrop, and mood to match your vision.", "Need hair, makeup, or special effects? We can arrange professional hair and makeup services for an additional fee — just let us know when you book so we can schedule everything in one visit."],
+        list: ["Portrait and headshot sessions", "Maternity and pregnancy photos", "Birthday and milestone shoots", "Influencer and social media content", "Themed and special-effects sessions", "Sessions with professional makeup and styling (add-on)"]
+      },
+      {
+        h2: "Custom Projects and Group Quotes",
+        paragraphs: ["Have something specific in mind that doesn't fit neatly into a standard package? Get in touch with our client services team and we'll put together a personalised quote. We work with brands, families, and creatives across the Dominican Republic.", "We also shoot on location in Punta Cana, Santiago de los Caballeros, Puerto Plata, and La Romana. Note that sessions outside Santo Domingo may carry an additional studio rental fee — ask us for an exact quote for your city."],
+        list: []
+      },
+      {
+        h2: "How to Book Your Session",
+        paragraphs: ["Booking is simple: check real-time availability through our online calendar and reserve your slot in minutes. We recommend reviewing our terms and conditions at babulashotsrd.com/reserva before booking to understand our rescheduling and cancellation policies.", "If you'd like to add makeup, a wardrobe change, or any other extras, coordinate these in advance so we can make the most of your studio time."],
+        list: []
+      }
+    ],
+    faq: [
+      { q: "How long does a studio photo session at Babula Shots last?", a: "Sessions run between 30 minutes and 2 hours depending on the package you choose. The Starter package is 30 minutes, while the Standard and Premium packages include up to 120 minutes of studio time." },
+      { q: "Can I change outfits during my session?", a: "Yes — outfit changes are welcome based on the time available in your package. We recommend coordinating your wardrobe plan with us ahead of the session so everything runs smoothly." },
+      { q: "How and when will I receive my edited photos?", a: "Your retouched images are delivered digitally via a private download link. Standard turnaround is 3 days, though some sessions may take up to 7 business days depending on volume." },
+      { q: "Does the session price include hair and makeup?", a: "Hair and makeup are not included in the base packages but can be added for an additional fee. This service must be booked in advance — contact us for details and pricing." },
+      { q: "Are these prices only available in Santo Domingo?", a: "The listed prices apply to studio sessions in Santo Domingo. We also serve Punta Cana, Santiago de los Caballeros, Puerto Plata, and La Romana, though sessions in other cities may include an additional studio rental cost." },
+      { q: "How do I check availability and book online?", a: "Our online booking calendar shows real-time availability. You can reserve your session directly through the calendar. For additional questions, we recommend reading the terms and conditions at babulashotsrd.com/reserva." }
+    ],
+    priceFromDop: 3000
+  },
+  {
+    esPath: "/retratos-sesion-de-fotos/",
+    enPath: "/en/portrait-photography-santo-domingo/",
+    enSlug: "portrait-photography-santo-domingo",
+    topic: "Portrait photography",
+    title: "Portrait Photography in Santo Domingo · Babula Shots · 4.9★ 98 reviews",
+    description: "Studio & outdoor portrait sessions in Santo Domingo and Punta Cana. Natural light, golden hour & creative studio lighting. Book your session — WhatsApp us today!",
+    h1: "Portrait Photography Sessions in Santo Domingo, Dominican Republic",
+    eyebrow: "Portrait Sessions · Babula Shots Estudio",
+    intro: "Whether you need a striking studio portrait, a sun-drenched golden-hour shoot, or bold creative lighting, Babula Shots Estudio delivers professional portrait photography in Santo Domingo and Punta Cana. From recording artists and performers to athletes and dancers, our team crafts images that capture exactly who you are — on location or in our fully equipped studio.",
+    sections: [
+      {
+        h2: "Studio Portrait Sessions",
+        paragraphs: ["Our Santo Domingo studio is purpose-built for portraits. We work with a full range of professional lighting setups — from clean, classic headshots to dramatic, high-contrast looks — so every session is tailored to your personal brand or creative vision.", "Whether you're building a modeling portfolio, refreshing your press photos, or simply want stunning images of yourself, our studio gives you a controlled environment where the focus stays entirely on you."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "Outdoor & Natural Light Portraits",
+        paragraphs: ["Some of the most memorable portraits happen outside. We scout visually rich locations across Santo Domingo and shoot during the golden hour — that magical window of warm, flattering light just after sunrise or before sunset — to give your images a natural depth that's impossible to fake.", "Natural-light sessions are ideal for musicians, creatives, and anyone who wants portraits that feel authentic rather than staged."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "Specialist Portrait Sessions",
+        paragraphs: ["Babula Shots Estudio has worked with a diverse range of clients who need more than a standard headshot. We have hands-on experience photographing performing artists, singers, athletes, actors, and dancers — each with their own unique visual story to tell."],
+        listIntro: "Portrait sessions we regularly shoot include:",
+        list: ["Artist & musician press photos", "Actor and performer portfolios", "Sports and athletic portraits", "Dance and movement photography", "Creative editorial portraits"]
+      },
+      {
+        h2: "Portrait Photography Across the Dominican Republic",
+        paragraphs: ["Based in Santo Domingo, we also travel to Punta Cana and other locations throughout the Dominican Republic. If you have a specific venue, landmark, or setting in mind, let us know — we love working with interesting environments and can advise on the best times and spots for your shoot.", "International clients and visiting artists are very welcome. We're easy to reach by phone or WhatsApp and can arrange a quick video call to plan your session before you arrive."],
+        list: [],
+        listIntro: ""
+      }
+    ],
+    faq: [
+      { q: "Where are your portrait sessions held?", a: "We shoot both in our professional studio in Santo Domingo and on location throughout the Dominican Republic, including Punta Cana. If you have a specific spot in mind, we're happy to scout it with you." },
+      { q: "What is the best time of day for an outdoor portrait session?", a: "We recommend the golden hour — roughly the first hour after sunrise or the last hour before sunset. The light is soft, warm, and incredibly flattering, and the results speak for themselves." },
+      { q: "Do you shoot portraits for musicians and performing artists?", a: "Absolutely. We have extensive experience photographing recording artists, singers, actors, and dancers. We understand how important strong visual branding is for performers and tailor every session to match your artistic identity." },
+      { q: "How do I book a portrait session at Babula Shots Estudio?", a: "The easiest way is to message us on WhatsApp or give us a call. We can also schedule a video call to discuss your project, review reference images, and confirm all the details before your shoot date." },
+      { q: "Can international clients or tourists book a portrait session in Santo Domingo?", a: "Yes — we regularly work with visiting artists and international clients. Reach out via WhatsApp before your trip and we'll plan everything in advance so your session runs smoothly from the moment you arrive." },
+      { q: "What kinds of creative lighting do you offer in the studio?", a: "Our Santo Domingo studio is equipped for a wide range of looks, from soft, natural-feeling setups to bold, high-contrast creative lighting. We'll discuss the mood and style you're going for during the consultation and build the right setup for your session." }
+    ],
+  },
+  {
+    esPath: "/cotizacion-99-2024/",
+    enPath: "/en/wedding-photography-videography-quote/",
+    enSlug: "wedding-photography-videography-quote",
+    topic: "Wedding photography & videography quote",
+    title: "Wedding Photo & Video Quote · Babula Shots · 4.9★ 98 reviews",
+    description: "Custom wedding photography & videography quote from Babula Shots Estudio. RAW files, 500 edited photos, 90-min video, drone shots & album included. Contact us today.",
+    h1: "Wedding Photography & Videography — Custom Quote",
+    eyebrow: "Wedding services · Babula Shots Estudio",
+    intro: "Babula Shots Estudio provides fully tailored wedding photography and videography packages built around your day, your venue, and your vision. This page outlines a sample custom quote — covering RAW image delivery, edited highlights, drone group shots, cinematic video, and a printed album — so you know exactly what to expect before you book.",
+    sections: [
+      {
+        h2: "What's Included in This Package",
+        paragraphs: ["Every detail of your wedding day deserves to be captured with care. This quote covers both photography and videography, delivered within seven days of your event so you're not left waiting weeks for your memories."],
+        listIntro: "The package includes:",
+        list: ["All photos delivered in full RAW format plus 500 individually edited images", "Drone aerial shots and group photography", "90 minutes of professionally edited wedding video plus the complete unedited footage", "A photo session at a location of your choice", "A 30–40 cm printed photo album (valued at 550 PLN) included at no extra charge"]
+      },
+      {
+        h2: "Pricing & Payment Options",
+        paragraphs: ["The total investment for photography and videography is 3,000 GBP (1,500 GBP per service). To secure your date, a 50% deposit is required no later than seven days before the event. The remaining balance can be settled within seven days of receiving your final photos and video.", "We accept online card payments through our secure booking system at babulashotsrd.com/reserva, as well as bank transfers via Banco BHD. Full bank details are provided upon request."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "Delivery Timeline",
+        paragraphs: ["We understand that after your wedding you want to relive those moments as soon as possible. Both your edited photo gallery and your finished video will be delivered within seven days of the event — not weeks, not months. The complete RAW archive and original video footage are included alongside every edited file."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "How to Book",
+        paragraphs: ["Ready to reserve your date? Get in touch with Michal Babula directly to confirm availability and lock in your package. Once the 50% deposit is received, your date and all agreed services are fully secured."],
+        listIntro: "Contact us through any of the following:",
+        list: ["Email: info@babulashotsrd.com", "Online booking: babulashotsrd.com/reserva", "Bank transfer via Banco BHD (account details provided on request)"]
+      }
+    ],
+    faq: [
+      { q: "How much does a wedding photography and video package cost?", a: "This custom package is priced at 3,000 GBP in total — 1,500 GBP for photography and 1,500 GBP for videography. Pricing varies depending on event details, so contact us for a personalised quote." },
+      { q: "How soon will I receive my wedding photos and video?", a: "Both your edited photos and your finished video are delivered within seven days of the wedding. You also receive all RAW files and the complete unedited video footage." },
+      { q: "What is the deposit and payment policy?", a: "A 50% deposit is required no later than seven days before the event to secure your booking. The remaining balance is due within seven days of receiving your final deliverables." },
+      { q: "Does the package include drone photography?", a: "Yes. Aerial drone shots and group photography are included as part of the photography service at no additional cost." },
+      { q: "How can I pay — do you accept bank transfers?", a: "Yes. We accept secure online payments via our booking portal and bank transfers through Banco BHD. Full account details are shared when you confirm your booking." },
+      { q: "Is a photo album included in the package?", a: "Yes — a high-quality 30–40 cm printed photo album is included in the package at no extra charge." }
+    ],
+  },
+  {
+    esPath: "/galeria-de-fotos-angela-fotos-blanco-y-negro/",
+    enPath: "/en/black-and-white-portrait-photography-santo-domingo/",
+    enSlug: "black-and-white-portrait-photography-santo-domingo",
+    topic: "Black and white portrait photography",
+    title: "Black & White Portrait Photography Santo Domingo · Babula Shots · 4.9★ 98 reviews",
+    description: "Timeless black & white studio portraits in Santo Domingo. Babula Shots Estudio delivers dramatic, high-contrast images that last a lifetime. Book your session today.",
+    h1: "Black & White Portrait Photography in Santo Domingo, Dominican Republic",
+    eyebrow: "Studio portrait photography · Babula Shots Estudio",
+    intro: "Some images are more powerful without colour. Babula Shots Estudio's black and white portrait sessions strip away distraction and put the focus entirely on expression, light, and emotion. Shot in our professional Santo Domingo studio, these portraits have a timeless quality that colour photography simply can't replicate — whether you're after a striking personal portrait or a editorial-style series.",
+    sections: [
+      {
+        h2: "Why Choose Black & White for Your Studio Portrait?",
+        paragraphs: ["Black and white photography has a long history as the medium of choice for serious portraiture — and for good reason. Without the distraction of colour, the viewer's eye goes straight to what matters: the contours of your face, the texture of your skin, the story in your expression. Our photographers at Babula Shots Estudio use studio lighting deliberately to sculpt shadow and highlight in ways that give every portrait genuine depth and drama.", "This style suits a wide range of clients — professionals wanting a bold headshot, individuals looking for a personal art piece, or anyone who wants a portrait that feels classic rather than tied to a specific moment in time."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "What to Expect from a Black & White Session at Babula Shots",
+        paragraphs: ["Every session at our Santo Domingo studio is tailored to the individual. Before we pick up a camera, we talk through your vision — the mood you want to capture, the looks you'll wear, and the style of images you're hoping to walk away with. Our team then designs the lighting setup and backdrop to match."],
+        listIntro: "A typical black and white portrait session includes:",
+        list: ["Professional studio lighting tailored to your features and desired mood", "Multiple looks or outfit changes to give you variety in your final gallery", "High-resolution, fully edited black and white images delivered digitally", "Direction and posing guidance throughout — no experience needed", "Optional prints or wall art available for your favourite shots"]
+      },
+      {
+        h2: "Professional Studio Photography in Santo Domingo & Punta Cana",
+        paragraphs: ["Babula Shots Estudio serves clients across the Dominican Republic, with our primary studio located in Santo Domingo. We also work with clients visiting or based in Punta Cana who want access to professional studio-quality portrait photography — reach out and we'll discuss the best option for you.", "Our goal is simple: to deliver portraits that genuinely reflect who you are, rendered in the elegance of black and white. Whether this is your first time in front of a professional camera or you're a seasoned model, we'll make the experience comfortable, collaborative, and creatively rewarding."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "Book Your Black & White Portrait Session",
+        paragraphs: ["Ready to see yourself in a new light? Booking a studio session with Babula Shots Estudio is straightforward. Get in touch via WhatsApp or our contact form to check availability, discuss your vision, and lock in a date. We look forward to creating something you'll be proud to hang on your wall."],
+        list: [],
+        listIntro: ""
+      }
+    ],
+    faq: [
+      { q: "What should I wear for a black and white portrait session?", a: "Solid tones and classic cuts tend to work best — bold patterns can compete with your face in black and white. Our team will give you specific guidance once we know the mood you're going for, so don't stress about it too much before you arrive." },
+      { q: "How long does a studio portrait session take?", a: "Most sessions run between one and two hours, depending on how many looks you'd like to shoot. We'll agree on the format when you book so you know exactly what to expect." },
+      { q: "Do you offer black and white portrait photography in Punta Cana?", a: "Yes — while our main studio is in Santo Domingo, Babula Shots Estudio works with clients from Punta Cana and across the Dominican Republic. Contact us to discuss the best arrangement for your location." },
+      { q: "How many final images will I receive?", a: "The number of delivered images depends on the session package you choose. We'll go over exactly what's included when you enquire so there are no surprises." },
+      { q: "Can I get physical prints of my black and white portraits?", a: "Absolutely. We offer professional print options, including wall art, for your favourite images. Just let us know when you book and we'll include it in your session plan." },
+      { q: "Do I need modelling experience for a studio portrait session?", a: "Not at all. Our photographers provide clear posing direction throughout the session, making it easy and comfortable for first-timers and experienced clients alike." }
+    ],
+  },
+  {
+    esPath: "/galeria-de-fotos-angela-col/",
+    enPath: "/en/studio-portrait-photography-punta-cana/",
+    enSlug: "studio-portrait-photography-punta-cana",
+    topic: "Studio portrait photography",
+    title: "Studio Portrait Photography Punta Cana · Babula Shots · 4.9★ 98 reviews",
+    description: "Professional studio portraits in Punta Cana & Santo Domingo. Color sessions with expert lighting, same-day booking available. Call or WhatsApp Babula Shots today.",
+    h1: "Studio Portrait Photography in Punta Cana, Dominican Republic",
+    eyebrow: "Studio portrait sessions · Babula Shots Estudio",
+    intro: "Looking for a professional photographer with a full studio setup in Punta Cana? Babula Shots Estudio delivers polished, color-rich studio portraits that capture your personality at its best. Whether you're visiting the Dominican Republic or living here, our controlled studio environment means stunning results every single session — no weather worries, no harsh sunlight, just beautifully lit photographs you'll love.",
+    sections: [
+      {
+        h2: "Color Studio Sessions That Make You Look Your Best",
+        paragraphs: ["Our color portrait sessions are designed to bring out the richness of your features against carefully chosen backdrops. Professional studio lighting eliminates unflattering shadows and ensures consistent, vibrant color in every frame — exactly the kind of result you'd expect from a high-end photography studio.", "Angela's gallery is a perfect example of what's possible in a single studio session. Clean compositions, true-to-life color tones, and a relaxed atmosphere that lets your personality shine through."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "What to Expect from Your Punta Cana Studio Session",
+        paragraphs: ["From the moment you walk in, our team at Babula Shots Estudio focuses entirely on making you comfortable. We guide every pose, adjust the lighting to flatter your unique look, and keep the session energetic and fun."],
+        listIntro: "A typical color studio session includes:",
+        list: ["Professional studio lighting setup tailored to your skin tone and style", "Multiple backdrop options to complement your outfit and mood", "Pose guidance from an experienced photographer throughout", "High-resolution color-edited images delivered digitally", "Session available in both Punta Cana and Santo Domingo locations"]
+      },
+      {
+        h2: "Professional Studio Photography in Punta Cana & Santo Domingo",
+        paragraphs: ["Babula Shots Estudio serves clients across the Dominican Republic, with studio sessions available in Punta Cana and Santo Domingo. Whether you need portraits for professional use, personal keepsakes, or social media content, we have the experience and equipment to deliver images that exceed your expectations.", "Tourists visiting Punta Cana often book a session to bring home something more lasting than a selfie — a proper, professionally shot portrait that captures the energy and beauty of their trip."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "Why Clients Choose Babula Shots Estudio",
+        paragraphs: ["With a 4.9-star rating across 98 reviews, Babula Shots Estudio has earned the trust of clients from the Dominican Republic and around the world. Our studio combines technical expertise with a warm, welcoming atmosphere — so you always feel at ease in front of the camera."],
+        listIntro: "Clients keep coming back because of:",
+        list: ["Consistently high image quality with professional color grading", "A bilingual team comfortable working with international visitors", "Fast turnaround on edited gallery delivery", "Flexible scheduling to fit vacation or local schedules", "Transparent pricing with no hidden fees"]
+      }
+    ],
+    faq: [
+      { q: "How do I book a studio portrait session in Punta Cana?", a: "You can book directly through Babula Shots Estudio via WhatsApp or our contact form. We recommend reaching out at least a day in advance to secure your preferred time slot, though same-day bookings are often possible." },
+      { q: "How long does a color studio session take?", a: "Most color portrait sessions last between 30 and 60 minutes depending on the number of looks and backdrops you choose. Your photographer will keep things moving while making sure you have plenty of great shots." },
+      { q: "Can tourists visiting Punta Cana book a studio session?", a: "Absolutely — many of our clients are international visitors who want professional portraits as a memorable keepsake from their time in the Dominican Republic. We're used to working with travelers and can accommodate tight schedules." },
+      { q: "What should I wear to a color studio photography session?", a: "Wear something that makes you feel confident and reflects your personality. Solid colors and simple patterns tend to photograph beautifully in a studio setting. Our team is happy to offer styling advice when you book." },
+      { q: "Do you offer studio photography in Santo Domingo as well as Punta Cana?", a: "Yes. Babula Shots Estudio operates in both Punta Cana and Santo Domingo, so wherever you are in the Dominican Republic, we can accommodate your portrait session." },
+      { q: "How soon will I receive my edited photos?", a: "Edited color images are typically delivered within a few business days via a private online gallery. Rush delivery options may be available — just let us know your timeline when booking." }
+    ],
+  },
+  {
+    esPath: "/galeria-retratos/",
+    enPath: "/en/bw-portrait-gallery-santo-domingo/",
+    enSlug: "bw-portrait-gallery-santo-domingo",
+    topic: "Black & white portrait photography",
+    title: "Black & White Portrait Photography Santo Domingo · Babula Shots · 4.9★ 98 reviews",
+    description: "Timeless black & white studio portraits in Santo Domingo. Babula Shots Estudio crafts images that last a lifetime. Book your session today — call or WhatsApp us now.",
+    h1: "Black & White Portrait Photography in Santo Domingo, Dominican Republic",
+    eyebrow: "Studio portrait photography · Babula Shots Estudio",
+    intro: "Some photographs stop time. At Babula Shots Estudio in Santo Domingo, we specialize in black and white portrait photography that strips away distraction and goes straight to emotion. Whether you're booking a solo session, a couples shoot, or a family portrait, our studio team brings out the depth and character that color sometimes hides — leaving you with images you'll still love decades from now.",
+    sections: [
+      {
+        h2: "Why Black & White? The Art of Timeless Portraiture",
+        paragraphs: ["Black and white photography has an honesty that color can't always match. Without the distraction of hues and tones, the viewer's eye goes straight to expression, light, and story. That's the foundation of every portrait session at Babula Shots Estudio.", "Our photographers use advanced studio lighting setups to sculpt shadow and highlight in a way that gives each portrait real dimension. The result isn't just a photo — it's a piece of wall art that captures who you are at this exact moment in your life."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "Our Portrait Studio in Santo Domingo",
+        paragraphs: ["Located in Santo Domingo, Dominican Republic, Babula Shots Estudio is a fully equipped portrait studio built for creative, high-quality work. From intimate individual sittings to larger family or group sessions, we tailor every shoot to the mood and personality you want to convey.", "We also offer on-location portrait sessions throughout Santo Domingo — including the historic Zona Colonial — as well as beach portrait sessions in Punta Cana. Wherever you choose to shoot, our team brings the same professional standard."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "What to Expect from Your Portrait Session",
+        paragraphs: [],
+        listIntro: "Every Babula Shots portrait session is a collaborative experience. Here's what's included:",
+        list: ["A pre-session consultation to align on style, mood, and wardrobe", "Professional studio lighting optimized for black and white output", "Guidance on posing so you always look natural and at ease", "Expert retouching and post-processing on your final images", "High-resolution digital files delivered ready for print or sharing", "Session options in-studio, in the Zona Colonial, or on location in Punta Cana"]
+      },
+      {
+        h2: "Portrait Photography Across the Dominican Republic",
+        paragraphs: ["Based in Santo Domingo but available across the island, Babula Shots Estudio is one of the Dominican Republic's most sought-after portrait photography teams. We work with individuals, couples, families, and professionals who want imagery that feels genuine rather than generic.", "Whether you're visiting from abroad or you're a Santo Domingo local, we make the process easy from first contact to final delivery. Our team speaks both Spanish and English, so communication is never a barrier."],
+        list: [],
+        listIntro: ""
+      }
+    ],
+    faq: [
+      { q: "Where is Babula Shots Estudio located?", a: "Babula Shots Estudio is based in Santo Domingo, Dominican Republic. We offer studio sessions at our Santo Domingo location and can also shoot on location in the Zona Colonial or travel to Punta Cana for beach portrait sessions." },
+      { q: "Can I get both black and white and color portraits in the same session?", a: "Absolutely. While we specialize in black and white portraiture, we shoot in full color and can deliver images in both formats. Just let us know your preference during your pre-session consultation." },
+      { q: "How do I book a portrait session at Babula Shots?", a: "You can book by calling or messaging us on WhatsApp. We'll set up a quick consultation to discuss your vision, preferred dates, and session details before confirming your reservation." },
+      { q: "Do you shoot portraits outside the studio — for example, in the Zona Colonial?", a: "Yes. On-location portrait sessions in Santo Domingo's historic Zona Colonial are one of our most popular options. The colonial architecture provides a stunning, timeless backdrop that pairs beautifully with black and white photography." },
+      { q: "How long does a typical portrait session last?", a: "Most studio portrait sessions run between one and two hours, which gives us enough time to try different looks, lighting setups, and poses. Larger family sessions or on-location shoots may run a little longer." },
+      { q: "Do you offer portrait photography in Punta Cana?", a: "Yes. Babula Shots Estudio travels to Punta Cana for beach portrait sessions and other on-location work. Contact us to discuss travel arrangements and availability." }
+    ],
+  },
+  {
+    esPath: "/retratos-sesion-de-fotos-en-estudio/",
+    enPath: "/en/studio-portrait-photography-santo-domingo/",
+    enSlug: "studio-portrait-photography-santo-domingo",
+    topic: "Portrait photography",
+    title: "Studio Portrait Photography Santo Domingo · Babula Shots · 4.9★ 98 reviews",
+    description: "Professional studio portrait sessions in Santo Domingo, DR. Precision lighting that brings out your eyes, personality & story. Book your session today — call now!",
+    h1: "Studio Portrait Photography in Santo Domingo, Dominican Republic",
+    eyebrow: "Portrait sessions · Babula Shots Estudio",
+    intro: "At Babula Shots Estudio in Santo Domingo, portrait photography is more than pressing a shutter — it's the art of revealing who you are through light and composition. Our studio gives us full control over every beam and shadow, letting us craft setups that flatter your features, ignite your eyes, and surface the authentic personality behind every face. The result: portraits that feel genuinely yours, not just technically correct.",
+    sections: [
+      {
+        h2: "Lighting That Brings Your Eyes to Life",
+        paragraphs: ["Eyes carry emotion like nothing else in a portrait. Our photographers at Babula Shots Estudio treat eye lighting as a discipline in itself — placing, shaping, and diffusing each source until the catch-lights and depth are exactly right. The difference between a flat snapshot and a compelling portrait almost always lives in how the eyes are lit.", "We use a combination of softboxes, reflectors, and accent lights to sculpt dimension without harsh shadows. Whether your session calls for clean, editorial brightness or moody, dramatic contrast, we dial in the setup before you ever step in front of the camera."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "A Creative Process Built Around You",
+        paragraphs: ["No two faces are the same, and our lighting configurations reflect that. Before each session we think through the look you're after — professional headshots, artistic portraits, personal branding images — and design a setup that complements your features and tells your story visually.", "We experiment with light angles, shadow gradients, and reflector positions throughout the shoot, giving you variety within a single session rather than the same frame repeated twenty times."],
+        list: ["Custom lighting setups tailored to your face shape and skin tone", "Multiple moods captured in one session — bright & clean through dramatic & editorial", "Reflectors and accent lights for added depth and dimension", "Full studio control: no wind, harsh sun, or unpredictable outdoor conditions"],
+        listIntro: "What you can expect from every portrait session at our Santo Domingo studio:"
+      },
+      {
+        h2: "Comfort First — Great Portraits Require Real Connection",
+        paragraphs: ["Technical skill gets you a sharp, well-exposed image. What turns that image into something memorable is the human connection between photographer and subject. At Babula Shots Estudio we invest real time in making you feel at ease — because tension shows up in every frame, and relaxed confidence shows up just as clearly.", "Our studio environment is relaxed, unhurried, and judgment-free. We guide you through posing naturally, coach expressions without making you feel stiff, and keep the energy light so that what you see in the final images is genuinely you."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "Why Choose Babula Shots Estudio for Portraits in Santo Domingo",
+        paragraphs: ["Santo Domingo has no shortage of photographers, but a controlled studio environment with purpose-built portrait lighting is far less common. Babula Shots Estudio was designed from the ground up for exactly this kind of work — every light, every surface, every piece of equipment chosen to serve portrait sessions specifically.", "We believe every face has a story worth telling beautifully. Our commitment is to the technical precision and the emotional authenticity that make portraits last — images you'll still love years from now."],
+        list: [],
+        listIntro: ""
+      }
+    ],
+    faq: [
+      { q: "How long does a studio portrait session at Babula Shots Estudio take?", a: "Most portrait sessions run between 60 and 90 minutes, which gives us time to try multiple lighting setups and capture a range of expressions without feeling rushed. We'll confirm the exact duration when you book." },
+      { q: "What should I wear to a studio portrait session?", a: "Solid colors and simple patterns tend to photograph best because they keep the focus on your face. Avoid very busy prints or logos that can distract the eye. We're happy to chat through outfit options during your pre-session consultation." },
+      { q: "Do you offer portrait sessions for personal branding or LinkedIn headshots?", a: "Absolutely. Professional headshots and personal branding portraits are among the most popular sessions we run. The studio environment and controlled lighting are ideal for clean, polished images that work across professional platforms." },
+      { q: "Can I bring a friend or family member to the session?", a: "Yes — having a familiar face in the room often helps people relax and look more natural on camera. Just let us know in advance so we can plan the session accordingly." },
+      { q: "How do I book a portrait session at your Santo Domingo studio?", a: "You can reserve your spot directly through our website or schedule a video call to discuss details before committing. We'll walk you through everything — timing, outfits, lighting styles, and what to expect on the day." },
+      { q: "Do you retouch or edit the final portrait photos?", a: "Yes, all delivered images go through professional post-processing. We enhance lighting, color, and skin tones while keeping the results natural-looking — the goal is the best version of you, not an over-edited version." }
+    ],
+  },
+  {
+    esPath: "/blog/",
+    enPath: "/en/photography-blog-santo-domingo/",
+    enSlug: "photography-blog-santo-domingo",
+    topic: "Photography blog",
+    title: "Photography Blog · Babula Shots · 4.9★ 98 reviews",
+    description: "Tips, inspiration, and behind-the-scenes stories from Santo Domingo's top photography studio. Explore the Babula Shots blog and book your session today.",
+    h1: "Photography Insights from Babula Shots Estudio, Santo Domingo",
+    eyebrow: "Photography blog · Babula Shots Estudio",
+    intro: "Welcome to the Babula Shots blog — your go-to source for photography tips, session inspiration, and real stories straight from our studio in Santo Domingo, Dominican Republic. Whether you're planning a wedding, a family portrait, or a professional headshot, our posts are designed to help you get the most out of every photo session.",
+    sections: [
+      {
+        h2: "What You'll Find on the Babula Shots Blog",
+        paragraphs: ["Our team shares practical advice drawn from years of experience shooting portraits, weddings, quinceañeras, corporate events, and everything in between across the Dominican Republic.", "From choosing the right outfit for your session to understanding natural light at golden hour in Santo Domingo, each post is written to make your photography experience smoother and more enjoyable."],
+        list: ["Session preparation tips — what to wear, what to bring, and how to relax in front of the camera", "Behind-the-scenes looks at real Babula Shots sessions", "Wedding and event photography guides tailored to Dominican venues", "Lighting and location spotlights around Santo Domingo", "Studio news, seasonal promotions, and new service announcements"],
+        listIntro: "Here's a taste of what our blog covers:"
+      },
+      {
+        h2: "Photography Tips for Every Occasion",
+        paragraphs: ["Not every client walks into a studio knowing exactly what they want — and that's perfectly fine. Our blog posts break down each photography service we offer, so you can arrive at your session feeling confident and prepared.", "We cover everything from how to pose naturally for a headshot to the best months of the year to shoot outdoors in the Dominican Republic without fighting harsh midday sun."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "Stories from Our Studio in Santo Domingo",
+        paragraphs: ["Photography is about more than technically perfect images — it's about capturing real moments and genuine emotion. Our blog features real client stories, session highlights, and the occasional peek into what a typical day looks like at Babula Shots Estudio.", "These stories are a great way to get a feel for our working style and the kind of experience you can expect when you book with us."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "Stay Updated and Book Your Session",
+        paragraphs: ["The blog is also where we announce new services, limited-time packages, and seasonal mini-sessions. Bookmark this page or follow us on social media so you never miss an update from Babula Shots Estudio.", "Ready to turn inspiration into action? Browse our services and reach out to schedule your session in Santo Domingo today."],
+        list: [],
+        listIntro: ""
+      }
+    ],
+    faq: [
+      { q: "What kind of content does the Babula Shots blog publish?", a: "We publish photography tips, session preparation guides, behind-the-scenes stories, location spotlights around Santo Domingo, and studio news. Posts are written for clients at every stage — whether you're just browsing or ready to book." },
+      { q: "How often is the blog updated?", a: "We add new posts regularly, covering seasonal topics, upcoming promotions, and practical photography advice. Check back often or follow our social media channels for the latest updates from Babula Shots Estudio." },
+      { q: "Can I find pricing information on the blog?", a: "Some blog posts include details about current packages and seasonal offers. For the most up-to-date pricing, we recommend contacting Babula Shots Estudio directly so we can tailor a quote to your specific needs." },
+      { q: "Does the blog cover photography for weddings in the Dominican Republic?", a: "Yes — wedding photography is one of our most popular topics. We share venue guides, posing tips, timeline advice, and real wedding highlights from across the Dominican Republic." },
+      { q: "How do I book a session after reading the blog?", a: "Simply visit our contact page or call us directly to discuss your vision. Our team is based in Santo Domingo and happy to help you plan the perfect session." }
+    ],
+  },
+  {
+    esPath: "/privacy-policy/",
+    enPath: "/en/privacy-policy/",
+    enSlug: "privacy-policy",
+    topic: "Privacy Policy",
+    title: "Privacy Policy · Babula Shots · 4.9★ 98 reviews",
+    description: "Read the Babula Shots Estudio privacy policy to learn how we collect, use, and protect your personal data. Questions? Email info@babulashotsrd.com or call 8097209547.",
+    h1: "Privacy Policy – Babula Shots Estudio",
+    eyebrow: "Legal · Babula Shots Estudio",
+    intro: "This Privacy Policy explains how Babula Shots RD collects, uses, and safeguards your personal information when you use our website at estudio.babulashotsrd.com. By using our service, you agree to the collection and use of information in accordance with this policy. Last updated: 23 June 2024.",
+    sections: [
+      {
+        h2: "Information We Collect",
+        paragraphs: ["When you use our service, we may ask you to provide certain personally identifiable information. This can include, but is not limited to, your name, email address, phone number, and any other details needed to contact or identify you ('Personal Data').", "We collect this information to provide and improve our service, and to keep you informed about offerings that may interest you."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "How We Use Your Data",
+        paragraphs: ["We may use your Personal Data to send you newsletters, marketing materials, promotional content, or other information we think you may find relevant. You can opt out of any or all such communications at any time by clicking the unsubscribe link in any email we send, or by following the opt-out instructions provided."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "When We May Disclose Your Data",
+        paragraphs: [],
+        listIntro: "We may disclose your Personal Data only in the following limited circumstances:",
+        list: ["To comply with a legal obligation", "To protect and defend the rights or property of Babula Shots RD", "To prevent or investigate potential misconduct related to our service", "To protect the personal safety of our users or the general public", "To protect against legal liability"]
+      },
+      {
+        h2: "Data Security & Third-Party Links",
+        paragraphs: ["The security of your data matters to us. We use commercially reasonable measures to protect your Personal Data; however, no method of internet transmission or electronic storage is 100% secure, and we cannot guarantee absolute security.", "Our website may contain links to third-party sites that we do not operate. If you click a third-party link, you will be directed to that site. We strongly encourage you to review the privacy policy of every site you visit, as we have no control over and assume no responsibility for their content or practices."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "Changes to This Policy & How to Contact Us",
+        paragraphs: ["We may update this Privacy Policy from time to time. Any changes will be posted on this page, and the 'last updated' date at the top will be revised accordingly. We recommend checking back periodically to stay informed.", "If you have any questions about this Privacy Policy, please reach out to us directly — we're happy to help."],
+        list: ["Email: info@babulashotsrd.com", "Phone: 809-720-9547"],
+        listIntro: "Contact us:"
+      }
+    ],
+    faq: [
+      { q: "What personal information does Babula Shots collect?", a: "We may collect your name, email address, and phone number when you use our website or contact us. This information is used solely to provide our service and communicate with you." },
+      { q: "Will Babula Shots sell or share my personal data?", a: "We do not sell your personal data. We may disclose it only when required by law, to protect our rights, or to ensure user safety — never for commercial gain." },
+      { q: "How can I opt out of marketing emails from Babula Shots?", a: "Every marketing email we send includes an unsubscribe link. Click it at any time to stop receiving promotional communications from us." },
+      { q: "Is my data secure with Babula Shots Estudio?", a: "We use commercially accepted security measures to protect your data. However, no online transmission is completely risk-free, so we cannot guarantee absolute security." },
+      { q: "How do I contact Babula Shots about a privacy concern?", a: "You can email us at info@babulashotsrd.com or call 809-720-9547. We aim to respond to all privacy inquiries promptly." },
+      { q: "How often is this Privacy Policy updated?", a: "We review and update the policy as needed. The current version was last updated on 23 June 2024. We recommend checking this page periodically for any changes." }
+    ],
+  },
+  {
+    esPath: "/fotos-pantalla-verde/",
+    enPath: "/en/green-screen-photography-santo-domingo/",
+    enSlug: "green-screen-photography-santo-domingo",
+    topic: "Green screen photography",
+    title: "Green Screen Photography Studio · Babula Shots · 4.9★ 98 reviews",
+    description: "Professional green screen photo & video sessions in Santo Domingo. Unlimited backgrounds, studio lighting, and expert guidance. Book today — WhatsApp us now!",
+    h1: "Green Screen Photography in Santo Domingo, Dominican Republic",
+    eyebrow: "Studio Photography · Babula Shots Estudio",
+    intro: "Green screen photography puts you in complete control of your story. At Babula Shots Estudio in Santo Domingo, we composite you against any background you can imagine — a tropical beach, a Manhattan skyline, a branded campaign backdrop — using professional studio lighting and high-resolution cameras. Whether you're shooting stills or video, our team handles every detail so you walk away with images that look polished, purposeful, and completely your own.",
+    sections: [
+      {
+        h2: "What Is Green Screen Photography?",
+        paragraphs: ["Green screen (or chroma key) photography works by filming a subject against a solid, evenly lit green backdrop. In post-production, that colour is replaced with any image or video clip you choose. The result is a seamless composite that's virtually indistinguishable from a location shoot — without the travel budget or unpredictable weather.", "The technique has been a cornerstone of the film and advertising industries for decades, and it's now just as accessible for personal projects, e-commerce, social media content, and corporate campaigns. At Babula Shots Estudio, we bring that same cinematic quality to every session, regardless of the scale of your project."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "Why Choose Green Screen for Your Next Shoot?",
+        paragraphs: [],
+        listIntro: "Green screen sessions offer advantages that traditional location shoots simply can't match:",
+        list: ["Infinite background options — swap scenes, brand environments, or seasonal settings in minutes", "Production efficiency — no location permits, travel time, or weather delays", "Consistent, studio-quality lighting on every frame", "Works equally well for photos, promotional videos, and social content", "Fully adaptable to advertising campaigns, personal branding, or creative personal projects"]
+      },
+      {
+        h2: "Our Green Screen Studio in Santo Domingo",
+        paragraphs: ["Babula Shots Estudio is fully equipped for green screen work. Our studio features large-format chroma key backdrops, controlled strobe and continuous lighting rigs, and the latest camera systems — everything needed to give your project a professional finish from the very first frame.", "Our photographers and editors work closely with you to understand your vision before the shutter clicks. From concept to final retouched file, we make sure every composite background feels like it belongs in the scene, not pasted on top of it."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "Photo and Video Production with Superior Audio",
+        paragraphs: ["Green screen isn't just for still photography. If your project calls for video — a product launch, a service promo, a talking-head piece — our studio is set up to capture high-quality footage with clean audio to match. A polished video produced against a professional chroma key background can elevate a brand far beyond what a smartphone clip can achieve.", "We handle the technical side so you can focus on your performance and your message. The end product is broadcast-ready content that stands out on any platform."],
+        list: [],
+        listIntro: ""
+      },
+      {
+        h2: "How to Book Your Green Screen Session",
+        paragraphs: ["Getting started is straightforward. Reach out via WhatsApp, give us a call, or schedule a quick video call to discuss your project goals, the backgrounds you have in mind, and the deliverables you need. We'll recommend the right session length and walk you through what to wear and how to prepare.", "Sessions are available for individuals, families, influencers, and business clients. Once you're in the studio, our team guides you through every pose and setup so even first-timers feel comfortable in front of the camera."],
+        list: [],
+        listIntro: ""
+      }
+    ],
+    faq: [
+      { q: "What should I wear for a green screen photo session?", a: "Avoid wearing green or lime-coloured clothing, since those shades can blend into the backdrop during editing. Solid colours and bold patterns both work well. Our team will give you a full preparation guide when you book." },
+      { q: "Can I choose my own background, or do you provide options?", a: "Both. We have a library of ready-made backgrounds — cityscapes, nature settings, branded environments — and we can also work with images you supply. If you have a specific vision, just share it and we'll make it work." },
+      { q: "How long does a green screen session take?", a: "A standard session typically runs one to two hours depending on the number of looks and backgrounds involved. We'll give you a clear time estimate when you book so you can plan your day." },
+      { q: "Is green screen photography good for business and commercial use?", a: "Absolutely. It's one of the most cost-effective ways to produce high-quality advertising images and promotional videos. You get a studio-polished result without the expense of a location shoot." },
+      { q: "Do you offer green screen video as well as photos?", a: "Yes. Our studio supports both photo and video projects. We capture high-resolution video with quality audio, making the content ready for websites, social media, and broadcast use." },
+      { q: "Where is Babula Shots Estudio located?", a: "We're based in Santo Domingo, Dominican Republic. Contact us via WhatsApp or phone to get the exact address and confirm your appointment time." }
     ],
   }
 ];
