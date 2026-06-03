@@ -1625,19 +1625,41 @@ p {
   margin-right: .35em;
 }
 
+/* Card images show the WHOLE photo at its real aspect ratio — no crop, no
+   distortion. (Was object-fit: cover into a 16:10 box, which chopped the
+   mostly-portrait studio shots.) height:auto is the base so even without
+   :has() support images degrade gracefully to natural-ratio in the grid. */
 .card-grid img {
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
-  object-position: center 30%;
-  margin: -1.2rem -1.2rem .6rem;
   width: calc(100% + 2.4rem);
+  height: auto;
+  margin: -1.2rem -1.2rem .8rem;
   display: block;
 }
 
-@media (max-width: 720px) {
-  .card-grid img {
-    aspect-ratio: 3 / 2;
+/* Image-bearing grids become masonry columns so mixed portrait + landscape
+   photos pack tightly with no ragged gaps. Text-only .card-grid (services,
+   locations, FAQ) is excluded by :has(img) and keeps its even grid. */
+.card-grid:has(img) {
+  display: block;
+  columns: 3;
+  column-gap: 1rem;
+}
+
+.card-grid:has(img) .card {
+  break-inside: avoid;
+  margin: 0 0 1rem;
+  min-height: 0;
+}
+
+@media (max-width: 900px) {
+  .card-grid:has(img) {
+    columns: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-grid:has(img) {
+    columns: 1;
   }
 }
 
