@@ -54,18 +54,18 @@ export const postalAddress = {
   addressCountry: "DO"
 };
 
-// Canonical aggregateRating (4.9/5 from 98 Google reviews — brand-wide).
+// Canonical aggregateRating (4.9/5 from 100 Google reviews — brand-wide).
 export const aggregateRating = {
   "@type": "AggregateRating" as const,
   ratingValue: "4.9",
   bestRating: "5",
   worstRating: "1",
-  ratingCount: "98",
-  reviewCount: "98"
+  ratingCount: "100",
+  reviewCount: "100"
 };
 
 // CTR-focused title suffix. Append to base titles to render
-// "· 4.9★ 98 reseñas Google" / "· 4.9★ 98 Google Reviews" in SERPs.
+// "· 4.9★ 100 reseñas Google" / "· 4.9★ 100 Google Reviews" in SERPs.
 // Reads from aggregateRating so the title stays in sync with schema + badge.
 export const ratingBadgeEs = ` · ${aggregateRating.ratingValue}★ ${aggregateRating.reviewCount} reseñas Google`;
 export const ratingBadgeEn = ` · ${aggregateRating.ratingValue}★ ${aggregateRating.reviewCount} Google Reviews`;

@@ -11,7 +11,7 @@ const seo = getSeo("https://estudio.babulashotsrd.com/");
 // Covers both top intent clusters: "sesion de fotos" + "estudio santo domingo".
 const homepageTitle = "Sesión de Fotos · Estudio en Santo Domingo · 4.9★ Babula Shots";
 const homepageDescription =
-  "Estudio fotográfico profesional en Santo Domingo. Sesiones de retrato, comida, moda y corporativo. Reserva 809 720 9547 · 4.9★ 98 reseñas Google.";
+  "Estudio fotográfico profesional en Santo Domingo. Sesiones de retrato, comida, moda y corporativo. Reserva 809 720 9547 · 4.9★ 100 reseñas Google.";
 
 export const metadata: Metadata = {
   title: homepageTitle,

@@ -18,7 +18,7 @@ const PAGE_PATH = "/en/studio-photo-session-santo-domingo/";
 const PAGE_URL = canonicalUrl(PAGE_PATH);
 const ES_MIRROR = canonicalUrl("/sesion-de-fotos-estudio-santo-domingo/");
 
-const title = "Studio Photo Session in Santo Domingo · Babula Shots · 4.9★ 98 reviews";
+const title = "Studio Photo Session in Santo Domingo · Babula Shots · 4.9★ 100 reviews";
 const description =
   "Professional photo studio in Santo Domingo, Dominican Republic. Portrait, fashion, maternity, family and creative studio sessions with Profoto lighting. Book your session.";
 

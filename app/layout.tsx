@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     default: "Estudio Fotográfico Santo Domingo · Sesión de Fotos · 4.9★ Babula Shots",
     template: "%s"
   },
-  description: "Estudio fotográfico profesional en Santo Domingo. Retratos, comida, moda y headshots corporativos. Reserva 809 720 9547 · 4.9★ 98 reseñas Google.",
+  description: "Estudio fotográfico profesional en Santo Domingo. Retratos, comida, moda y headshots corporativos. Reserva 809 720 9547 · 4.9★ 100 reseñas Google.",
   openGraph: {
     siteName: "Babula Shots - Fotografo Estudio Santo Domingo",
     locale: "es_DO",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Estudio Fotográfico Santo Domingo · Sesión de Fotos · 4.9★ Babula Shots",
-    description: "Estudio fotográfico profesional en Santo Domingo. Retratos, comida, moda y headshots corporativos. Reserva 809 720 9547 · 4.9★ 98 reseñas Google.",
+    description: "Estudio fotográfico profesional en Santo Domingo. Retratos, comida, moda y headshots corporativos. Reserva 809 720 9547 · 4.9★ 100 reseñas Google.",
     images: ["/wp-content/uploads/2024/06/social-card-1200x630.webp"]
   },
   robots: {

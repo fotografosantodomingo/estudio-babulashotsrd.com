@@ -18,7 +18,7 @@ const PAGE_PATH = "/en/corporate-photography-studio-dr/";
 const PAGE_URL = canonicalUrl(PAGE_PATH);
 const ES_MIRROR = canonicalUrl("/fotografia-corporativa-en-estudio-rd/");
 
-const title = "Corporate Photography Studio in Santo Domingo · Babula Shots · 4.9★ 98 reviews";
+const title = "Corporate Photography Studio in Santo Domingo · Babula Shots · 4.9★ 100 reviews";
 const description =
   "Professional corporate headshots and executive portraits in Santo Domingo. LinkedIn photos, team headshots, brand portraits with Profoto studio lighting. 48h delivery.";
 
