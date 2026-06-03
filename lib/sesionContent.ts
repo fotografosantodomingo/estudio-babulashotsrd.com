@@ -85,10 +85,14 @@ const HERO = {
 const master: SesionPage = {
   slug: "sesion-de-fotos",
   url: "/sesion-de-fotos/",
-  title: "Sesión de Fotos en Santo Domingo | Babula Shots Estudio",
+  // Title re-angled to catalog/buying intent (tipos · paquetes · precios) so it
+  // stops duplicating the homepage's bare "sesión de fotos" head term. Per GSC
+  // 2026-06, homepage owns "sesión de fotos" (pos 8.7, 979 impr); this hub was a
+  // weaker duplicate at pos 9.8 (115 impr). Now targets type/price long-tail.
+  title: "Tipos de Sesión de Fotos en Estudio: Paquetes y Precios | Babula Shots",
   metaDescription:
-    "Sesión de fotos en Santo Domingo con Babula Shots: estudio profesional, retratos, parejas, corporativo, embarazo, quinceañera. WhatsApp +1 809 720 9547.",
-  h1: "Sesión de Fotos en Santo Domingo",
+    "Todos los tipos de sesión de fotos en Santo Domingo: retratos, parejas, embarazo, quinceañera, corporativo y branding — con paquetes y precios fijos. Reserva por WhatsApp +1 809 720 9547.",
+  h1: "Tipos de Sesión de Fotos en Santo Domingo",
   eyebrow: "Babula Shots Estudio",
   introParagraphs: [
     "Una sesión de fotos profesional en Santo Domingo no es solo presionar un botón. Es dirección de pose, lectura de luz, edición consistente, y una entrega rápida que llega lista para imprimir, compartir o publicar. En Babula Shots cubrimos cada uno de esos puntos en estudio propio, con equipo Sony G Master, iluminación Profoto, y un equipo bilingüe que trabaja de la misma forma desde el primer mensaje por WhatsApp hasta la galería online final.",

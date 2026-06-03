@@ -20,6 +20,17 @@ const titles: Record<PageType, { es: string; en: string }> = {
   faq: { es: "Preguntas frecuentes", en: "Frequently asked questions" }
 };
 
+// Richer on-page H1s than the short breadcrumb labels in `titles`. Per GSC
+// 2026-06 the /precios/ H1 was a bare "Precios" while the page ranks for
+// "estudio fotográfico"/"sesión de fotos" intent — give the H1 keyword context.
+// Falls back to `titles` for any type without an override.
+const h1Overrides: Partial<Record<PageType, { es: string; en: string }>> = {
+  precios: {
+    es: "Precios de Sesión de Fotos en Santo Domingo",
+    en: "Photo Session Prices in Santo Domingo"
+  }
+};
+
 const intros: Record<PageType, { es: string; en: string }> = {
   servicios: {
     es: "Cobertura, deliverables y tiempos por servicio. Cada servicio tiene su propio FAQ con datos especificos sobre cobertura, equipo y entrega.",
@@ -133,7 +144,7 @@ export function NetworkPage({ niche, type, locale }: { niche: Niche; type: PageT
       <SeoJsonLd data={schemas as Record<string, unknown>[]} />
       <section className="plain-hero">
         <p className="eyebrow">Babula Shots</p>
-        <h1>{isEn ? t.en : t.es}</h1>
+        <h1>{(() => { const h = h1Overrides[type] ?? t; return isEn ? h.en : h.es; })()}</h1>
         <p>{isEn ? intro.en : intro.es}</p>
       </section>
 
