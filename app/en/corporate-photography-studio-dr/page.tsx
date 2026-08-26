@@ -191,7 +191,7 @@ export default function CorporatePhotographyPage() {
           <p>
             We work with full Profoto studio lighting in a controlled environment — no weather or
             location risk, no harsh midday sun, no echo from outdoor noise. Sessions are scheduled
-            in 30–90 minute slots so the executive's day isn't disrupted. Standard delivery is
+            in 30–90 minute slots so the executive&apos;s day isn&apos;t disrupted. Standard delivery is
             <strong> 48 hours</strong> via a private online gallery with high-resolution files and
             web-optimised crops. Commercial usage rights are included in all corporate packages.
           </p>
