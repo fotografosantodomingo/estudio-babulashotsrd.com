@@ -50,6 +50,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: canonicalUrl("/en/locations/"), lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: canonicalUrl("/en/prices/"), lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: canonicalUrl("/en/faq/"), lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: canonicalUrl("/en/blog/"), lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     // Hand-translated deep service pages (2026-05-22 — top Spanish-only by GSC impressions)
     { url: canonicalUrl("/en/corporate-photography-studio-dr/"), lastModified: now, changeFrequency: "monthly", priority: 0.85 },
     { url: canonicalUrl("/en/studio-photo-session-santo-domingo/"), lastModified: now, changeFrequency: "monthly", priority: 0.85 },

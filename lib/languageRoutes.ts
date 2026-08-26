@@ -22,6 +22,7 @@ const staticPairs: LanguagePaths[] = [
   { es: "/ubicaciones/", en: "/en/locations/" },
   { es: "/precios/", en: "/en/prices/" },
   { es: "/faq/", en: "/en/faq/" },
+  { es: "/blog/", en: "/en/blog/" },
   // Hand-translated deep service pages (the two highest-impression Spanish-only
   // pages by GSC 2026-05-10: corporate photography 213 imp/mo, studio session 166).
   { es: "/fotografia-corporativa-en-estudio-rd/", en: "/en/corporate-photography-studio-dr/" },
